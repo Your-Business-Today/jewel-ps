@@ -115,6 +115,8 @@ export const stats = [
 export const marquee = [
 	'24hr emergency callout',
 	'12-month guarantee',
+	'NAPIT registered',
+	'CHAS accredited',
 	'SafeContractor approved',
 	'NICEIC registered',
 	'DBS-checked team',
@@ -141,10 +143,22 @@ export const process = [
 	}
 ];
 
+const ACCREDITATION_LOGOS = '/images/accreditations';
+
+/** @typedef {{ name: string, image: string, registration?: string, expires?: string, href?: string }} Accreditation */
+
+/** Current schemes, from the accreditations register Katie Prentice sent on 15 October 2026. Expiry dates are ISO, so a lapsed scheme drops off the site by itself.
+ * @type {Accreditation[]}
+ */
 export const accreditations = [
-	{ name: 'SafeContractor Approved', image: img('Safe-Contractor-Approved.png') },
+	{ name: 'NAPIT Competent Person Scheme', image: `${ACCREDITATION_LOGOS}/napit.png`, registration: 'NAP/82807/26/1', expires: '2027-05-31' },
+	{ name: 'CHAS Accredited Contractor', image: `${ACCREDITATION_LOGOS}/chas.png`, registration: 'CHAS-29004226', expires: '2026-12-05' },
+	{ name: 'SafeContractor', image: `${ACCREDITATION_LOGOS}/safecontractor.png`, registration: 'EX4295', expires: '2027-02-26' },
 	{ name: 'NICEIC Registered', image: img('NIC-EIC-Logo.webp') },
-	{ name: 'Vantify', image: img('Vantify-.jpg') }
+	{ name: 'Fire Aware Main Contractors Charter', image: `${ACCREDITATION_LOGOS}/fire-aware.png`, registration: '760-4896-308', expires: '2027-09-08' },
+	{ name: 'Vantify Verified Pre-Qual', image: `${ACCREDITATION_LOGOS}/vantify-verified-pre-qual.png`, registration: 'P360-006428', expires: '2027-07-22' },
+	{ name: 'Vantify SSIP Deem to Satisfy', image: `${ACCREDITATION_LOGOS}/vantify-ssip-deem-to-satisfy.png`, registration: 'P360-006727', expires: '2026-12-05' },
+	{ name: 'Ecologi', image: `${ACCREDITATION_LOGOS}/ecologi.png`, registration: 'ecologi.com/jewelpsltd', href: 'https://ecologi.com/jewelpsltd' }
 ];
 
 export const testimonials = [

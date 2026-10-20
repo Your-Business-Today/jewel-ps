@@ -179,7 +179,7 @@ export function defaultBrochurePages() {
 				services_line:
 					'Refurbishment · Planned & Reactive Maintenance · Fire & Flood Restoration · 24hr Emergency Callout',
 				accreditations_line:
-					'SafeContractor Approved | NICEIC Registered | Vantify | Ecologi Partner | 12-Month Guarantee'
+					'NAPIT | CHAS | SafeContractor | NICEIC | Fire Aware | Vantify SSIP | Ecologi Partner | 12-Month Guarantee'
 			}
 		}
 	];
