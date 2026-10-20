@@ -53,7 +53,7 @@
 			addressCountry: 'GB'
 		},
 		areaServed: ['London', 'South East England'],
-		openingHours: 'Mo-Su 00:00-24:00',
+		openingHours: contact.openingHours,
 		sameAs: Object.values(social)
 	});
 </script>
@@ -156,7 +156,6 @@
 					<a href={social.instagram} target="_blank" rel="noopener" class="transition hover:text-gold">Instagram</a>
 					<a href={social.linkedin} target="_blank" rel="noopener" class="transition hover:text-gold">LinkedIn</a>
 					<a href={social.facebook} target="_blank" rel="noopener" class="transition hover:text-gold">Facebook</a>
-					<a href={social.checkatrade} target="_blank" rel="noopener" class="transition hover:text-gold">Checkatrade</a>
 				</div>
 			</div>
 
@@ -201,7 +200,6 @@
 			<div class="flex gap-5">
 				<a href="/documents/terms-and-conditions.pdf" target="_blank" rel="noopener" class="transition hover:text-gold">Terms &amp; conditions (PDF)</a>
 				<a href="/privacy" class="transition hover:text-gold">Privacy</a>
-				<a href="/admin" class="text-grey/40 transition hover:text-gold" rel="nofollow">Admin</a>
 			</div>
 		</div>
 	</div>

@@ -28,6 +28,7 @@ export const contact = {
 	address: '48 Warwick Street, London, W1B 5AW',
 	addressLines: ['48 Warwick Street', 'London', 'W1B 5AW'],
 	hours: 'Office Mon–Fri, 8am–5pm · Emergency callout 24/7, 365 days',
+	openingHours: 'Mo-Fr 08:00-17:00',
 	mapEmbed:
 		'https://www.google.com/maps?q=48+Warwick+Street,+London,+W1B+5AW&z=16&output=embed',
 	mapLink: 'https://www.google.com/maps/search/?api=1&query=48+Warwick+Street+London+W1B+5AW'
@@ -36,8 +37,7 @@ export const contact = {
 export const social = {
 	facebook: 'https://www.facebook.com/Jewelpsltd/',
 	instagram: 'https://www.instagram.com/jewelpsltd/',
-	linkedin: 'https://www.linkedin.com/company/jewelpropertyserveltd/',
-	checkatrade: 'https://www.checkatrade.com/trades/jewelpropertyserveltd'
+	linkedin: 'https://www.linkedin.com/company/jewelpropertyserveltd/'
 };
 
 export const nav = [
@@ -194,7 +194,7 @@ export const leadership = {
 export const ecologi = {
 	title: 'We plant trees for every project.',
 	text: 'Jewel partners with Ecologi to offset our carbon footprint. For every project we plant trees in our virtual forest — each sequestering an estimated 0.30 tonnes of carbon, roughly the equivalent of 732 miles in a standard car.',
-	image: img('Ecoligi.jpg')
+	image: img('Ecologi.jpg')
 };
 
 export const refurbServices = [
@@ -215,7 +215,7 @@ export const refurbServices = [
 	},
 	{
 		title: 'Tiling',
-		image: img('6870d940dea0ec79c9489c62_Tilling-p-800.jpg'),
+		image: img('6870d940dea0ec79c9489c62_Tiling-p-800.jpg'),
 		text: 'Skilled craftsmen working in ceramic, porcelain, glass and natural stone. Whether it’s a kitchen splashback, a luxurious bathroom or a statement wall, we install, repair and maintain tiling that looks stunning and lasts.'
 	},
 	{
@@ -276,6 +276,7 @@ export const faqs = [
 		a: 'We look after properties across London and the South East, from our base on Warwick Street in the West End.'
 	},
 	{
+		id: 'careers',
 		q: 'Looking for a career at Jewel?',
 		a: 'We’re always looking to grow our team of managers, surveyors and engineers. If you deliver high standards with great customer service, email us at enquiries@jewelps.co.uk.'
 	}

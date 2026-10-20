@@ -74,7 +74,6 @@
 					<a href={social.instagram} target="_blank" rel="noopener" class="rounded-full border border-white/10 px-4 py-2 transition hover:border-gold hover:text-gold">Instagram</a>
 					<a href={social.linkedin} target="_blank" rel="noopener" class="rounded-full border border-white/10 px-4 py-2 transition hover:border-gold hover:text-gold">LinkedIn</a>
 					<a href={social.facebook} target="_blank" rel="noopener" class="rounded-full border border-white/10 px-4 py-2 transition hover:border-gold hover:text-gold">Facebook</a>
-					<a href={social.checkatrade} target="_blank" rel="noopener" class="rounded-full border border-white/10 px-4 py-2 transition hover:border-gold hover:text-gold">Checkatrade</a>
 				</div>
 			</div>
 			<div class="overflow-hidden rounded-3xl border border-white/[0.06]">
@@ -177,7 +176,7 @@
 		<div class="lg:col-span-4" use:reveal>
 			<p class="kicker">FAQs</p>
 			<h2 class="h-section mt-5 text-white">Good to know.</h2>
-			<p id="careers" class="mt-6 text-grey">Can’t find what you’re looking for? Our service desk is happy to help on <a href={contact.phoneHref} class="font-semibold text-gold">{contact.phone}</a>.</p>
+			<p class="mt-6 text-grey">Can’t find what you’re looking for? Our service desk is happy to help on <a href={contact.phoneHref} class="font-semibold text-gold">{contact.phone}</a>.</p>
 		</div>
 		<div class="lg:col-span-8">
 			<Faq items={faqs} />
