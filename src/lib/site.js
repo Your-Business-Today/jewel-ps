@@ -145,7 +145,11 @@ export const process = [
 
 const ACCREDITATION_LOGOS = '/images/accreditations';
 
-/** Current schemes, from the accreditations register Katie Prentice sent on 15 October 2026. Expiry dates are ISO, so a lapsed scheme drops off the site by itself. */
+/** @typedef {{ name: string, image: string, registration?: string, expires?: string, href?: string }} Accreditation */
+
+/** Current schemes, from the accreditations register Katie Prentice sent on 15 October 2026. Expiry dates are ISO, so a lapsed scheme drops off the site by itself.
+ * @type {Accreditation[]}
+ */
 export const accreditations = [
 	{ name: 'NAPIT Competent Person Scheme', image: `${ACCREDITATION_LOGOS}/napit.png`, registration: 'NAP/82807/26/1', expires: '2027-05-31' },
 	{ name: 'CHAS Accredited Contractor', image: `${ACCREDITATION_LOGOS}/chas.png`, registration: 'CHAS-29004226', expires: '2026-12-05' },
