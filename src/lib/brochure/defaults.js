@@ -165,7 +165,7 @@ export function defaultBrochurePages() {
 					'Every member of our team is fully vetted, qualified and DBS-checked. We are SafeContractor approved, NICEIC registered and Vantify accredited — and our work for schools, hotels, government bodies and notable properties reflects the standards we hold ourselves to.',
 					'We also partner with Ecologi to offset our carbon footprint: for every project we plant trees in our virtual forest, each sequestering an estimated 0.30 tonnes of carbon — roughly the equivalent of 732 miles in a standard car.'
 				].join('\n\n'),
-				image: img('Ecoligi.jpg')
+				image: img('Ecologi.jpg')
 			}
 		},
 		{

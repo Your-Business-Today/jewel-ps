@@ -9,7 +9,7 @@
 
 <div class="divide-y divide-white/[0.08] border-y border-white/[0.08]" use:reveal={{ stagger: true }}>
 	{#each items as f, i}
-		<details class="group" open={i === 0}>
+		<details id={f.id} class="group scroll-mt-28" open={i === 0}>
 			<summary class="flex cursor-pointer items-center justify-between gap-6 py-5 font-display text-lg font-semibold text-white transition hover:text-gold sm:text-xl">
 				{f.q}
 				<span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/15 text-gold transition group-open:rotate-45 group-open:border-gold">

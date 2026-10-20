@@ -32,7 +32,7 @@ export const photoGroups = [
 			'Kitchens.jpg',
 			'Bathroom--Plumbing.avif',
 			'Carpentry-and-Joinery.png',
-			'6870d940dea0ec79c9489c62_Tilling-p-800.jpg',
+			'6870d940dea0ec79c9489c62_Tiling-p-800.jpg',
 			'image10.jpg',
 			'image6.jpg',
 			'bf78877b-27b5-49f7-8cc6-724267fdaca6.png'
@@ -78,7 +78,7 @@ export const photoGroups = [
 			'Safe-Contractor-Approved.png',
 			'NIC-EIC-Logo.webp',
 			'Vantify-.jpg',
-			'Ecoligi.jpg'
+			'Ecologi.jpg'
 		].map(img)
 	}
 ];
