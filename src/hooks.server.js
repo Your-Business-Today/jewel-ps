@@ -1,5 +1,8 @@
 import { building } from '$app/environment';
 import { ADMIN_COOKIE, verifySessionToken } from '$lib/server/auth.js';
+import { newAddressFor } from '$lib/server/old-addresses.js';
+
+const MOVED_PERMANENTLY = 301;
 
 /**
  * Headers added to every /admin response (pages, form actions, the media
@@ -22,12 +25,14 @@ const ADMIN_HEADERS = {
 
 /** @type {import('@sveltejs/kit').Handle} */
 export const handle = async ({ event, resolve }) => {
-	// During prerendering the crawler can follow the footer link to /admin.
 	// If the guard redirected at build time, SvelteKit would bake that redirect
 	// in as a static response — so the guard must not run while building.
 	if (building) return resolve(event);
 
 	const { pathname } = event.url;
+
+	const newAddress = newAddressFor(pathname);
+	if (newAddress) return movedTo(newAddress + event.url.search);
 
 	// Deliberately broad: anything starting with /admin is treated as admin
 	// territory, so a new route can never be forgotten by the guard.
@@ -53,6 +58,14 @@ export const handle = async ({ event, resolve }) => {
  */
 function redirectTo(location) {
 	return new Response(null, { status: 303, headers: { location } });
+}
+
+/**
+ * A permanent redirect from an old address, so search engines move its ranking to the new one.
+ * @param {string} location
+ */
+function movedTo(location) {
+	return new Response(null, { status: MOVED_PERMANENTLY, headers: { location } });
 }
 
 /** @param {Response} response */
