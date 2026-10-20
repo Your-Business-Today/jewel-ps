@@ -11,3 +11,9 @@ The public site at jewelps.co.uk: SvelteKit 2 with Svelte 5 and Tailwind CSS v3,
 - `npm run dev` serves the site locally; `npm run build` builds it; `npm run check` runs svelte-check.
 - `README.md` has the full route list, environment variables, the admin area and the brochure generator.
 - Duplication measurement needs jscpd (`npm install -g jscpd`); install it before retaking the baseline.
+
+## Database migrations run on merge
+
+- A new migration is a new file in `migrations/` (`YYYY-MM-DD-<what-it-does>.sql`). When its pull request merges, GitHub runs it against the live Supabase database (`run migrations` workflow, secret `SUPABASE_DB_URL`) in one transaction. Nobody runs it by hand.
+- It protects the data already there: additive (`create table if not exists`, `add column if not exists`), safe to run twice, never dropping or rewriting anything in use. A correction is a new file, never an edit to a merged one.
+- `supabase/schema.sql` (fresh databases only) and the dated files in `supabase/` were run by hand and are never run by the workflow. Keep `schema.sql` in step with each new migration so a fresh database still matches.
