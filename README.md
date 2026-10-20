@@ -87,6 +87,12 @@ the built-in default, and the dashboard explains what's missing.
 | `2026-08-26-admin.sql` | `media` storage bucket, `brochures` + `brochure_pages` (brochure builder), `rtw_submissions` (RTW register) |
 | `2026-09-04-security-hardening.sql` | RLS on every table, public API roles revoked, `admin_login_attempts` table (see *Security*) |
 
+Those files were run by hand and stay where they are. **New migrations go in `migrations/`** at the repository root,
+named `YYYY-MM-DD-<what-it-does>.sql`: when a pull request merges, the `run migrations` workflow
+(`.github/workflows/run-migrations.yml`, `scripts/run-added-migrations.sh`) runs every file the merge added there, in
+filename order and one transaction each, against the repository secret `SUPABASE_DB_URL`. Nothing under `supabase/` is
+ever run by it, and a file already on `main` never runs again.
+
 ## Security
 
 **Database.** Every table has row-level security enabled with **no policies**. The site's server code authenticates
