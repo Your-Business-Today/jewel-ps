@@ -101,6 +101,7 @@
 				</li>
 			{/each}
 		</ol>
+		<a href="/insurance-claims" class="btn-ghost mt-10">For insurers &amp; loss adjusters</a>
 	</div>
 </section>
 

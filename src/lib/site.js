@@ -49,6 +49,15 @@ export const nav = [
 	{ label: 'Contact', href: '/contact' }
 ];
 
+export const footerServices = [
+	{ label: 'Refurbishment', href: '/refurbishment' },
+	{ label: 'Maintenance', href: '/maintenance' },
+	{ label: 'Fire & Flood Restoration', href: '/fire-flood-restoration' },
+	{ label: '24hr Emergency Callout', href: '/emergency' },
+	{ label: 'Managing Agents', href: '/managing-agents' },
+	{ label: 'Insurers & Loss Adjusters', href: '/insurance-claims' }
+];
+
 export const clients = [
 	'Homeowners',
 	'Private landlords',

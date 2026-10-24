@@ -2,7 +2,7 @@
 	import '../app.css';
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
-	import { nav, contact, social, site } from '$lib/site.js';
+	import { nav, footerServices, contact, social, site } from '$lib/site.js';
 	import { initMotionPreference } from '$lib/motion.js';
 
 	let { children } = $props();
@@ -163,11 +163,9 @@
 				<div>
 					<h3 class="font-display text-[11px] font-semibold uppercase tracking-kicker text-gold">Services</h3>
 					<ul class="mt-5 space-y-3 text-sm">
-						<li><a href="/refurbishment" class="transition hover:text-gold">Refurbishment</a></li>
-						<li><a href="/maintenance" class="transition hover:text-gold">Maintenance</a></li>
-						<li><a href="/fire-flood-restoration" class="transition hover:text-gold">Fire &amp; Flood Restoration</a></li>
-						<li><a href="/emergency" class="transition hover:text-gold">24hr Emergency Callout</a></li>
-						<li><a href="/managing-agents" class="transition hover:text-gold">Managing Agents</a></li>
+						{#each footerServices as link}
+							<li><a href={link.href} class="transition hover:text-gold">{link.label}</a></li>
+						{/each}
 					</ul>
 				</div>
 				<div>
