@@ -11,6 +11,7 @@ Follows the Jewel Enterprise Brand Guidelines 2026 (PS Blue `#135EAA`, Jewel Gol
 | `/about` | Story, mission, CEO quote, four brand values, Ecologi, testimonials |
 | `/refurbishment` | Kitchens, bathrooms, carpentry & joinery, tiling, decoration |
 | `/maintenance` | All 17 maintenance services, managing-agent support |
+| `/emergency` | 24/7 emergency callout: leaks, roof repairs, make-safe, board-up, drying |
 | `/managing-agents` | Portfolio maintenance for managing agents and block managers, Chiltern Court |
 | `/fire-flood-restoration` | Restoration services, four-step claims process |
 | `/contact` | Contact cards, map, enquiry form (server action), FAQs |
