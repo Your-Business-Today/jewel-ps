@@ -167,7 +167,7 @@
 						<li><a href="/maintenance" class="transition hover:text-gold">Maintenance</a></li>
 						<li><a href="/fire-flood-restoration" class="transition hover:text-gold">Fire &amp; Flood Restoration</a></li>
 						<li><a href="/contact" class="transition hover:text-gold">24hr Emergency Callout</a></li>
-						<li><a href="/maintenance#managing-agents" class="transition hover:text-gold">Managing Agents</a></li>
+						<li><a href="/managing-agents" class="transition hover:text-gold">Managing Agents</a></li>
 					</ul>
 				</div>
 				<div>

@@ -8,6 +8,7 @@ const pages = [
 	{ path: '/refurbishment', priority: '0.9' },
 	{ path: '/maintenance', priority: '0.9' },
 	{ path: '/fire-flood-restoration', priority: '0.9' },
+	{ path: '/managing-agents', priority: '0.8' },
 	{ path: '/contact', priority: '0.8' },
 	{ path: '/brochure', priority: '0.5' },
 	{ path: '/privacy', priority: '0.2' }

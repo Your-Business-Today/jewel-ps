@@ -79,6 +79,7 @@
 				<p class="mt-6 text-lg text-grey">
 					We provide dedicated maintenance support for managing agents and block managers across London and the South East — one service desk, clear reporting, and a team that residents are happy to see. We’ve been an approved contractor at Chiltern Court since 2006.
 				</p>
+				<a href="/managing-agents" class="btn-ghost mt-8">How we look after portfolios</a>
 			</div>
 			<div class="grid gap-3 lg:col-span-5">
 				{#each ['Single point of contact for all trades', 'Planned maintenance programmes', 'Compliance testing & certification', 'Detailed completion reports', '24hr emergency response for residents'] as f}
