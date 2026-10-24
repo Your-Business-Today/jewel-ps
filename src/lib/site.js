@@ -96,7 +96,7 @@ export const services = [
 		id: 'emergency',
 		index: '04',
 		title: '24hr Emergency Callout',
-		href: '/contact',
+		href: '/emergency',
 		image: img('customer-service-24-hours-7-days-support2.jpg'),
 		icon: 'clock',
 		short: 'Around the clock, 365 days a year.',
