@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-09T13:48:11+00:00",
-  "kitVersion": "1.14.0",
+  "generatedAt": "2026-10-25T10:15:04+00:00",
+  "kitVersion": "1.35.0",
   "score": {
-    "overall": 65.7,
+    "overall": 65.6,
     "groups": [
       {
         "group": "Standard baseline checks",
-        "score": 56.7,
-        "weight": 60
+        "score": 54.9,
+        "weight": 52
       },
       {
         "group": "Design pattern file count",
@@ -16,7 +16,7 @@
       },
       {
         "group": "Prose",
-        "score": 75.5,
+        "score": 76.2,
         "weight": 20
       },
       {
@@ -40,8 +40,8 @@
         "unit": "files",
         "isMeasured": true,
         "offenders": 29,
-        "measuredAgainst": 75,
-        "score": 22.7
+        "measuredAgainst": 88,
+        "score": 34.1
       },
       {
         "key": "worstFile",
@@ -64,8 +64,8 @@
         "unit": "functions",
         "isMeasured": true,
         "offenders": 6,
-        "measuredAgainst": 131,
-        "score": 81.7
+        "measuredAgainst": 134,
+        "score": 82.1
       },
       {
         "key": "elseBlocks",
@@ -76,7 +76,7 @@
         "unit": "branches",
         "isMeasured": true,
         "offenders": 8,
-        "measuredAgainst": 269,
+        "measuredAgainst": 271,
         "score": 94.1
       },
       {
@@ -86,10 +86,9 @@
         "weight": 8,
         "zeroAt": 20,
         "unit": "",
-        "isMeasured": true,
-        "offenders": 0.94,
-        "measuredAgainst": 1,
-        "score": 95.3
+        "isMeasured": false,
+        "offenders": null,
+        "score": null
       },
       {
         "key": "comments",
@@ -99,9 +98,9 @@
         "zeroAt": 50,
         "unit": "thousand lines",
         "isMeasured": true,
-        "offenders": 106,
-        "measuredAgainst": 10.29,
-        "score": 79.4
+        "offenders": 105,
+        "measuredAgainst": 10.66,
+        "score": 80.3
       },
       {
         "key": "magicValues",
@@ -111,9 +110,9 @@
         "zeroAt": 20,
         "unit": "thousand lines",
         "isMeasured": true,
-        "offenders": 131,
-        "measuredAgainst": 10.29,
-        "score": 36.3
+        "offenders": 101,
+        "measuredAgainst": 10.66,
+        "score": 52.6
       },
       {
         "key": "orphans",
@@ -124,8 +123,8 @@
         "unit": "components and functions",
         "isMeasured": true,
         "offenders": 11,
-        "measuredAgainst": 152,
-        "score": 27.6
+        "measuredAgainst": 160,
+        "score": 31.2
       },
       {
         "key": "memberChains",
@@ -135,9 +134,9 @@
         "zeroAt": 30,
         "unit": "thousand lines",
         "isMeasured": true,
-        "offenders": 67,
-        "measuredAgainst": 10.29,
-        "score": 78.3
+        "offenders": 58,
+        "measuredAgainst": 10.66,
+        "score": 81.9
       },
       {
         "key": "deepIndentation",
@@ -147,8 +146,8 @@
         "zeroAt": 30,
         "unit": "thousand lines",
         "isMeasured": true,
-        "offenders": 522,
-        "measuredAgainst": 10.29,
+        "offenders": 520,
+        "measuredAgainst": 10.66,
         "score": 0.0
       },
       {
@@ -160,7 +159,7 @@
         "unit": "functions",
         "isMeasured": true,
         "offenders": 0,
-        "measuredAgainst": 131,
+        "measuredAgainst": 134,
         "score": 100.0
       },
       {
@@ -194,9 +193,9 @@
         "zeroAt": 0.25,
         "unit": "branches",
         "isMeasured": true,
-        "offenders": 15,
-        "measuredAgainst": 269,
-        "score": 77.7
+        "offenders": 14,
+        "measuredAgainst": 271,
+        "score": 79.3
       },
       {
         "key": "literalComparisons",
@@ -207,8 +206,8 @@
         "unit": "branches",
         "isMeasured": true,
         "offenders": 35,
-        "measuredAgainst": 269,
-        "score": 48.0
+        "measuredAgainst": 271,
+        "score": 48.3
       },
       {
         "key": "gluedAccessors",
@@ -219,7 +218,7 @@
         "unit": "functions",
         "isMeasured": true,
         "offenders": 0,
-        "measuredAgainst": 131,
+        "measuredAgainst": 134,
         "score": 100.0
       },
       {
@@ -250,17 +249,17 @@
     "fileLength": {
       "limit": 100,
       "filesOverLimit": 29,
-      "totalFiles": 75,
-      "totalLines": 10290,
+      "totalFiles": 88,
+      "totalLines": 10662,
       "worstFileLines": 1028,
       "worstFileTimesOverLimit": 9.28
     },
     "functionShape": {
       "limit": 30,
       "functionsOverLimit": 6,
-      "totalFunctions": 131,
+      "totalFunctions": 134,
       "elseBlocks": 8,
-      "ifBlocks": 269,
+      "ifBlocks": 271,
       "measurementIsHeuristic": true
     },
     "functionNames": {
@@ -273,39 +272,36 @@
       "measurementIsHeuristic": true
     },
     "duplication": {
-      "clones": 9,
-      "duplicatedLines": 145,
-      "totalLines": 15451,
-      "duplicatedPercentage": 0.94
+      "skipped": "jscpd is not installed (npm install -g jscpd)"
     },
     "naming": {
-      "bannedAbbreviationHits": 143,
+      "bannedAbbreviationHits": 146,
       "unprefixedBooleans": 21
     },
     "comments": {
-      "explanatoryCommentLines": 106,
+      "explanatoryCommentLines": 105,
       "filesWithComments": 26,
       "taskMarkers": 0
     },
     "magicValues": {
       "inlineHexColours": 95,
       "inlineStyleAttributes": 6,
-      "repeatedStringLiterals": 30
+      "repeatedStringLiterals": 0
     },
     "prose": {
-      "longMemberChainLines": 67,
-      "deeplyIndentedLines": 522,
-      "overlongLines": 122,
+      "longMemberChainLines": 58,
+      "deeplyIndentedLines": 520,
+      "overlongLines": 138,
       "measurementIsHeuristic": true
     },
     "conditions": {
-      "tangledConditionLines": 15,
+      "tangledConditionLines": 14,
       "literalComparisonLines": 35,
       "measurementIsHeuristic": true
     },
     "orphans": {
       "orphanFunctions": 0,
-      "functionsExamined": 131
+      "functionsExamined": 134
     },
     "designPatterns": {
       "roleFamilies": 3,
@@ -316,10 +312,10 @@
       "measurementIsHeuristic": true
     },
     "inventory": {
-      "pages": 18,
-      "components": 21,
+      "pages": 21,
+      "components": 26,
       "orphanComponents": 11,
-      "averagePageLines": 289
+      "averagePageLines": 256
     },
     "siteDefinition": {
       "skipped": "no siteDefinition catalogue in rules.json"
@@ -332,16 +328,17 @@
       "looserLimits": 0
     },
     "fileAreas": {
-      "totalFiles": 178,
-      "frontend": 127,
-      "backend": 20,
-      "infrastructure": 10,
+      "totalFiles": 317,
+      "frontend": 142,
+      "tooling": 94,
+      "backend": 21,
+      "docs": 16,
+      "infrastructure": 13,
+      "tests": 10,
+      "shared": 9,
       "api": 7,
-      "shared": 5,
-      "tooling": 3,
       "database": 3,
-      "other": 2,
-      "docs": 1
+      "other": 2
     }
   },
   "details": {
@@ -350,8 +347,8 @@
       "summary": {
         "limit": 100,
         "filesOverLimit": 29,
-        "totalFiles": 75,
-        "totalLines": 10290,
+        "totalFiles": 88,
+        "totalLines": 10662,
         "worstFileLines": 1028,
         "worstFileTimesOverLimit": 9.28
       },
@@ -381,6 +378,10 @@
           "lines": 316
         },
         {
+          "file": "src/lib/site.js",
+          "lines": 316
+        },
+        {
           "file": "src/routes/admin/brochure/+page.svelte",
           "lines": 312
         },
@@ -389,15 +390,11 @@
           "lines": 301
         },
         {
-          "file": "src/lib/site.js",
-          "lines": 292
+          "file": "src/lib/brochure/templates.js",
+          "lines": 282
         },
         {
           "file": "src/routes/+page.svelte",
-          "lines": 283
-        },
-        {
-          "file": "src/lib/brochure/templates.js",
           "lines": 282
         },
         {
@@ -414,7 +411,7 @@
         },
         {
           "file": "src/routes/+layout.svelte",
-          "lines": 222
+          "lines": 218
         },
         {
           "file": "src/routes/admin/+layout.svelte",
@@ -422,7 +419,7 @@
         },
         {
           "file": "src/routes/contact/+page.svelte",
-          "lines": 188
+          "lines": 187
         },
         {
           "file": "src/lib/brochure/defaults.js",
@@ -466,7 +463,7 @@
         },
         {
           "file": "src/routes/fire-flood-restoration/+page.svelte",
-          "lines": 109
+          "lines": 110
         },
         {
           "file": "src/routes/contact/+page.server.js",
@@ -479,9 +476,9 @@
       "summary": {
         "limit": 30,
         "functionsOverLimit": 6,
-        "totalFunctions": 131,
+        "totalFunctions": 134,
         "elseBlocks": 8,
-        "ifBlocks": 269,
+        "ifBlocks": 271,
         "measurementIsHeuristic": true
       },
       "offenders": [
@@ -543,7 +540,7 @@
     "naming": {
       "name": "naming",
       "summary": {
-        "bannedAbbreviationHits": 143,
+        "bannedAbbreviationHits": 146,
         "unprefixedBooleans": 21
       },
       "offenders": {
@@ -861,7 +858,7 @@
     "comments": {
       "name": "comments",
       "summary": {
-        "explanatoryCommentLines": 106,
+        "explanatoryCommentLines": 105,
         "filesWithComments": 26,
         "taskMarkers": 0
       },
@@ -872,7 +869,7 @@
       "summary": {
         "inlineHexColours": 95,
         "inlineStyleAttributes": 6,
-        "repeatedStringLiterals": 30
+        "repeatedStringLiterals": 0
       },
       "offenders": {
         "hexColours": [
@@ -910,15 +907,15 @@
           },
           {
             "file": "src/routes/+page.svelte",
+            "line": 274
+          },
+          {
+            "file": "src/routes/+page.svelte",
             "line": 275
           },
           {
             "file": "src/routes/+page.svelte",
             "line": 276
-          },
-          {
-            "file": "src/routes/+page.svelte",
-            "line": 277
           },
           {
             "file": "src/routes/admin/+layout.svelte",
@@ -1084,11 +1081,11 @@
           },
           {
             "file": "src/routes/+page.svelte",
-            "line": 130
+            "line": 129
           },
           {
             "file": "src/routes/+page.svelte",
-            "line": 207
+            "line": 206
           },
           {
             "file": "src/routes/admin/brochure/[id]/page/[pageId]/+page.svelte",
@@ -1103,136 +1100,15 @@
             "line": 571
           }
         ],
-        "repeatedLiterals": [
-          {
-            "literal": "kicker",
-            "occurrences": 27
-          },
-          {
-            "literal": "h-section mt-5 text-white",
-            "occurrences": 23
-          },
-          {
-            "literal": "hidden",
-            "occurrences": 21
-          },
-          {
-            "literal": "noopener",
-            "occurrences": 19
-          },
-          {
-            "literal": "submit",
-            "occurrences": 18
-          },
-          {
-            "literal": "btn btn--outline btn--sm",
-            "occurrences": 18
-          },
-          {
-            "literal": "button",
-            "occurrences": 16
-          },
-          {
-            "literal": "container-site",
-            "occurrences": 15
-          },
-          {
-            "literal": "max-w-2xl",
-            "occurrences": 8
-          },
-          {
-            "literal": "b-kicker",
-            "occurrences": 8
-          },
-          {
-            "literal": "linkish linkish--danger",
-            "occurrences": 7
-          },
-          {
-            "literal": "text-white",
-            "occurrences": 7
-          },
-          {
-            "literal": "b-rule",
-            "occurrences": 6
-          },
-          {
-            "literal": "linkish",
-            "occurrences": 6
-          },
-          {
-            "literal": "rail-step",
-            "occurrences": 6
-          },
-          {
-            "literal": "stepnum",
-            "occurrences": 6
-          },
-          {
-            "literal": "radio-opt",
-            "occurrences": 6
-          },
-          {
-            "literal": "btn-gold",
-            "occurrences": 5
-          },
-          {
-            "literal": "b-title",
-            "occurrences": 5
-          },
-          {
-            "literal": "bg-grid absolute inset-0 -z-10",
-            "occurrences": 4
-          },
-          {
-            "literal": "mt-7 text-lg leading-relaxed text-grey",
-            "occurrences": 4
-          },
-          {
-            "literal": "mt-4 leading-relaxed text-grey",
-            "occurrences": 4
-          },
-          {
-            "literal": "mt-6 text-lg text-grey",
-            "occurrences": 4
-          },
-          {
-            "literal": "warn__detail",
-            "occurrences": 4
-          },
-          {
-            "literal": "btn btn--outline",
-            "occurrences": 4
-          },
-          {
-            "literal": "btn btn--primary",
-            "occurrences": 4
-          },
-          {
-            "literal": "page_id",
-            "occurrences": 4
-          },
-          {
-            "literal": "nowrap",
-            "occurrences": 4
-          },
-          {
-            "literal": "mt-1 block text-xs text-red-400",
-            "occurrences": 4
-          },
-          {
-            "literal": "radio-group",
-            "occurrences": 4
-          }
-        ]
+        "repeatedLiterals": []
       }
     },
     "prose": {
       "name": "prose",
       "summary": {
-        "longMemberChainLines": 67,
-        "deeplyIndentedLines": 522,
-        "overlongLines": 122,
+        "longMemberChainLines": 58,
+        "deeplyIndentedLines": 520,
+        "overlongLines": 138,
         "measurementIsHeuristic": true
       },
       "offenders": {
@@ -1243,23 +1119,11 @@
           },
           {
             "file": "src/hooks.server.js",
-            "line": 41
+            "line": 35
           },
           {
-            "file": "src/lib/brochure/defaults.js",
-            "line": 16
-          },
-          {
-            "file": "src/lib/brochure/defaults.js",
-            "line": 177
-          },
-          {
-            "file": "src/lib/brochure/templates.js",
-            "line": 49
-          },
-          {
-            "file": "src/lib/data/photos.js",
-            "line": 65
+            "file": "src/hooks.server.js",
+            "line": 46
           },
           {
             "file": "src/lib/motion.js",
@@ -1278,32 +1142,16 @@
             "line": 282
           },
           {
-            "file": "src/lib/server/email.js",
-            "line": 39
-          },
-          {
-            "file": "src/lib/server/email.js",
-            "line": 41
-          },
-          {
-            "file": "src/lib/server/email.js",
-            "line": 82
-          },
-          {
             "file": "src/lib/server/pdf.js",
             "line": 71
           },
           {
-            "file": "src/lib/site.js",
-            "line": 27
-          },
-          {
-            "file": "src/lib/site.js",
-            "line": 280
-          },
-          {
             "file": "src/routes/admin/brochure/[id]/page/[pageId]/+page.server.js",
             "line": 28
+          },
+          {
+            "file": "src/routes/admin/brochure/[id]/pdf/+server.js",
+            "line": 29
           },
           {
             "file": "src/routes/brochure/pdf/+server.js",
@@ -1324,10 +1172,6 @@
           {
             "file": "src/routes/contact/+page.server.js",
             "line": 39
-          },
-          {
-            "file": "src/routes/contact/+page.server.js",
-            "line": 81
           },
           {
             "file": "src/lib/components/Seo.svelte",
@@ -1371,7 +1215,7 @@
           },
           {
             "file": "src/routes/+layout.svelte",
-            "line": 191
+            "line": 188
           },
           {
             "file": "src/routes/admin/+layout.svelte",
@@ -1436,6 +1280,38 @@
           {
             "file": "src/routes/admin/brochure/[id]/page/[pageId]/+page.svelte",
             "line": 201
+          },
+          {
+            "file": "src/routes/admin/brochure/[id]/page/[pageId]/+page.svelte",
+            "line": 281
+          },
+          {
+            "file": "src/routes/admin/brochure/[id]/page/[pageId]/+page.svelte",
+            "line": 294
+          },
+          {
+            "file": "src/routes/admin/brochure/[id]/page/[pageId]/+page.svelte",
+            "line": 359
+          },
+          {
+            "file": "src/routes/admin/enquiries/+page.svelte",
+            "line": 111
+          },
+          {
+            "file": "src/routes/admin/media/+page.svelte",
+            "line": 75
+          },
+          {
+            "file": "src/routes/admin/media/+page.svelte",
+            "line": 105
+          },
+          {
+            "file": "src/routes/admin/media/+page.svelte",
+            "line": 106
+          },
+          {
+            "file": "src/routes/brochure/+page.svelte",
+            "line": 12
           }
         ],
         "deepIndentation": [
@@ -1557,6 +1433,10 @@
           },
           {
             "file": "src/routes/+layout.svelte",
+            "line": 166
+          },
+          {
+            "file": "src/routes/+layout.svelte",
             "line": 167
           },
           {
@@ -1565,15 +1445,15 @@
           },
           {
             "file": "src/routes/+layout.svelte",
-            "line": 169
+            "line": 174
           },
           {
             "file": "src/routes/+layout.svelte",
-            "line": 170
+            "line": 175
           },
           {
             "file": "src/routes/+layout.svelte",
-            "line": 171
+            "line": 176
           },
           {
             "file": "src/routes/+layout.svelte",
@@ -1589,15 +1469,15 @@
           },
           {
             "file": "src/routes/+layout.svelte",
-            "line": 180
+            "line": 185
           },
           {
             "file": "src/routes/+layout.svelte",
-            "line": 181
+            "line": 186
           },
           {
             "file": "src/routes/+layout.svelte",
-            "line": 182
+            "line": 187
           },
           {
             "file": "src/routes/+layout.svelte",
@@ -1610,18 +1490,6 @@
           {
             "file": "src/routes/+layout.svelte",
             "line": 190
-          },
-          {
-            "file": "src/routes/+layout.svelte",
-            "line": 191
-          },
-          {
-            "file": "src/routes/+layout.svelte",
-            "line": 192
-          },
-          {
-            "file": "src/routes/+layout.svelte",
-            "line": 193
           },
           {
             "file": "src/routes/+page.svelte",
@@ -1638,6 +1506,14 @@
           {
             "file": "src/routes/+page.svelte",
             "line": 60
+          },
+          {
+            "file": "src/routes/+page.svelte",
+            "line": 126
+          },
+          {
+            "file": "src/routes/+page.svelte",
+            "line": 127
           }
         ],
         "overlongLines": [
@@ -1694,6 +1570,46 @@
             "line": 166
           },
           {
+            "file": "src/lib/content/insurance-claims.js",
+            "line": 3
+          },
+          {
+            "file": "src/lib/content/insurance-claims.js",
+            "line": 9
+          },
+          {
+            "file": "src/lib/content/insurance-claims.js",
+            "line": 10
+          },
+          {
+            "file": "src/lib/content/insurance-claims.js",
+            "line": 11
+          },
+          {
+            "file": "src/lib/content/insurance-claims.js",
+            "line": 13
+          },
+          {
+            "file": "src/lib/content/managing-agents.js",
+            "line": 5
+          },
+          {
+            "file": "src/lib/content/managing-agents.js",
+            "line": 6
+          },
+          {
+            "file": "src/lib/content/managing-agents.js",
+            "line": 7
+          },
+          {
+            "file": "src/lib/content/managing-agents.js",
+            "line": 8
+          },
+          {
+            "file": "src/lib/content/managing-agents.js",
+            "line": 9
+          },
+          {
             "file": "src/lib/server/email.js",
             "line": 63
           },
@@ -1703,27 +1619,11 @@
           },
           {
             "file": "src/lib/site.js",
-            "line": 153
-          },
-          {
-            "file": "src/lib/site.js",
             "line": 159
           },
           {
             "file": "src/lib/site.js",
-            "line": 165
-          },
-          {
-            "file": "src/lib/site.js",
-            "line": 171
-          },
-          {
-            "file": "src/lib/site.js",
-            "line": 179
-          },
-          {
-            "file": "src/lib/site.js",
-            "line": 180
+            "line": 176
           },
           {
             "file": "src/lib/site.js",
@@ -1731,23 +1631,27 @@
           },
           {
             "file": "src/lib/site.js",
-            "line": 189
+            "line": 188
           },
           {
             "file": "src/lib/site.js",
-            "line": 196
+            "line": 194
           },
           {
             "file": "src/lib/site.js",
-            "line": 204
+            "line": 202
           },
           {
             "file": "src/lib/site.js",
-            "line": 209
+            "line": 203
           },
           {
             "file": "src/lib/site.js",
-            "line": 214
+            "line": 205
+          },
+          {
+            "file": "src/lib/site.js",
+            "line": 212
           },
           {
             "file": "src/lib/site.js",
@@ -1755,19 +1659,7 @@
           },
           {
             "file": "src/lib/site.js",
-            "line": 224
-          },
-          {
-            "file": "src/lib/site.js",
-            "line": 229
-          },
-          {
-            "file": "src/lib/site.js",
-            "line": 230
-          },
-          {
-            "file": "src/lib/site.js",
-            "line": 231
+            "line": 227
           },
           {
             "file": "src/lib/site.js",
@@ -1775,55 +1667,15 @@
           },
           {
             "file": "src/lib/site.js",
-            "line": 233
-          },
-          {
-            "file": "src/lib/site.js",
-            "line": 234
-          },
-          {
-            "file": "src/lib/site.js",
-            "line": 235
-          },
-          {
-            "file": "src/lib/site.js",
             "line": 237
           },
           {
             "file": "src/lib/site.js",
-            "line": 238
+            "line": 242
           },
           {
             "file": "src/lib/site.js",
-            "line": 239
-          },
-          {
-            "file": "src/lib/site.js",
-            "line": 240
-          },
-          {
-            "file": "src/lib/site.js",
-            "line": 241
-          },
-          {
-            "file": "src/lib/site.js",
-            "line": 243
-          },
-          {
-            "file": "src/lib/site.js",
-            "line": 244
-          },
-          {
-            "file": "src/lib/site.js",
-            "line": 245
-          },
-          {
-            "file": "src/lib/site.js",
-            "line": 249
-          },
-          {
-            "file": "src/lib/site.js",
-            "line": 250
+            "line": 247
           },
           {
             "file": "src/lib/site.js",
@@ -1835,11 +1687,35 @@
           },
           {
             "file": "src/lib/site.js",
+            "line": 254
+          },
+          {
+            "file": "src/lib/site.js",
+            "line": 255
+          },
+          {
+            "file": "src/lib/site.js",
+            "line": 256
+          },
+          {
+            "file": "src/lib/site.js",
+            "line": 257
+          },
+          {
+            "file": "src/lib/site.js",
+            "line": 258
+          },
+          {
+            "file": "src/lib/site.js",
             "line": 260
           },
           {
             "file": "src/lib/site.js",
-            "line": 280
+            "line": 261
+          },
+          {
+            "file": "src/lib/site.js",
+            "line": 262
           }
         ]
       }
@@ -1847,7 +1723,7 @@
     "conditions": {
       "name": "conditions",
       "summary": {
-        "tangledConditionLines": 15,
+        "tangledConditionLines": 14,
         "literalComparisonLines": 35,
         "measurementIsHeuristic": true
       },
@@ -1855,7 +1731,7 @@
         "tangled": [
           {
             "file": "src/hooks.server.js",
-            "line": 41
+            "line": 46
           },
           {
             "file": "src/lib/motion.js",
@@ -1864,10 +1740,6 @@
           {
             "file": "src/lib/motion.js",
             "line": 164
-          },
-          {
-            "file": "src/lib/server/db.js",
-            "line": 158
           },
           {
             "file": "src/routes/admin/login/+page.server.js",
@@ -1917,11 +1789,11 @@
         "literalComparisons": [
           {
             "file": "src/hooks.server.js",
-            "line": 38
+            "line": 43
           },
           {
             "file": "src/hooks.server.js",
-            "line": 41
+            "line": 46
           },
           {
             "file": "src/lib/server/brochures.js",
@@ -2062,7 +1934,7 @@
       "name": "orphans",
       "summary": {
         "orphanFunctions": 0,
-        "functionsExamined": 131
+        "functionsExamined": 134
       },
       "offenders": []
     },
@@ -2079,7 +1951,7 @@
       "offenders": {
         "roleFamilies": {
           "+page.server.js": 11,
-          "+page.svelte": 18,
+          "+page.svelte": 21,
           "+server.js": 7
         },
         "patterns": [
@@ -2096,10 +1968,10 @@
     "inventory": {
       "name": "inventory",
       "summary": {
-        "pages": 18,
-        "components": 21,
+        "pages": 21,
+        "components": 26,
         "orphanComponents": 11,
-        "averagePageLines": 289
+        "averagePageLines": 256
       },
       "offenders": {
         "pages": [
@@ -2157,7 +2029,7 @@
           },
           {
             "page": "src/routes/+page.svelte",
-            "lines": 283,
+            "lines": 282,
             "widgets": [
               "list"
             ]
@@ -2172,7 +2044,7 @@
           },
           {
             "page": "src/routes/contact/+page.svelte",
-            "lines": 188,
+            "lines": 187,
             "widgets": [
               "form",
               "list"
@@ -2194,7 +2066,7 @@
           },
           {
             "page": "src/routes/fire-flood-restoration/+page.svelte",
-            "lines": 109,
+            "lines": 110,
             "widgets": [
               "list"
             ]
@@ -2208,14 +2080,29 @@
           },
           {
             "page": "src/routes/maintenance/+page.svelte",
-            "lines": 94,
+            "lines": 95,
             "widgets": [
               "list"
             ]
           },
           {
+            "page": "src/routes/managing-agents/+page.svelte",
+            "lines": 65,
+            "widgets": []
+          },
+          {
             "page": "src/routes/brochure/+page.svelte",
             "lines": 56,
+            "widgets": []
+          },
+          {
+            "page": "src/routes/insurance-claims/+page.svelte",
+            "lines": 52,
+            "widgets": []
+          },
+          {
+            "page": "src/routes/emergency/+page.svelte",
+            "lines": 50,
             "widgets": []
           },
           {
@@ -2232,26 +2119,30 @@
         "componentReuse": [
           {
             "component": "src/lib/components/Seo.svelte",
-            "reusedBy": 8
+            "reusedBy": 11
           },
           {
             "component": "src/lib/components/Accreditations.svelte",
-            "reusedBy": 6
+            "reusedBy": 9
+          },
+          {
+            "component": "src/lib/components/CtaBand.svelte",
+            "reusedBy": 8
+          },
+          {
+            "component": "src/lib/components/PageHero.svelte",
+            "reusedBy": 7
+          },
+          {
+            "component": "src/lib/components/Testimonials.svelte",
+            "reusedBy": 7
           },
           {
             "component": "src/lib/components/brochure/BImg.svelte",
             "reusedBy": 6
           },
           {
-            "component": "src/lib/components/CtaBand.svelte",
-            "reusedBy": 5
-          },
-          {
             "component": "src/lib/components/Icon.svelte",
-            "reusedBy": 5
-          },
-          {
-            "component": "src/lib/components/Testimonials.svelte",
             "reusedBy": 5
           },
           {
@@ -2259,8 +2150,24 @@
             "reusedBy": 5
           },
           {
-            "component": "src/lib/components/PageHero.svelte",
-            "reusedBy": 4
+            "component": "src/lib/components/NumberedList.svelte",
+            "reusedBy": 3
+          },
+          {
+            "component": "src/lib/components/SectionIntro.svelte",
+            "reusedBy": 3
+          },
+          {
+            "component": "src/lib/components/StepCards.svelte",
+            "reusedBy": 3
+          },
+          {
+            "component": "src/lib/components/BrochureOffer.svelte",
+            "reusedBy": 2
+          },
+          {
+            "component": "src/lib/components/AccreditationTile.svelte",
+            "reusedBy": 1
           },
           {
             "component": "src/lib/components/Faq.svelte",
@@ -2343,53 +2250,66 @@
     "fileAreas": {
       "name": "fileAreas",
       "summary": {
-        "totalFiles": 178,
-        "frontend": 127,
-        "backend": 20,
-        "infrastructure": 10,
+        "totalFiles": 317,
+        "frontend": 142,
+        "tooling": 94,
+        "backend": 21,
+        "docs": 16,
+        "infrastructure": 13,
+        "tests": 10,
+        "shared": 9,
         "api": 7,
-        "shared": 5,
-        "tooling": 3,
         "database": 3,
-        "other": 2,
-        "docs": 1
+        "other": 2
       },
       "offenders": [
         {
           "area": "frontend",
-          "files": 127,
-          "sourceFiles": 42,
-          "sourceLines": 7229
+          "files": 142,
+          "sourceFiles": 50,
+          "sourceLines": 7477
+        },
+        {
+          "area": "tooling",
+          "files": 94,
+          "sourceFiles": 0,
+          "sourceLines": 0
         },
         {
           "area": "backend",
-          "files": 20,
-          "sourceFiles": 20,
-          "sourceLines": 1816
+          "files": 21,
+          "sourceFiles": 21,
+          "sourceLines": 1854
+        },
+        {
+          "area": "docs",
+          "files": 16,
+          "sourceFiles": 0,
+          "sourceLines": 0
         },
         {
           "area": "infrastructure",
+          "files": 13,
+          "sourceFiles": 0,
+          "sourceLines": 0
+        },
+        {
+          "area": "tests",
           "files": 10,
           "sourceFiles": 0,
           "sourceLines": 0
         },
         {
+          "area": "shared",
+          "files": 9,
+          "sourceFiles": 9,
+          "sourceLines": 1095
+        },
+        {
           "area": "api",
           "files": 7,
           "sourceFiles": 7,
-          "sourceLines": 229
-        },
-        {
-          "area": "shared",
-          "files": 5,
-          "sourceFiles": 5,
-          "sourceLines": 1012
-        },
-        {
-          "area": "tooling",
-          "files": 3,
-          "sourceFiles": 0,
-          "sourceLines": 0
+          "sourceLines": 232
         },
         {
           "area": "database",
@@ -2402,12 +2322,6 @@
           "files": 2,
           "sourceFiles": 1,
           "sourceLines": 4
-        },
-        {
-          "area": "docs",
-          "files": 1,
-          "sourceFiles": 0,
-          "sourceLines": 0
         }
       ]
     },
@@ -2428,45 +2342,9 @@
     "duplication": {
       "name": "duplication",
       "summary": {
-        "clones": 9,
-        "duplicatedLines": 145,
-        "totalLines": 15451,
-        "duplicatedPercentage": 0.94
+        "skipped": "jscpd is not installed (npm install -g jscpd)"
       },
-      "offenders": [
-        {
-          "file": "src/routes/admin/brochure/[id]/+page.svelte:css",
-          "duplicatedLineInstances": 74
-        },
-        {
-          "file": "src/routes/admin/enquiries/+page.svelte:css",
-          "duplicatedLineInstances": 69
-        },
-        {
-          "file": "src/routes/admin/media/+page.svelte:css",
-          "duplicatedLineInstances": 66
-        },
-        {
-          "file": "src/routes/admin/brochure/+page.svelte:css",
-          "duplicatedLineInstances": 62
-        },
-        {
-          "file": "src/routes/admin/rtw/+page.svelte:css",
-          "duplicatedLineInstances": 21
-        },
-        {
-          "file": "src/lib/components/admin/ImagePicker.svelte:javascript",
-          "duplicatedLineInstances": 13
-        },
-        {
-          "file": "src/routes/admin/media/+page.svelte:javascript",
-          "duplicatedLineInstances": 13
-        },
-        {
-          "file": "src/routes/admin/brochure/[id]/page/[pageId]/+page.svelte:html",
-          "duplicatedLineInstances": 12
-        }
-      ]
+      "offenders": []
     }
   }
 }
