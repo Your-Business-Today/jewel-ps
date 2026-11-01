@@ -4,6 +4,7 @@
 	import Seo from '$lib/components/Seo.svelte';
 	import PageHero from '$lib/components/PageHero.svelte';
 	import Testimonials from '$lib/components/Testimonials.svelte';
+	import BrochureOffer from '$lib/components/BrochureOffer.svelte';
 	import Accreditations from '$lib/components/Accreditations.svelte';
 	import CtaBand from '$lib/components/CtaBand.svelte';
 	import { testimonials } from '$lib/site.js';
@@ -91,5 +92,6 @@
 </section>
 
 <Testimonials items={[testimonials[2], testimonials[3]]} title="Long-standing relationships." parallaxColumns={false} />
+<BrochureOffer text="Our brochure sets out who we are, the trades we cover, the schemes we are accredited by and the work we do, ready to share with your board, landlord or client." />
 <Accreditations />
 <CtaBand title="Need something fixed?" text="Call our service desk — we’ll talk you through the issue and get the right engineer to you fast." />

@@ -34,8 +34,10 @@ function escapeHtml(s) {
  * whether that should block the visitor's success message (it shouldn't).
  *
  * @param {{ name: string, email: string, phone: string, postcode: string, service: string, message: string }} values
+ * @param {{ filename: string, content: string }[]} [photoAttachments]
  */
-export async function sendEnquiryEmail(values) {
+export async function sendEnquiryEmail(values, photoAttachments = []) {
+	const photoSummary = photoAttachments.length ? `${photoAttachments.length} attached` : '—';
 	const to = envTrim(env.CONTACT_TO_EMAIL) || 'enquiries@jewelps.co.uk';
 	const from =
 		envTrim(env.CONTACT_FROM_EMAIL) || 'Jewel Property Serve <website@jewelps.co.uk>';
@@ -45,7 +47,8 @@ export async function sendEnquiryEmail(values) {
 		['Email', values.email],
 		['Phone', values.phone || '—'],
 		['Postcode', values.postcode || '—'],
-		['Service', values.service || '—']
+		['Service', values.service || '—'],
+		['Photos', photoSummary]
 	]
 		.map(
 			([label, value]) => `
@@ -86,6 +89,7 @@ export async function sendEnquiryEmail(values) {
 		`Phone:    ${values.phone || '—'}`,
 		`Postcode: ${values.postcode || '—'}`,
 		`Service:  ${values.service || '—'}`,
+		`Photos:   ${photoSummary}`,
 		'',
 		'Message:',
 		values.message,
@@ -105,7 +109,8 @@ export async function sendEnquiryEmail(values) {
 			reply_to: values.email,
 			subject: `New enquiry from ${values.name}${values.service ? ` — ${values.service}` : ''}`,
 			html,
-			text
+			text,
+			...(photoAttachments.length ? { attachments: photoAttachments } : {})
 		})
 	});
 
