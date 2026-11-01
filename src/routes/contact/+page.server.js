@@ -2,6 +2,7 @@ import { fail } from '@sveltejs/kit';
 import { env } from '$env/dynamic/private';
 import { dbConfigured, dbInsert } from '$lib/server/db.js';
 import { emailConfigured, sendEnquiryEmail } from '$lib/server/email.js';
+import { readEnquiryPhotos, photosAsAttachments } from '$lib/server/enquiry-photos.js';
 
 /**
  * Contact form handler. Each submission is delivered up to three ways, any
@@ -10,7 +11,8 @@ import { emailConfigured, sendEnquiryEmail } from '$lib/server/email.js';
  *  1. Stored in Supabase (`enquiries` table) so it appears in the admin
  *     inbox at /admin/enquiries — needs SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY.
  *  2. Emailed via Resend to CONTACT_TO_EMAIL (enquiries@jewelps.co.uk by
- *     default) — needs RESEND_API_KEY; see src/lib/server/email.js.
+ *     default), with any photos the visitor attached — needs RESEND_API_KEY;
+ *     see src/lib/server/email.js. Photos travel only by this email.
  *  3. Optionally posted as JSON to FORM_WEBHOOK_URL (legacy n8n webhook).
  *
  * With none configured the form shows an "email us instead" fallback.
@@ -37,6 +39,8 @@ export const actions = {
 		if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email)) errors.email = 'Please enter a valid email address.';
 		if (values.phone && values.phone.replace(/\D/g, '').length < 10) errors.phone = 'Please enter a valid phone number.';
 		if (values.message.length < 10) errors.message = 'Please give us a few details about the job.';
+		const { photos, problem: photoProblem } = readEnquiryPhotos(data);
+		if (photoProblem) errors.photos = photoProblem;
 		if (Object.keys(errors).length) return fail(400, { errors, values });
 
 		const endpoint = env.FORM_WEBHOOK_URL;
@@ -61,7 +65,7 @@ export const actions = {
 		// 2. Email notification via Resend
 		if (emailConfigured()) {
 			try {
-				await sendEnquiryEmail(values);
+				await sendEnquiryEmail(values, await photosAsAttachments(photos));
 				delivered = true;
 			} catch (err) {
 				console.error('[contact] Resend email failed:', err);
