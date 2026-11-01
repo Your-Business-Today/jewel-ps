@@ -1,6 +1,6 @@
 # Refactor audit
 
-Generated 2026-11-01 08:08 UTC.
+Generated 2026-11-01 10:20 UTC.
 
 ## Headline
 
@@ -41,16 +41,16 @@ Each element scores 100% with no offenders and falls in a straight line to 0% wh
 | Area | Files | Of which audited source | Source lines |
 | --- | --- | --- | --- |
 | frontend | 154 | 62 | 7,657 |
-| tooling | 104 | 0 | 0 |
+| tooling | 105 | 0 | 0 |
 | backend | 22 | 22 | 1,901 |
 | shared | 19 | 19 | 1,355 |
 | docs | 16 | 0 | 0 |
-| tests | 14 | 0 | 0 |
+| tests | 15 | 0 | 0 |
 | infrastructure | 14 | 0 | 0 |
 | api | 7 | 7 | 232 |
 | database | 3 | 0 | 0 |
 | other | 2 | 1 | 4 |
-| **whole repository** | **355** | **111** | **11,149** |
+| **whole repository** | **357** | **111** | **11,149** |
 
 ## Summary
 
@@ -71,24 +71,24 @@ Each element scores 100% with no offenders and falls in a straight line to 0% wh
 | inventory | pages: 21, components: 38, orphanComponents: 11, averagePageLines: 250 |
 | siteDefinition | skipped: no siteDefinition catalogue in rules.json |
 | inputValidation | schemaTables: 2, limitedColumns: 0, writeDoors: 0, unvalidatedDoors: 0, looserLimits: 0 |
-| fileAreas | totalFiles: 355, frontend: 154, tooling: 104, backend: 22, shared: 19, docs: 16, tests: 14, infrastructure: 14, api: 7, database: 3, other: 2 |
+| fileAreas | totalFiles: 357, frontend: 154, tooling: 105, backend: 22, shared: 19, docs: 16, tests: 15, infrastructure: 14, api: 7, database: 3, other: 2 |
 
 ## Against the baseline
 
 | Ratcheted figure | Baseline | Now | Verdict |
 | --- | --- | --- | --- |
-| code quality score | 68.2% | 71.3% | — |
-| fileLength.filesOverLimit | 29 | 28 | better |
+| code quality score | 71.3% | 71.3% | — |
+| fileLength.filesOverLimit | 28 | 28 | held |
 | fileLength.worstFileLines | 1028 | 1028 | held |
 | functionShape.functionsOverLimit | 6 | 6 | held |
 | functionShape.elseBlocks | 8 | 8 | held |
-| duplication.duplicatedPercentage | 0.92 | 0.89 | better |
-| comments.explanatoryCommentLines | 105 | 103 | better |
+| duplication.duplicatedPercentage | 0.89 | 0.89 | held |
+| comments.explanatoryCommentLines | 103 | 103 | held |
 | magicValues.inlineHexColours | 95 | 95 | held |
 | inventory.orphanComponents | 11 | 11 | held |
 | orphans.orphanFunctions | 0 | 0 | held |
 | prose.longMemberChainLines | 58 | 58 | held |
-| prose.deeplyIndentedLines | 520 | 461 | better |
+| prose.deeplyIndentedLines | 461 | 461 | held |
 | functionNames.overlongFunctionNames | 0 | 0 | held |
 | accessorNames.gluedAccessorNames | 0 | 0 | held |
 | conditions.tangledConditionLines | 14 | 14 | held |
