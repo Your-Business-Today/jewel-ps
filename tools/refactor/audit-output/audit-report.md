@@ -1,21 +1,21 @@
 # Refactor audit
 
-Generated 2026-10-29 20:47 UTC.
+Generated 2026-11-01 07:01 UTC.
 
 ## Headline
 
-**Code quality score 65.6%.** **29 of 88 source files are over the 100-line limit (33.0%)**; the worst file is 1,028 lines.
+**Code quality score 68.2%.** **29 of 88 source files are over the 100-line limit (33.0%)**; the worst file is 1,028 lines.
 
 ## Code quality score
 
 | Element | Reading | Score | Weight | 0% at |
 | --- | --- | --- | --- | --- |
-| **Standard baseline checks** | | **54.9%** | **52** | |
+| **Standard baseline checks** | | **60.3%** | **60** | |
 | Files over the line limit | 29 in 88 files | 34.1% | 10 | 50% of files |
 | Worst file, in limits over | 9.28 | 0.0% | 5 | 9 |
 | Functions over the line limit | 6 in 134 functions | 82.1% | 8 | 25% of functions |
 | Else blocks | 8 in 271 branches | 94.1% | 5 | 50% of branches |
-| Duplication % | not measured | not measured | — | 20 |
+| Duplication % | 0.92 | 95.4% | 8 | 20 |
 | Explanatory comment lines | 105 in 10.66 thousand lines | 80.3% | 4 | 50 per thousand lines |
 | Inline magic values | 101 in 10.66 thousand lines | 52.6% | 4 | 20 per thousand lines |
 | Orphan components and functions | 11 in 160 components and functions | 31.2% | 4 | 10% of components and functions |
@@ -60,7 +60,7 @@ Each element scores 100% with no offenders and falls in a straight line to 0% wh
 | functionShape | limit: 30, functionsOverLimit: 6, totalFunctions: 134, elseBlocks: 8, ifBlocks: 271, measurementIsHeuristic: True |
 | functionNames | overlongFunctionNames: 0, maxWords: 5, maxLength: 40 |
 | accessorNames | gluedAccessorNames: 0, measurementIsHeuristic: True |
-| duplication | skipped: jscpd is not installed (npm install -g jscpd) |
+| duplication | clones: 9, duplicatedLines: 145, totalLines: 15800, duplicatedPercentage: 0.92 |
 | naming | bannedAbbreviationHits: 146, unprefixedBooleans: 21 |
 | comments | explanatoryCommentLines: 105, filesWithComments: 26, taskMarkers: 0 |
 | magicValues | inlineHexColours: 95, inlineStyleAttributes: 6, repeatedStringLiterals: 0 |
@@ -77,12 +77,12 @@ Each element scores 100% with no offenders and falls in a straight line to 0% wh
 
 | Ratcheted figure | Baseline | Now | Verdict |
 | --- | --- | --- | --- |
-| code quality score | 65.6% | 65.6% | — |
+| code quality score | 65.6% | 68.2% | — |
 | fileLength.filesOverLimit | 29 | 29 | held |
 | fileLength.worstFileLines | 1028 | 1028 | held |
 | functionShape.functionsOverLimit | 6 | 6 | held |
 | functionShape.elseBlocks | 8 | 8 | held |
-| duplication.duplicatedPercentage | None | None | — |
+| duplication.duplicatedPercentage | None | 0.92 | — |
 | comments.explanatoryCommentLines | 105 | 105 | held |
 | magicValues.inlineHexColours | 95 | 95 | held |
 | inventory.orphanComponents | 11 | 11 | held |
