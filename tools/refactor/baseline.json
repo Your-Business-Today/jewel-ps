@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-01T08:08:06+00:00",
-  "kitVersion": "1.39.0",
+  "generatedAt": "2026-11-01T10:20:48+00:00",
+  "kitVersion": "1.40.0",
   "score": {
     "overall": 71.3,
     "groups": [
@@ -333,13 +333,13 @@
       "looserLimits": 0
     },
     "fileAreas": {
-      "totalFiles": 355,
+      "totalFiles": 357,
       "frontend": 154,
-      "tooling": 104,
+      "tooling": 105,
       "backend": 22,
       "shared": 19,
       "docs": 16,
-      "tests": 14,
+      "tests": 15,
       "infrastructure": 14,
       "api": 7,
       "database": 3,
@@ -2292,13 +2292,13 @@
     "fileAreas": {
       "name": "fileAreas",
       "summary": {
-        "totalFiles": 355,
+        "totalFiles": 357,
         "frontend": 154,
-        "tooling": 104,
+        "tooling": 105,
         "backend": 22,
         "shared": 19,
         "docs": 16,
-        "tests": 14,
+        "tests": 15,
         "infrastructure": 14,
         "api": 7,
         "database": 3,
@@ -2313,7 +2313,7 @@
         },
         {
           "area": "tooling",
-          "files": 104,
+          "files": 105,
           "sourceFiles": 0,
           "sourceLines": 0
         },
@@ -2337,7 +2337,7 @@
         },
         {
           "area": "tests",
-          "files": 14,
+          "files": 15,
           "sourceFiles": 0,
           "sourceLines": 0
         },
