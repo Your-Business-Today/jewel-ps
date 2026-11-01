@@ -4,6 +4,9 @@
 	import { page } from '$app/stores';
 	import { nav, footerServices, contact, social, site } from '$lib/site.js';
 	import { initMotionPreference } from '$lib/motion.js';
+	import BusinessMarkup from '$lib/components/BusinessMarkup.svelte';
+	import GoogleAnalytics from '$lib/components/analytics/GoogleAnalytics.svelte';
+	import AnalyticsChoiceLink from '$lib/components/analytics/AnalyticsChoiceLink.svelte';
 
 	let { children } = $props();
 	let menuOpen = $state(false);
@@ -33,38 +36,13 @@
 	onMount(() => {
 		initMotionPreference();
 	});
-
-	const jsonLd = JSON.stringify({
-		'@context': 'https://schema.org',
-		'@type': 'LocalBusiness',
-		'@id': `${site.url}/#business`,
-		name: site.legalName,
-		url: site.url,
-		logo: `${site.url}${site.logoPng}`,
-		image: `${site.url}/og-image.png`,
-		description: site.description,
-		telephone: '+442081091012',
-		email: contact.email,
-		address: {
-			'@type': 'PostalAddress',
-			streetAddress: '48 Warwick Street',
-			addressLocality: 'London',
-			postalCode: 'W1B 5AW',
-			addressCountry: 'GB'
-		},
-		areaServed: ['London', 'South East England'],
-		openingHours: contact.openingHours,
-		sameAs: Object.values(social)
-	});
 </script>
 
 <svelte:window bind:scrollY bind:innerHeight />
 
-<svelte:head>
-	{#if !isAdmin}
-		{@html `<script type="application/ld+json">${jsonLd}</script>`}
-	{/if}
-</svelte:head>
+{#if !isAdmin}
+	<BusinessMarkup />
+{/if}
 
 {#if isBare}
 	{@render children()}
@@ -143,6 +121,10 @@
 	{@render children()}
 </main>
 
+{#if !isAdmin}
+	<GoogleAnalytics />
+{/if}
+
 <!-- Footer -->
 <footer class="relative border-t border-white/[0.06] bg-night text-grey">
 	<div class="container-site py-16 sm:py-20">
@@ -198,6 +180,7 @@
 			<div class="flex gap-5">
 				<a href="/documents/terms-and-conditions.pdf" target="_blank" rel="noopener" class="transition hover:text-gold">Terms &amp; conditions (PDF)</a>
 				<a href="/privacy" class="transition hover:text-gold">Privacy</a>
+				<AnalyticsChoiceLink />
 			</div>
 		</div>
 	</div>

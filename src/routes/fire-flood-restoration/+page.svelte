@@ -4,6 +4,7 @@
 	import Seo from '$lib/components/Seo.svelte';
 	import PageHero from '$lib/components/PageHero.svelte';
 	import Testimonials from '$lib/components/Testimonials.svelte';
+	import BrochureOffer from '$lib/components/BrochureOffer.svelte';
 	import Accreditations from '$lib/components/Accreditations.svelte';
 	import CtaBand from '$lib/components/CtaBand.svelte';
 	import { testimonials } from '$lib/site.js';
@@ -106,5 +107,6 @@
 </section>
 
 <Testimonials items={[testimonials[1], testimonials[0]]} title="Trusted when it matters most." parallaxColumns={false} />
+<BrochureOffer title="Everything your insurer needs to see." text="Our brochure sets out who we are, the schemes we are accredited by and how we take a claim from first call to sign-off, ready to share with your insurer or loss adjuster." />
 <Accreditations />
 <CtaBand title="Fire or flood damage? We’re here." text="Emergency response around the clock, 365 days a year. Call now and we’ll get your property secured." />
