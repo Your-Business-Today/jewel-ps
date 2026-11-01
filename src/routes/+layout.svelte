@@ -198,6 +198,7 @@
 			<div class="flex gap-5">
 				<a href="/documents/terms-and-conditions.pdf" target="_blank" rel="noopener" class="transition hover:text-gold">Terms &amp; conditions (PDF)</a>
 				<a href="/terms" class="transition hover:text-gold">Private client terms</a>
+				<a href="/business-terms" class="transition hover:text-gold">Business terms</a>
 				<a href="/privacy" class="transition hover:text-gold">Privacy</a>
 			</div>
 		</div>
