@@ -23,12 +23,12 @@ export const site = {
 
 export const contact = {
 	phone: '0208 109 1012',
+	phoneInternational: '+442081091012',
 	phoneHref: 'tel:+442081091012',
 	email: 'enquiries@jewelps.co.uk',
 	address: '48 Warwick Street, London, W1B 5AW',
 	addressLines: ['48 Warwick Street', 'London', 'W1B 5AW'],
 	hours: 'Office Mon–Fri, 8am–5pm · Emergency callout 24/7, 365 days',
-	openingHours: 'Mo-Fr 08:00-17:00',
 	mapEmbed:
 		'https://www.google.com/maps?q=48+Warwick+Street,+London,+W1B+5AW&z=16&output=embed',
 	mapLink: 'https://www.google.com/maps/search/?api=1&query=48+Warwick+Street+London+W1B+5AW'
