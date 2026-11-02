@@ -1,6 +1,6 @@
-import { company, toBeConfirmed } from './company.js';
+import { company, approvedFigures } from './company.js';
 
-export const businessTermsIssue = { number: '1.0 (draft)', date: '1 November 2026' };
+export const businessTermsIssue = { number: '1.0', date: '2 November 2026' };
 
 export const businessKeyFacts = [
 	{ label: 'Who we are', text: `${company.legalName}, company number ${company.number}, registered office ${company.registeredOffice}. Email ${company.email} or call ${company.phone}.` },
@@ -8,8 +8,8 @@ export const businessKeyFacts = [
 	{ label: 'Accepting a quote', text: 'By the link in our quote email, in writing, or by a purchase order or work order that refers to the quote.' },
 	{ label: 'Changes to the work', text: 'Agreed in writing before the extra work carries on, except work needed to make a property safe.' },
 	{ label: 'Payment', text: '30 days from the invoice date unless the quote says otherwise. Only the disputed part of an invoice may be withheld.' },
-	{ label: 'Guarantee', text: `${toBeConfirmed} on our workmanship.` },
-	{ label: 'Liability cap', text: `${toBeConfirmed}. See clause 12.` },
+	{ label: 'Guarantee', text: `${approvedFigures.workmanshipGuarantee} on our workmanship.` },
+	{ label: 'Liability cap', text: `Limited to ${approvedFigures.businessLiabilityCap}. See clause 12.` },
 	{ label: 'Which terms win', text: 'These terms, unless a separate contract signed by a director of Jewel PS expressly replaces them. Terms printed on a purchase order or work order do not apply.' }
 ];
 
@@ -55,6 +55,7 @@ export const businessClauses = [
 			'The due date for each payment is the invoice date and the final date for payment is 30 days after it, unless the quote says otherwise. Our invoice is our notice of the sum we consider due.',
 			'You may withhold only the part of an invoice you genuinely dispute, and only if you give us a pay less notice at least 7 days before the final date for payment, stating the sum you consider due and how it is calculated. The undisputed part remains payable by the final date for payment.',
 			'If an invoice is not paid by the final date for payment, we may charge interest and compensation under the Late Payment of Commercial Debts (Interest) Act 1998, and, after giving you 7 days’ written notice, suspend the Works until it is paid. Time lost to a suspension is added to the programme, and our costs of stopping and restarting are payable.',
+			'Retention may be held only where the quote says so, and is released in full at the end of the guarantee period.',
 			'Our bank details are on every invoice and we will never change them by email. If you receive a message asking you to pay to different details, call us before paying.'
 		]
 	},
@@ -62,7 +63,7 @@ export const businessClauses = [
 		title: 'CIS and VAT',
 		paragraphs: [
 			'If you are a contractor for the purposes of the Construction Industry Scheme, you make the deductions the scheme requires from the labour element of our invoices, after verifying us with HMRC, and give us a statement of each deduction. If you are not a contractor for those purposes, you pay our invoices without deduction.',
-			'If the VAT domestic reverse charge for building and construction services applies to the Works, our invoice will say so and you account for the VAT to HMRC. Before work starts, tell us in writing whether you are an end user or an intermediary supplier for those purposes; if you do not, we will invoice VAT in the normal way.'
+			'If the VAT domestic reverse charge for building and construction services applies to the Works, our invoice will say so and you account for the VAT to HMRC. Before work starts, tell us in writing whether you are an end user or an intermediary supplier for those purposes, and give us your VAT number and confirmation that you are registered for CIS; if you do not, we will invoice VAT in the normal way.'
 		]
 	},
 	{
@@ -100,7 +101,7 @@ export const businessClauses = [
 	{
 		title: 'Our workmanship and guarantee',
 		paragraphs: [
-			`We guarantee our workmanship for ${toBeConfirmed} from the date the Works are complete. Parts and materials we supply carry the manufacturer’s warranty.`,
+			`We guarantee our workmanship for ${approvedFigures.workmanshipGuarantee} from the date the Works are complete. Parts and materials we supply carry the manufacturer’s warranty.`,
 			'If you believe there is a defect in our work, tell us in writing promptly and let us inspect it. Where the defect is ours we put it right at no charge; that is your first remedy.',
 			'The guarantee does not cover fair wear and tear, misuse, neglect or accidental damage, work by others, or alteration of our work by anyone else after completion.'
 		]
@@ -109,7 +110,7 @@ export const businessClauses = [
 		title: 'Liability',
 		paragraphs: [
 			'Nothing in these terms limits the liability of either of us for death or personal injury caused by negligence, for fraud, or for anything else that cannot lawfully be limited.',
-			`Subject to that, our total liability to you arising from the Works is limited to ${toBeConfirmed}.`,
+			`Subject to that, our total liability to you arising from the Works is limited to ${approvedFigures.businessLiabilityCap}.`,
 			'We are not liable for loss of profit, rent, revenue or business, or for any indirect or consequential loss.',
 			'Where someone else is also responsible for a loss, our liability is limited to the share it is just and equitable for us to pay, having regard to their responsibility.',
 			'We are not responsible for defects in the property that existed before we started and that we were not engaged to remedy, or for damage to concealed services whose position was not disclosed to us.'
@@ -118,7 +119,7 @@ export const businessClauses = [
 	{
 		title: 'Insurance',
 		paragraphs: [
-			`We hold public liability insurance of not less than ${toBeConfirmed} and employer’s liability insurance of not less than ${toBeConfirmed}. We will send certificates on reasonable written request.`
+			`We hold public liability insurance of not less than ${approvedFigures.publicLiabilityCover} and employer’s liability insurance of not less than ${approvedFigures.employersLiabilityCover}. We will send certificates on reasonable written request.`
 		]
 	},
 	{
@@ -152,7 +153,7 @@ export const businessClauses = [
 	{
 		title: 'Complaints and disputes',
 		paragraphs: [
-			`If something is not right, tell us straight away on ${company.phone} or by email to ${company.email} with “Complaint” in the subject. We will acknowledge it within ${toBeConfirmed} and aim to give you a full reply within ${toBeConfirmed}.`,
+			`If something is not right, tell us straight away on ${company.phone} or by email to ${company.email} with “Complaint” in the subject. We will acknowledge it within ${approvedFigures.complaintAcknowledgement} and aim to give you a full reply within ${approvedFigures.complaintFullReply}.`,
 			'If a disagreement arises, we will both try to settle it quickly and in good faith. Either of us may refer a dispute to adjudication where the law allows it, or use any other process available at law.'
 		]
 	},
