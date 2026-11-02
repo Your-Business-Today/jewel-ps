@@ -1,6 +1,6 @@
-import { company, toBeConfirmed } from './company.js';
+import { company, approvedFigures } from './company.js';
 
-export const consumerTermsIssue = { number: '1.0', date: '1 November 2026' };
+export const consumerTermsIssue = { number: '1.0', date: '2 November 2026' };
 
 export const consumerKeyFacts = [
 	{ label: 'Who we are', text: `${company.legalName}, company number ${company.number}, registered office ${company.registeredOffice}. Email ${company.email} or call ${company.phone}.` },
@@ -10,7 +10,7 @@ export const consumerKeyFacts = [
 	{ label: 'Changes to the work', text: 'Explained and agreed with you in writing before that work carries on.' },
 	{ label: 'Payment', text: 'By bank transfer within 14 days of the invoice date.' },
 	{ label: 'Your right to cancel', text: '14 days from the day you approve the quote. See clause 5 and the form in Appendix A.' },
-	{ label: 'Guarantee', text: `${toBeConfirmed} on our workmanship, on top of your legal rights.` },
+	{ label: 'Guarantee', text: `${approvedFigures.workmanshipGuarantee} on our workmanship, on top of your legal rights.` },
 	{ label: 'Complaints', text: `Email ${company.email} with “Complaint” in the subject. See clause 11.` }
 ];
 
@@ -37,7 +37,7 @@ export const consumerClauses = [
 		paragraphs: [
 			'If you ask to change the scope of the work, we will explain the cost and any effect on timing, and agree it with you in writing before that work carries on.',
 			'If we find something once work starts that was not reasonably visible when we quoted, such as a hidden leak, defective pipework, rot, a structural problem or materials containing asbestos, we will stop that part of the work, explain what we found, and agree any variation or additional cost with you in writing before that work carries on.',
-			'If something cannot safely be left as it is while you decide, we will make it safe and tell you straight away what we did.'
+			'If something cannot safely be left as it is while you decide, we will make it safe, at a fair cost, which we will tell you, and tell you straight away what we did.'
 		]
 	},
 	{
@@ -72,7 +72,7 @@ export const consumerClauses = [
 		title: 'Our workmanship and guarantee',
 		paragraphs: [
 			'We carry out the work with reasonable care and skill, using the materials described in your quote, in line with the Building Regulations and the standards that apply to the trade.',
-			`We guarantee our workmanship for ${toBeConfirmed} from the date the work is complete. Parts and materials we supply carry the manufacturer’s warranty.`,
+			`We guarantee our workmanship for ${approvedFigures.workmanshipGuarantee} from the date the work is complete. Parts and materials we supply carry the manufacturer’s warranty.`,
 			'If something is wrong with our work, tell us promptly and let us inspect it and put it right.',
 			'The guarantee does not cover fair wear and tear, misuse or accidental damage, work done by others, or materials you supplied.',
 			'The guarantee is in addition to your legal rights. Under the Consumer Rights Act 2015 our work must be carried out with reasonable care and skill; if it is not, you can ask us to repeat or fix it, or in some cases receive some money back. Citizens Advice can tell you more.'
@@ -84,7 +84,7 @@ export const consumerClauses = [
 			'We are responsible for loss or damage you suffer that is a foreseeable result of our breaking these terms or failing to use reasonable care and skill. Loss is foreseeable if it was obvious it would happen, or if we both knew it might happen when the contract started.',
 			'We do not exclude or limit our liability where the law does not allow it, including for death or personal injury caused by our negligence, for fraud, or for breaking your legal rights in relation to the work.',
 			'We carry out work for your domestic and private use. We are not responsible to you for any loss of profit, loss of business or loss of business opportunity.',
-			`We hold public liability insurance of ${toBeConfirmed} and will send you the certificate on request.`
+			`We hold public liability insurance of ${approvedFigures.publicLiabilityCover} and will send you the certificate on request.`
 		]
 	},
 	{
@@ -103,8 +103,9 @@ export const consumerClauses = [
 		title: 'Complaints',
 		paragraphs: [
 			`If something is not right, please tell us straight away on ${company.phone}, or by email to ${company.email} with “Complaint” in the subject.`,
-			`We acknowledge your complaint within ${toBeConfirmed} and aim to give you a full reply within ${toBeConfirmed}.`,
-			'If you are not happy with our reply, Citizens Advice can tell you what you can do next.'
+			`We acknowledge your complaint within ${approvedFigures.complaintAcknowledgement} and aim to give you a full reply within ${approvedFigures.complaintFullReply}.`,
+			'If you are not happy with our reply, Citizens Advice can tell you what you can do next.',
+			'If we cannot settle your complaint, we will tell you in writing which approved dispute resolution body could help and whether we agree to use it.'
 		]
 	},
 	{
