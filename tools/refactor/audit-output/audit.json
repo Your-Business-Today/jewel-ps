@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-01T07:01:01+00:00",
-  "kitVersion": "1.38.0",
+  "generatedAt": "2026-11-01T10:20:48+00:00",
+  "kitVersion": "1.40.0",
   "score": {
-    "overall": 68.2,
+    "overall": 71.3,
     "groups": [
       {
         "group": "Standard baseline checks",
-        "score": 60.3,
+        "score": 64.3,
         "weight": 60
       },
       {
@@ -16,7 +16,7 @@
       },
       {
         "group": "Prose",
-        "score": 76.2,
+        "score": 77.8,
         "weight": 20
       },
       {
@@ -39,9 +39,9 @@
         "zeroAt": 0.5,
         "unit": "files",
         "isMeasured": true,
-        "offenders": 29,
-        "measuredAgainst": 88,
-        "score": 34.1
+        "offenders": 28,
+        "measuredAgainst": 111,
+        "score": 49.5
       },
       {
         "key": "worstFile",
@@ -64,8 +64,8 @@
         "unit": "functions",
         "isMeasured": true,
         "offenders": 6,
-        "measuredAgainst": 134,
-        "score": 82.1
+        "measuredAgainst": 156,
+        "score": 84.6
       },
       {
         "key": "elseBlocks",
@@ -76,8 +76,8 @@
         "unit": "branches",
         "isMeasured": true,
         "offenders": 8,
-        "measuredAgainst": 271,
-        "score": 94.1
+        "measuredAgainst": 290,
+        "score": 94.5
       },
       {
         "key": "duplication",
@@ -87,9 +87,9 @@
         "zeroAt": 20,
         "unit": "",
         "isMeasured": true,
-        "offenders": 0.92,
+        "offenders": 0.89,
         "measuredAgainst": 1,
-        "score": 95.4
+        "score": 95.5
       },
       {
         "key": "comments",
@@ -99,9 +99,9 @@
         "zeroAt": 50,
         "unit": "thousand lines",
         "isMeasured": true,
-        "offenders": 105,
-        "measuredAgainst": 10.66,
-        "score": 80.3
+        "offenders": 103,
+        "measuredAgainst": 11.15,
+        "score": 81.5
       },
       {
         "key": "magicValues",
@@ -112,8 +112,8 @@
         "unit": "thousand lines",
         "isMeasured": true,
         "offenders": 101,
-        "measuredAgainst": 10.66,
-        "score": 52.6
+        "measuredAgainst": 11.15,
+        "score": 54.7
       },
       {
         "key": "orphans",
@@ -124,8 +124,8 @@
         "unit": "components and functions",
         "isMeasured": true,
         "offenders": 11,
-        "measuredAgainst": 160,
-        "score": 31.2
+        "measuredAgainst": 194,
+        "score": 43.3
       },
       {
         "key": "memberChains",
@@ -136,8 +136,8 @@
         "unit": "thousand lines",
         "isMeasured": true,
         "offenders": 58,
-        "measuredAgainst": 10.66,
-        "score": 81.9
+        "measuredAgainst": 11.15,
+        "score": 82.7
       },
       {
         "key": "deepIndentation",
@@ -147,8 +147,8 @@
         "zeroAt": 30,
         "unit": "thousand lines",
         "isMeasured": true,
-        "offenders": 520,
-        "measuredAgainst": 10.66,
+        "offenders": 461,
+        "measuredAgainst": 11.15,
         "score": 0.0
       },
       {
@@ -160,7 +160,7 @@
         "unit": "functions",
         "isMeasured": true,
         "offenders": 0,
-        "measuredAgainst": 134,
+        "measuredAgainst": 156,
         "score": 100.0
       },
       {
@@ -195,8 +195,8 @@
         "unit": "branches",
         "isMeasured": true,
         "offenders": 14,
-        "measuredAgainst": 271,
-        "score": 79.3
+        "measuredAgainst": 290,
+        "score": 80.7
       },
       {
         "key": "literalComparisons",
@@ -207,8 +207,8 @@
         "unit": "branches",
         "isMeasured": true,
         "offenders": 35,
-        "measuredAgainst": 271,
-        "score": 48.3
+        "measuredAgainst": 290,
+        "score": 51.7
       },
       {
         "key": "gluedAccessors",
@@ -219,7 +219,7 @@
         "unit": "functions",
         "isMeasured": true,
         "offenders": 0,
-        "measuredAgainst": 134,
+        "measuredAgainst": 156,
         "score": 100.0
       },
       {
@@ -249,18 +249,18 @@
   "summaries": {
     "fileLength": {
       "limit": 100,
-      "filesOverLimit": 29,
-      "totalFiles": 88,
-      "totalLines": 10662,
+      "filesOverLimit": 28,
+      "totalFiles": 111,
+      "totalLines": 11149,
       "worstFileLines": 1028,
       "worstFileTimesOverLimit": 9.28
     },
     "functionShape": {
       "limit": 30,
       "functionsOverLimit": 6,
-      "totalFunctions": 134,
+      "totalFunctions": 156,
       "elseBlocks": 8,
-      "ifBlocks": 271,
+      "ifBlocks": 290,
       "measurementIsHeuristic": true
     },
     "functionNames": {
@@ -275,15 +275,15 @@
     "duplication": {
       "clones": 9,
       "duplicatedLines": 145,
-      "totalLines": 15800,
-      "duplicatedPercentage": 0.92
+      "totalLines": 16274,
+      "duplicatedPercentage": 0.89
     },
     "naming": {
-      "bannedAbbreviationHits": 146,
-      "unprefixedBooleans": 21
+      "bannedAbbreviationHits": 150,
+      "unprefixedBooleans": 20
     },
     "comments": {
-      "explanatoryCommentLines": 105,
+      "explanatoryCommentLines": 103,
       "filesWithComments": 26,
       "taskMarkers": 0
     },
@@ -294,8 +294,8 @@
     },
     "prose": {
       "longMemberChainLines": 58,
-      "deeplyIndentedLines": 520,
-      "overlongLines": 138,
+      "deeplyIndentedLines": 461,
+      "overlongLines": 144,
       "measurementIsHeuristic": true
     },
     "conditions": {
@@ -305,7 +305,7 @@
     },
     "orphans": {
       "orphanFunctions": 0,
-      "functionsExamined": 134
+      "functionsExamined": 156
     },
     "designPatterns": {
       "roleFamilies": 3,
@@ -313,13 +313,14 @@
       "predictedFilesMissing": 0,
       "entities": 0,
       "entitiesOutOfRange": 0,
+      "entitiesAccepted": 0,
       "measurementIsHeuristic": true
     },
     "inventory": {
       "pages": 21,
-      "components": 26,
+      "components": 38,
       "orphanComponents": 11,
-      "averagePageLines": 256
+      "averagePageLines": 250
     },
     "siteDefinition": {
       "skipped": "no siteDefinition catalogue in rules.json"
@@ -332,14 +333,14 @@
       "looserLimits": 0
     },
     "fileAreas": {
-      "totalFiles": 332,
-      "frontend": 142,
-      "tooling": 104,
-      "backend": 21,
+      "totalFiles": 357,
+      "frontend": 154,
+      "tooling": 105,
+      "backend": 22,
+      "shared": 19,
       "docs": 16,
-      "tests": 14,
+      "tests": 15,
       "infrastructure": 14,
-      "shared": 9,
       "api": 7,
       "database": 3,
       "other": 2
@@ -350,9 +351,9 @@
       "name": "fileLength",
       "summary": {
         "limit": 100,
-        "filesOverLimit": 29,
-        "totalFiles": 88,
-        "totalLines": 10662,
+        "filesOverLimit": 28,
+        "totalFiles": 111,
+        "totalLines": 11149,
         "worstFileLines": 1028,
         "worstFileTimesOverLimit": 9.28
       },
@@ -414,16 +415,12 @@
           "lines": 230
         },
         {
-          "file": "src/routes/+layout.svelte",
-          "lines": 218
-        },
-        {
           "file": "src/routes/admin/+layout.svelte",
           "lines": 207
         },
         {
-          "file": "src/routes/contact/+page.svelte",
-          "lines": 187
+          "file": "src/routes/+layout.svelte",
+          "lines": 201
         },
         {
           "file": "src/lib/brochure/defaults.js",
@@ -459,7 +456,7 @@
         },
         {
           "file": "src/lib/server/email.js",
-          "lines": 116
+          "lines": 121
         },
         {
           "file": "src/lib/server/login-attempts.js",
@@ -467,11 +464,11 @@
         },
         {
           "file": "src/routes/fire-flood-restoration/+page.svelte",
-          "lines": 110
+          "lines": 112
         },
         {
           "file": "src/routes/contact/+page.server.js",
-          "lines": 107
+          "lines": 111
         }
       ]
     },
@@ -480,9 +477,9 @@
       "summary": {
         "limit": 30,
         "functionsOverLimit": 6,
-        "totalFunctions": 134,
+        "totalFunctions": 156,
         "elseBlocks": 8,
-        "ifBlocks": 271,
+        "ifBlocks": 290,
         "measurementIsHeuristic": true
       },
       "offenders": [
@@ -494,9 +491,9 @@
         },
         {
           "file": "src/lib/server/email.js",
-          "lines": 79,
+          "lines": 83,
           "name": "sendEnquiryEmail",
-          "line": 38
+          "line": 39
         },
         {
           "file": "src/routes/admin/+page.server.js",
@@ -544,8 +541,8 @@
     "naming": {
       "name": "naming",
       "summary": {
-        "bannedAbbreviationHits": 146,
-        "unprefixedBooleans": 21
+        "bannedAbbreviationHits": 150,
+        "unprefixedBooleans": 20
       },
       "offenders": {
         "abbreviations": [
@@ -707,19 +704,19 @@
           },
           {
             "file": "src/lib/server/email.js",
-            "line": 96
+            "line": 100
           },
           {
             "file": "src/lib/server/email.js",
-            "line": 112
+            "line": 117
           },
           {
             "file": "src/lib/server/email.js",
-            "line": 113
+            "line": 118
           },
           {
             "file": "src/lib/server/email.js",
-            "line": 114
+            "line": 119
           },
           {
             "file": "src/lib/server/pdf.js",
@@ -735,19 +732,19 @@
           },
           {
             "file": "src/routes/contact/+page.server.js",
-            "line": 56
+            "line": 60
           },
           {
             "file": "src/routes/contact/+page.server.js",
-            "line": 57
+            "line": 61
           },
           {
             "file": "src/routes/contact/+page.server.js",
-            "line": 66
+            "line": 70
           },
           {
             "file": "src/routes/contact/+page.server.js",
-            "line": 67
+            "line": 71
           }
         ],
         "booleans": [
@@ -793,12 +790,12 @@
           },
           {
             "file": "src/routes/contact/+page.server.js",
-            "line": 48,
+            "line": 52,
             "name": "stored"
           },
           {
             "file": "src/routes/contact/+page.server.js",
-            "line": 49,
+            "line": 53,
             "name": "delivered"
           },
           {
@@ -823,7 +820,7 @@
           },
           {
             "file": "src/routes/+layout.svelte",
-            "line": 9,
+            "line": 12,
             "name": "menuOpen"
           },
           {
@@ -847,11 +844,6 @@
             "name": "uploading"
           },
           {
-            "file": "src/routes/contact/+page.svelte",
-            "line": 12,
-            "name": "submitting"
-          },
-          {
             "file": "src/routes/rtw/+page.svelte",
             "line": 354,
             "name": "done"
@@ -862,7 +854,7 @@
     "comments": {
       "name": "comments",
       "summary": {
-        "explanatoryCommentLines": 105,
+        "explanatoryCommentLines": 103,
         "filesWithComments": 26,
         "taskMarkers": 0
       },
@@ -1081,7 +1073,7 @@
         "inlineStyles": [
           {
             "file": "src/routes/+layout.svelte",
-            "line": 129
+            "line": 107
           },
           {
             "file": "src/routes/+page.svelte",
@@ -1111,8 +1103,8 @@
       "name": "prose",
       "summary": {
         "longMemberChainLines": 58,
-        "deeplyIndentedLines": 520,
-        "overlongLines": 138,
+        "deeplyIndentedLines": 461,
+        "overlongLines": 144,
         "measurementIsHeuristic": true
       },
       "offenders": {
@@ -1171,11 +1163,11 @@
           },
           {
             "file": "src/routes/contact/+page.server.js",
-            "line": 36
+            "line": 38
           },
           {
             "file": "src/routes/contact/+page.server.js",
-            "line": 39
+            "line": 41
           },
           {
             "file": "src/lib/components/Seo.svelte",
@@ -1191,15 +1183,11 @@
           },
           {
             "file": "src/routes/+layout.svelte",
-            "line": 15
+            "line": 18
           },
           {
             "file": "src/routes/+layout.svelte",
-            "line": 19
-          },
-          {
-            "file": "src/routes/+layout.svelte",
-            "line": 21
+            "line": 22
           },
           {
             "file": "src/routes/+layout.svelte",
@@ -1207,19 +1195,23 @@
           },
           {
             "file": "src/routes/+layout.svelte",
-            "line": 30
+            "line": 27
           },
           {
             "file": "src/routes/+layout.svelte",
-            "line": 85
+            "line": 33
           },
           {
             "file": "src/routes/+layout.svelte",
-            "line": 125
+            "line": 63
           },
           {
             "file": "src/routes/+layout.svelte",
-            "line": 188
+            "line": 103
+          },
+          {
+            "file": "src/routes/+layout.svelte",
+            "line": 170
           },
           {
             "file": "src/routes/admin/+layout.svelte",
@@ -1437,7 +1429,39 @@
           },
           {
             "file": "src/routes/+layout.svelte",
-            "line": 166
+            "line": 148
+          },
+          {
+            "file": "src/routes/+layout.svelte",
+            "line": 149
+          },
+          {
+            "file": "src/routes/+layout.svelte",
+            "line": 150
+          },
+          {
+            "file": "src/routes/+layout.svelte",
+            "line": 156
+          },
+          {
+            "file": "src/routes/+layout.svelte",
+            "line": 157
+          },
+          {
+            "file": "src/routes/+layout.svelte",
+            "line": 158
+          },
+          {
+            "file": "src/routes/+layout.svelte",
+            "line": 159
+          },
+          {
+            "file": "src/routes/+layout.svelte",
+            "line": 160
+          },
+          {
+            "file": "src/routes/+layout.svelte",
+            "line": 161
           },
           {
             "file": "src/routes/+layout.svelte",
@@ -1449,51 +1473,19 @@
           },
           {
             "file": "src/routes/+layout.svelte",
-            "line": 174
+            "line": 169
           },
           {
             "file": "src/routes/+layout.svelte",
-            "line": 175
+            "line": 170
           },
           {
             "file": "src/routes/+layout.svelte",
-            "line": 176
+            "line": 171
           },
           {
             "file": "src/routes/+layout.svelte",
-            "line": 177
-          },
-          {
-            "file": "src/routes/+layout.svelte",
-            "line": 178
-          },
-          {
-            "file": "src/routes/+layout.svelte",
-            "line": 179
-          },
-          {
-            "file": "src/routes/+layout.svelte",
-            "line": 185
-          },
-          {
-            "file": "src/routes/+layout.svelte",
-            "line": 186
-          },
-          {
-            "file": "src/routes/+layout.svelte",
-            "line": 187
-          },
-          {
-            "file": "src/routes/+layout.svelte",
-            "line": 188
-          },
-          {
-            "file": "src/routes/+layout.svelte",
-            "line": 189
-          },
-          {
-            "file": "src/routes/+layout.svelte",
-            "line": 190
+            "line": 172
           },
           {
             "file": "src/routes/+page.svelte",
@@ -1615,7 +1607,7 @@
           },
           {
             "file": "src/lib/server/email.js",
-            "line": 63
+            "line": 66
           },
           {
             "file": "src/lib/site.js",
@@ -1751,11 +1743,11 @@
           },
           {
             "file": "src/routes/contact/+page.server.js",
-            "line": 38
+            "line": 40
           },
           {
             "file": "src/routes/contact/+page.server.js",
-            "line": 40
+            "line": 44
           },
           {
             "file": "src/lib/components/admin/ImagePicker.svelte",
@@ -1817,15 +1809,15 @@
           },
           {
             "file": "src/routes/contact/+page.server.js",
-            "line": 36
-          },
-          {
-            "file": "src/routes/contact/+page.server.js",
             "line": 38
           },
           {
             "file": "src/routes/contact/+page.server.js",
-            "line": 39
+            "line": 40
+          },
+          {
+            "file": "src/routes/contact/+page.server.js",
+            "line": 41
           },
           {
             "file": "src/routes/admin/+layout.svelte",
@@ -1938,7 +1930,7 @@
       "name": "orphans",
       "summary": {
         "orphanFunctions": 0,
-        "functionsExamined": 134
+        "functionsExamined": 156
       },
       "offenders": []
     },
@@ -1950,6 +1942,7 @@
         "predictedFilesMissing": 0,
         "entities": 0,
         "entitiesOutOfRange": 0,
+        "entitiesAccepted": 0,
         "measurementIsHeuristic": true
       },
       "offenders": {
@@ -1973,9 +1966,9 @@
       "name": "inventory",
       "summary": {
         "pages": 21,
-        "components": 26,
+        "components": 38,
         "orphanComponents": 11,
-        "averagePageLines": 256
+        "averagePageLines": 250
       },
       "offenders": {
         "pages": [
@@ -2047,14 +2040,6 @@
             ]
           },
           {
-            "page": "src/routes/contact/+page.svelte",
-            "lines": 187,
-            "widgets": [
-              "form",
-              "list"
-            ]
-          },
-          {
             "page": "src/routes/admin/login/+page.svelte",
             "lines": 179,
             "widgets": [
@@ -2070,21 +2055,21 @@
           },
           {
             "page": "src/routes/fire-flood-restoration/+page.svelte",
-            "lines": 110,
+            "lines": 112,
             "widgets": [
               "list"
             ]
           },
           {
             "page": "src/routes/refurbishment/+page.svelte",
-            "lines": 98,
+            "lines": 100,
             "widgets": [
               "list"
             ]
           },
           {
             "page": "src/routes/maintenance/+page.svelte",
-            "lines": 95,
+            "lines": 97,
             "widgets": [
               "list"
             ]
@@ -2096,6 +2081,11 @@
           },
           {
             "page": "src/routes/brochure/+page.svelte",
+            "lines": 56,
+            "widgets": []
+          },
+          {
+            "page": "src/routes/contact/+page.svelte",
             "lines": 56,
             "widgets": []
           },
@@ -2134,6 +2124,10 @@
             "reusedBy": 8
           },
           {
+            "component": "src/lib/components/Icon.svelte",
+            "reusedBy": 8
+          },
+          {
             "component": "src/lib/components/PageHero.svelte",
             "reusedBy": 7
           },
@@ -2146,7 +2140,7 @@
             "reusedBy": 6
           },
           {
-            "component": "src/lib/components/Icon.svelte",
+            "component": "src/lib/components/BrochureOffer.svelte",
             "reusedBy": 5
           },
           {
@@ -2166,11 +2160,11 @@
             "reusedBy": 3
           },
           {
-            "component": "src/lib/components/BrochureOffer.svelte",
-            "reusedBy": 2
+            "component": "src/lib/components/AccreditationTile.svelte",
+            "reusedBy": 1
           },
           {
-            "component": "src/lib/components/AccreditationTile.svelte",
+            "component": "src/lib/components/BusinessMarkup.svelte",
             "reusedBy": 1
           },
           {
@@ -2179,6 +2173,50 @@
           },
           {
             "component": "src/lib/components/admin/ImagePicker.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/analytics/AnalyticsChoiceLink.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/analytics/AnalyticsConsentBanner.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/analytics/GoogleAnalytics.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/contact/ContactCards.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/contact/DeliveryFallback.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/contact/EmergencyCallPanel.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/contact/EnquiryFields.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/contact/EnquiryForm.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/contact/EnquirySent.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/contact/PhotoUploadField.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/contact/WhatsAppButton.svelte",
             "reusedBy": 1
           },
           {
@@ -2254,14 +2292,14 @@
     "fileAreas": {
       "name": "fileAreas",
       "summary": {
-        "totalFiles": 332,
-        "frontend": 142,
-        "tooling": 104,
-        "backend": 21,
+        "totalFiles": 357,
+        "frontend": 154,
+        "tooling": 105,
+        "backend": 22,
+        "shared": 19,
         "docs": 16,
-        "tests": 14,
+        "tests": 15,
         "infrastructure": 14,
-        "shared": 9,
         "api": 7,
         "database": 3,
         "other": 2
@@ -2269,21 +2307,27 @@
       "offenders": [
         {
           "area": "frontend",
-          "files": 142,
-          "sourceFiles": 50,
-          "sourceLines": 7477
+          "files": 154,
+          "sourceFiles": 62,
+          "sourceLines": 7657
         },
         {
           "area": "tooling",
-          "files": 104,
+          "files": 105,
           "sourceFiles": 0,
           "sourceLines": 0
         },
         {
           "area": "backend",
-          "files": 21,
-          "sourceFiles": 21,
-          "sourceLines": 1854
+          "files": 22,
+          "sourceFiles": 22,
+          "sourceLines": 1901
+        },
+        {
+          "area": "shared",
+          "files": 19,
+          "sourceFiles": 19,
+          "sourceLines": 1355
         },
         {
           "area": "docs",
@@ -2293,7 +2337,7 @@
         },
         {
           "area": "tests",
-          "files": 14,
+          "files": 15,
           "sourceFiles": 0,
           "sourceLines": 0
         },
@@ -2302,12 +2346,6 @@
           "files": 14,
           "sourceFiles": 0,
           "sourceLines": 0
-        },
-        {
-          "area": "shared",
-          "files": 9,
-          "sourceFiles": 9,
-          "sourceLines": 1095
         },
         {
           "area": "api",
@@ -2348,8 +2386,8 @@
       "summary": {
         "clones": 9,
         "duplicatedLines": 145,
-        "totalLines": 15800,
-        "duplicatedPercentage": 0.92
+        "totalLines": 16274,
+        "duplicatedPercentage": 0.89
       },
       "offenders": [
         {

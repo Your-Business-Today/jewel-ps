@@ -5,6 +5,7 @@
 	import Icon from '$lib/components/Icon.svelte';
 	import PageHero from '$lib/components/PageHero.svelte';
 	import Testimonials from '$lib/components/Testimonials.svelte';
+	import BrochureOffer from '$lib/components/BrochureOffer.svelte';
 	import Accreditations from '$lib/components/Accreditations.svelte';
 	import CtaBand from '$lib/components/CtaBand.svelte';
 	import { testimonials } from '$lib/site.js';
@@ -94,5 +95,6 @@
 </section>
 
 <Testimonials items={[testimonials[1], testimonials[2]]} title="Refurbishments our clients love." parallaxColumns={false} />
+<BrochureOffer title="See the work before you commit." text="Our brochure shows the refurbishments we have completed, how we run a project and the schemes we are accredited by, ready to share with anyone involved in the decision." />
 <Accreditations />
 <CtaBand title="Let’s design your next space." text="Free consultation and quote. A dedicated project manager from first fix to final finish." />

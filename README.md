@@ -134,6 +134,16 @@ redeploy.
 3. **Geom Graphic** — the licensed body font isn't in the repo; Outfit is the stand-in. Drop the `.woff2` files into `static/fonts/` and uncomment the `GEOM` block at the top of `src/app.css`.
 4. **Terms & conditions** — `static/documents/terms-and-conditions.pdf` is a client-facing Terms of Business (v1.0, Aug 2026) written for the new site; the source is `scripts/terms-and-conditions.html` — edit it and re-export to PDF from a browser (Print → Save as PDF, A4, background graphics on). Have it checked before launch.
 5. **Domain** — point `jewelps.co.uk` at Vercel under Project → Settings → Domains.
+6. **Google Analytics** — set `PUBLIC_GA_MEASUREMENT_ID` (the GA4 Measurement ID, `G-…`) in Vercel → Settings →
+   Environment Variables and redeploy. Until it is set nothing loads and no banner shows. Once set, visitors are asked
+   once whether they accept analytics cookies (`src/lib/components/analytics/`); Google's tag loads only after they
+   accept, and "Cookie choices" in the footer lets them change their mind. Two events are sent: `generate_lead` when the
+   contact form is sent and `phone_tap` when a phone number is tapped, each with the page it happened on. Mark
+   `generate_lead` as a key event in GA4 so it counts as a conversion. The privacy notice must describe the analytics
+   before the variable is set.
+
+The business details Google reads (address, phone, office hours, 24/7 emergency line, areas served and every service)
+are LocalBusiness structured data built from `src/lib/site.js` by `src/lib/seo/` and rendered on every public page.
 
 ## Local development
 

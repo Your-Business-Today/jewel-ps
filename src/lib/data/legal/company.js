@@ -7,4 +7,11 @@ export const company = {
 	phone: '0208 109 1012'
 };
 
-export const toBeConfirmed = '[to be confirmed]';
+export const approvedFigures = {
+	workmanshipGuarantee: '6 months',
+	publicLiabilityCover: '£10,000,000',
+	employersLiabilityCover: '£10,000,000',
+	businessLiabilityCap: 'the higher of the contract price and £1,000,000',
+	complaintAcknowledgement: '3 working days',
+	complaintFullReply: '14 days'
+};
