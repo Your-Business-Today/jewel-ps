@@ -28,3 +28,15 @@ export function receivedAgo(iso) {
 	if (days < daysShownAsAge) return `${days}d ago`;
 	return new Date(iso).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', timeZone: londonTime });
 }
+
+const millisecondsPerDay = millisecondsPerMinute * minutesPerHour * hoursPerDay;
+const dayLabels = ['Today', 'Yesterday'];
+
+/** @param {string} iso */
+export function receivedDay(iso) {
+	const received = new Date(iso);
+	const days = Math.floor((Date.now() - received.getTime()) / millisecondsPerDay);
+	const label = dayLabels[days];
+	if (label) return label;
+	return received.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', timeZone: londonTime });
+}
