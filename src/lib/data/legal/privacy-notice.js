@@ -40,7 +40,8 @@ export const privacySections = [
 		title: 'Visitors to this website',
 		paragraphs: [
 			'When you send an enquiry through this website we collect the details you give us, typically your name, email address, phone number, property postcode and a description of the work, together with your IP address to help us stop spam. We use them to reply to your enquiry and prepare a quote.',
-			'This website does not set marketing or tracking cookies. The map on our contact page is provided by Google and is subject to Google’s privacy policy. If we add website analytics, we will update this notice first and ask for your consent where the law requires it.'
+			'If you agree when we ask, we use Google Analytics to see how visitors find and use this website, such as which pages lead to an enquiry and whether a phone number was tapped. Google Analytics sets cookies and receives your IP address and details of your device and browser; it does not receive anything you type into the enquiry form. We use it only in summary, to improve the website, on the basis of your consent, and Google keeps the data for 14 months. You can change your choice at any time with “Cookie choices” at the foot of any page.',
+			'This website sets no marketing cookies. The map on our contact page is provided by Google and is subject to Google’s privacy policy.'
 		]
 	},
 	{

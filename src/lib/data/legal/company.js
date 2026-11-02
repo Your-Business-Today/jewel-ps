@@ -15,3 +15,5 @@ export const approvedFigures = {
 	complaintAcknowledgement: '3 working days',
 	complaintFullReply: '14 days'
 };
+
+export const toBeConfirmed = '[to be confirmed]';
