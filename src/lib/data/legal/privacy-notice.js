@@ -1,6 +1,6 @@
-import { company, toBeConfirmed } from './company.js';
+import { company } from './company.js';
 
-export const privacyNoticeIssue = { number: '2.0', date: '1 November 2026' };
+export const privacyNoticeIssue = { number: '2.0', date: '2 November 2026' };
 
 export const privacyIntroduction = `This notice explains what personal information ${company.legalName} holds about the people we work with and for, why we hold it, who we share it with, how long we keep it, and the rights you have over it.`;
 
@@ -9,7 +9,7 @@ export const privacySections = [
 		title: 'Who we are',
 		paragraphs: [
 			`${company.legalName} (“${company.shortName}”, “we”, “us”), company number ${company.number}, registered office ${company.registeredOffice}, is the controller of the personal information described in this notice.`,
-			`We are registered with the Information Commissioner’s Office (ICO) under number ${toBeConfirmed}.`,
+			`We are registered with the Information Commissioner’s Office (ICO) under number ${company.informationCommissionerNumber}.`,
 			`If you have a question about this notice or your information, email ${company.email}, call ${company.phone}, or write to us at our registered office.`,
 			'This notice covers our clients and their contacts; tenants, flat owners and other people connected with the buildings we work on; the people who work on our sites; and visitors to this website.'
 		]
@@ -47,7 +47,7 @@ export const privacySections = [
 	{
 		title: 'Who we share it with',
 		paragraphs: [
-			'We do not sell your information. We share it only where we need to, with service providers who process it for us under contract: Xero for accounts and invoicing; Microsoft 365 for email and documents; Dext for receipts and supplier bills, until we move that work into our own systems; the companies that host our business portal and this website, including Vercel, Supabase and Resend; and Anthropic, whose AI assistant Claude helps our team read and draft emails and documents, with a member of our team checking its work.',
+			'We do not sell your information. We share it only where we need to, with service providers who process it for us under contract: Xero for accounts and invoicing; Microsoft 365 for email and documents; Dext for receipts and supplier bills, until we move that work into our own systems; Microsoft Azure, which hosts our business portal; Vercel, Supabase and Resend, which host this website and send its emails; WhatsApp, which our site teams use to send their day records and photos; Vapi, the AI call answering service on our phone line, which records calls and takes messages; Google, for the map on our contact page and, if you agree, website analytics; and Anthropic, whose AI assistant Claude helps our team read and draft emails and documents, with a member of our team checking its work.',
 			'We share what is needed for the work with the people involved in it: the client who instructed us, their managing agent or insurer, loss adjusters, and the subcontractors who carry out part of the work.',
 			'We give information to HMRC for tax and CIS, and to other authorities where the law requires it.'
 		]
