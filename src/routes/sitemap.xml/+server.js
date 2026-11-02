@@ -13,7 +13,8 @@ const pages = [
 	{ path: '/insurance-claims', priority: '0.8' },
 	{ path: '/contact', priority: '0.8' },
 	{ path: '/brochure', priority: '0.5' },
-	{ path: '/privacy', priority: '0.2' }
+	{ path: '/privacy', priority: '0.2' },
+	{ path: '/terms', priority: '0.2' }
 ];
 
 export function GET() {
