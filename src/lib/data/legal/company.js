@@ -4,7 +4,8 @@ export const company = {
 	number: '10587343',
 	registeredOffice: '48 Warwick Street, London W1B 5AW',
 	email: 'info@jewelps.co.uk',
-	phone: '0208 109 1012'
+	phone: '0208 109 1012',
+	informationCommissionerNumber: 'ZB482693'
 };
 
 export const approvedFigures = {
