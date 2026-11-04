@@ -54,6 +54,26 @@ create index if not exists admin_login_attempts_ip_time_idx
 
 alter table public.admin_login_attempts enable row level security;
 
+-- ---------- Google review requests (added 2026-11-04) -------------
+-- Each review request the office emails from /admin/reviews, so a
+-- client is not asked twice by accident. RLS on, no policies.
+
+create table if not exists public.review_requests (
+	id uuid primary key default gen_random_uuid(),
+	name text not null,
+	email text not null,
+	work text not null default '',
+	sent_at timestamptz not null default now()
+);
+
+create index if not exists review_requests_email_idx
+	on public.review_requests (lower(email));
+
+create index if not exists review_requests_sent_at_idx
+	on public.review_requests (sent_at desc);
+
+alter table public.review_requests enable row level security;
+
 -- ---------- Lock the public API roles out (added 2026-09-04) --------
 -- The site only ever talks to Supabase from server code with the
 -- service_role key, so the public anon/authenticated roles need no

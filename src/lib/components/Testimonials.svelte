@@ -2,12 +2,13 @@
 	import { testimonials } from '$lib/site.js';
 	import { reveal, parallax } from '$lib/motion.js';
 
-	/** @type {{ items?: typeof testimonials, title?: string, kicker?: string, parallaxColumns?: boolean }} */
+	/** @type {{ items?: typeof testimonials, title?: string, kicker?: string, parallaxColumns?: boolean, badge?: import('svelte').Snippet }} */
 	let {
 		items = testimonials,
 		title = 'Don’t take our word for it.',
 		kicker = 'What our clients say',
-		parallaxColumns = true
+		parallaxColumns = true,
+		badge
 	} = $props();
 
 	const left = $derived(items.filter((_, i) => i % 2 === 0));
@@ -20,6 +21,7 @@
 		<div class="max-w-2xl" use:reveal>
 			<p class="kicker">{kicker}</p>
 			<h2 class="h-section mt-5 text-white">{title}</h2>
+			{@render badge?.()}
 		</div>
 
 		<div class="mt-14 grid gap-6 md:grid-cols-2 md:gap-8">

@@ -4,8 +4,11 @@
 	import { getGsap, prefersReducedMotion, reveal, parallax, countUp, splitWords } from '$lib/motion.js';
 	import Seo from '$lib/components/Seo.svelte';
 	import Testimonials from '$lib/components/Testimonials.svelte';
+	import GoogleRating from '$lib/components/GoogleRating.svelte';
 	import Accreditations from '$lib/components/Accreditations.svelte';
 	import CtaBand from '$lib/components/CtaBand.svelte';
+
+	let { data } = $props();
 
 	/** @type {HTMLElement} */ let heroBg;
 	/** @type {HTMLElement} */ let heroShade;
@@ -242,7 +245,11 @@
 		</div>
 	</section>
 
-	<Testimonials />
+	<Testimonials>
+		{#snippet badge()}
+			<GoogleRating rating={data.googleRating} reviewLink={data.googleReviewLink} />
+		{/snippet}
+	</Testimonials>
 	<Accreditations />
 
 	<!-- Ecologi -->

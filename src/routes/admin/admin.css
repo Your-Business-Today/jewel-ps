@@ -23,6 +23,10 @@
 	--surface: #ffffff;
 	--tint: #f4f6f9;
 	--line: #e4e8ef;
+	--warn-tint: #fdf6ec;
+	--warn-line: #f0dfc0;
+	--warn-ink: #8a5a2a;
+	--ok-ink: #1d6b3a;
 
 	/* Typography */
 	--font-display: 'Switzer', 'Inter', -apple-system, sans-serif;
