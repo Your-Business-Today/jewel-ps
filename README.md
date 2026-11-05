@@ -53,6 +53,9 @@ structure and look as the jewelbb.co.uk admin:
   server-side with headless Chromium (`puppeteer-core` + `@sparticuz/chromium`), so the output is identical to the
   designed pages every time. A new brochure can be seeded from the built-in Jewel PS layout, which is also the fallback
   shown at `/brochure` before anything is published.
+- **Reviews** — ask a past client for a Google review: name, email and (optionally) the work done. They get a short
+  email via Resend with a button to our Google review page; replies go to `enquiries@`. Every request is listed
+  (`review_requests` table) and a second ask to the same address needs a tick, so nobody is asked twice by accident.
 - **RTW checks** — every Right to Work check completed at `/rtw` (Jeremy's guided check tool, entity `JPS`) is logged
   to a register viewable here; the tool's copy-row and print outputs are unchanged.
 - **Login** — one shared username/password from env vars, held in a signed `httpOnly` cookie for 8 hours. No accounts
@@ -141,6 +144,12 @@ redeploy.
    contact form is sent and `phone_tap` when a phone number is tapped, each with the page it happened on. Mark
    `generate_lead` as a key event in GA4 so it counts as a conversion. The privacy notice must describe the analytics
    before the variable is set.
+7. **Google reviews** — set `GOOGLE_PLACE_ID` (the Business Profile's Place ID, the part after `placeid=` in its
+   "Ask for reviews" link) and `GOOGLE_PLACES_API_KEY` (a Google Cloud key with Places API (New) enabled, restricted
+   to that API) in Vercel → Settings → Environment Variables and redeploy. With both, the homepage shows the live star
+   rating and review count beside the testimonials (`src/lib/server/google-reviews.js`, read at most every six hours).
+   The Place ID alone gives the "Review us on Google" link and lets the office send review requests from
+   `/admin/reviews`. Neither set, the homepage shows neither.
 
 The business details Google reads (address, phone, office hours, 24/7 emergency line, areas served and every service)
 are LocalBusiness structured data built from `src/lib/site.js` by `src/lib/seo/` and rendered on every public page.
