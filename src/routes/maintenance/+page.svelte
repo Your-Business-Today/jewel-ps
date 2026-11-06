@@ -1,6 +1,7 @@
 <script>
 	import { maintenanceServices, clients, contact, img } from '$lib/site.js';
 	import { reveal } from '$lib/motion.js';
+	import { equalHeights } from '$lib/equalHeights.js';
 	import Seo from '$lib/components/Seo.svelte';
 	import PageHero from '$lib/components/PageHero.svelte';
 	import Testimonials from '$lib/components/Testimonials.svelte';
@@ -53,9 +54,9 @@
 			<p class="kicker">What we cover</p>
 			<h2 class="h-section mt-5 text-white">Every trade. One call.</h2>
 		</div>
-		<ol class="mt-14 grid gap-x-12 sm:grid-cols-2" use:reveal={{ stagger: true }}>
+		<ol class="mt-14 grid gap-x-12 sm:grid-cols-2" use:reveal={{ stagger: true }} use:equalHeights={'li[data-emergency]'}>
 			{#each maintenanceServices as s, i}
-				<li id={s.title === 'Managing Agent Support' ? 'managing-agents' : undefined} class="border-t border-white/10 py-6 {s.title.includes('Emergency') ? 'sm:col-span-2 rounded-[1.25rem] border border-gold/30 bg-gold/[0.06] px-6 sm:px-8' : ''}">
+				<li id={s.title === 'Managing Agent Support' ? 'managing-agents' : undefined} data-emergency={s.title.includes('Emergency') ? '' : undefined} class="border-t border-white/10 py-6 {s.title.includes('Emergency') ? 'sm:col-span-2 rounded-[1.25rem] border border-gold/30 bg-gold/[0.06] px-6 sm:px-8' : ''}">
 					<div class="grid grid-cols-[2.5rem_1fr] gap-4">
 						<span class="pt-1 font-display text-xs font-semibold text-gold/80">{String(i + 1).padStart(2, '0')}</span>
 						<div>
