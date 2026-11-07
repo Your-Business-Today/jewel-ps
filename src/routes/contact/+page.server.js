@@ -2,7 +2,8 @@ import { fail } from '@sveltejs/kit';
 import { env } from '$env/dynamic/private';
 import { dbConfigured, dbInsert } from '$lib/server/db.js';
 import { emailConfigured, sendEnquiryEmail } from '$lib/server/email.js';
-import { readEnquiryPhotos, photosAsAttachments } from '$lib/server/enquiry-photos.js';
+import { photosAsAttachments } from '$lib/server/enquiry-photos.js';
+import { readEnquiryRequest } from '$lib/server/enquiry-request.js';
 
 /**
  * Contact form handler. Each submission is delivered up to three ways, any
@@ -24,23 +25,7 @@ export const actions = {
 		// Honeypot — bots fill this, humans never see it.
 		if (data.get('company_website')) return { success: true };
 
-		const values = {
-			name: String(data.get('name') ?? '').trim().slice(0, 120),
-			email: String(data.get('email') ?? '').trim().slice(0, 200),
-			phone: String(data.get('phone') ?? '').trim().slice(0, 50),
-			postcode: String(data.get('postcode') ?? '').trim().slice(0, 20),
-			service: String(data.get('service') ?? '').trim().slice(0, 80),
-			message: String(data.get('message') ?? '').trim().slice(0, 5000)
-		};
-
-		/** @type {Record<string, string>} */
-		const errors = {};
-		if (values.name.length < 2) errors.name = 'Please tell us your name.';
-		if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email)) errors.email = 'Please enter a valid email address.';
-		if (values.phone && values.phone.replace(/\D/g, '').length < 10) errors.phone = 'Please enter a valid phone number.';
-		if (values.message.length < 10) errors.message = 'Please give us a few details about the job.';
-		const { photos, problem: photoProblem } = readEnquiryPhotos(data);
-		if (photoProblem) errors.photos = photoProblem;
+		const { values, errors, photos } = readEnquiryRequest(data);
 		if (Object.keys(errors).length) return fail(400, { errors, values });
 
 		const endpoint = env.FORM_WEBHOOK_URL;
