@@ -311,6 +311,7 @@ export const emergencyCalloutService = 'Emergency callout';
 export const enquiryTypes = [
 	'Refurbishment',
 	'Planned or reactive maintenance',
+	'Commercial cleaning',
 	'Fire or flood restoration',
 	emergencyCalloutService,
 	'Managing agent / portfolio support',
