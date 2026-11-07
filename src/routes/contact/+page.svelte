@@ -6,7 +6,7 @@
 	import Accreditations from '$lib/components/Accreditations.svelte';
 	import EmergencyCallPanel from '$lib/components/contact/EmergencyCallPanel.svelte';
 	import ContactCards from '$lib/components/contact/ContactCards.svelte';
-	import EnquiryForm from '$lib/components/contact/EnquiryForm.svelte';
+	import GuidedRequestForm from '$lib/components/contact/GuidedRequestForm.svelte';
 
 	/** @type {{ form: any }} */
 	let { form } = $props();
@@ -34,7 +34,7 @@
 		</div>
 		<ContactCards />
 		<div class="lg:col-span-7" use:reveal>
-			<EnquiryForm {form} />
+			<GuidedRequestForm {form} />
 		</div>
 	</div>
 </section>

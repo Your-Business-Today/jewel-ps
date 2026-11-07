@@ -306,11 +306,13 @@ export const faqs = [
 ];
 
 /** Options for the contact form service selector. */
+export const emergencyCalloutService = 'Emergency callout';
+
 export const enquiryTypes = [
 	'Refurbishment',
 	'Planned or reactive maintenance',
 	'Fire or flood restoration',
-	'Emergency callout',
+	emergencyCalloutService,
 	'Managing agent / portfolio support',
 	'Something else'
 ];
