@@ -8,12 +8,13 @@
 	import BrochureOffer from '$lib/components/BrochureOffer.svelte';
 	import Accreditations from '$lib/components/Accreditations.svelte';
 	import CtaBand from '$lib/components/CtaBand.svelte';
+	import CleaningServices from '$lib/components/maintenance/CleaningServices.svelte';
 	import { testimonials } from '$lib/site.js';
 </script>
 
 <Seo
 	title="Maintenance services"
-	description="Planned and reactive property maintenance across London and the South East — electrical, plumbing, HVAC, roofing, glazing, compliance testing and a 24-hour emergency callout."
+	description="Planned and reactive property maintenance and commercial cleaning across London and the South East — electrical, plumbing, HVAC, roofing, glazing, compliance testing and a 24-hour emergency callout."
 />
 
 <PageHero
@@ -71,7 +72,8 @@
 	</div>
 </section>
 
-<!-- Managing agents -->
+<CleaningServices />
+
 <section class="bg-night py-24 sm:py-32">
 	<div class="container-site">
 		<div class="card grid items-center gap-10 p-8 sm:p-12 lg:grid-cols-12 lg:p-16" use:reveal={{ stagger: true }}>
