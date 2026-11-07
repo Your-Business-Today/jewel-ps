@@ -1,5 +1,5 @@
 <script>
-	import { values, groupValues, leadership, ecologi, clients, img } from '$lib/site.js';
+	import { values, groupValues, leadership, clients, img } from '$lib/site.js';
 	import { reveal, parallax } from '$lib/motion.js';
 	import Seo from '$lib/components/Seo.svelte';
 	import Icon from '$lib/components/Icon.svelte';
@@ -7,21 +7,25 @@
 	import Testimonials from '$lib/components/Testimonials.svelte';
 	import Accreditations from '$lib/components/Accreditations.svelte';
 	import CtaBand from '$lib/components/CtaBand.svelte';
+	import ServiceLines from '$lib/components/about/ServiceLines.svelte';
+	import EcologiSection from '$lib/components/about/EcologiSection.svelte';
 </script>
 
 <Seo
 	title="About us"
-	description="A professional and passionate property maintenance company. Jewel Property Serve is a family business caring for properties across London and the South East for more than 20 years."
+	description="Jewel Property Serve is a family business covering maintenance and commercial cleaning, high-end refurbishment, fire and flood insurance works and Building Safety Regulator support across London and the South East for more than 20 years."
 />
 
 <PageHero
 	kicker="About us"
-	title="A professional and passionate property maintenance company."
-	lede="A family business caring for properties across London and the South East — with the reliability, professionalism and care that clients have trusted us for over two decades."
+	title="Maintenance, refurbishment, insurance works and building safety."
+	lede="A family business caring for properties across London and the South East, from day-to-day upkeep to high-end refurbishment, with the reliability and care clients have trusted for over two decades."
 	image={img('jewel_style_prime_london_lobby_option_3-1.png')}
 	alt="A prime London lobby maintained by Jewel Property Serve"
 	cta={{ href: '/contact', label: 'Get in touch' }}
 />
+
+<ServiceLines />
 
 <!-- Story -->
 <section class="bg-night py-24 sm:py-32">
@@ -111,31 +115,7 @@
 	</div>
 </section>
 
-<!-- Ecologi -->
-<section id="ecologi" class="relative overflow-hidden bg-night py-24 sm:py-32">
-	<div class="container-site grid items-center gap-12 lg:grid-cols-12">
-		<div class="lg:col-span-5" use:reveal={{ stagger: true }}>
-			<p class="kicker">Sustainability</p>
-			<h2 class="h-section mt-5 text-white">{ecologi.title}</h2>
-			<p class="mt-6 text-lg text-grey">{ecologi.text}</p>
-			<div class="mt-8 grid grid-cols-2 gap-4">
-				<div class="card p-5">
-					<p class="font-display text-3xl font-semibold text-white">0.30<span class="text-base text-gold">t</span></p>
-					<p class="mt-1 text-xs text-grey">CO₂ sequestered per tree</p>
-				</div>
-				<div class="card p-5">
-					<p class="font-display text-3xl font-semibold text-white">732<span class="text-base text-gold">mi</span></p>
-					<p class="mt-1 text-xs text-grey">Equivalent driving offset per tree</p>
-				</div>
-			</div>
-		</div>
-		<div class="relative overflow-hidden rounded-[2rem] lg:col-span-6 lg:col-start-7" use:reveal>
-			<div class="aspect-[4/3]">
-				<img src={ecologi.image} alt="Our Ecologi partnership" class="h-[125%] w-full object-cover" loading="lazy" use:parallax={{ speed: 0.25 }} />
-			</div>
-		</div>
-	</div>
-</section>
+<EcologiSection />
 
 <Testimonials title="Trusted for over twenty years." parallaxColumns={false} />
 <Accreditations />
