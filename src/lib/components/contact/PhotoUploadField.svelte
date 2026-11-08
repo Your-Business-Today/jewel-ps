@@ -27,6 +27,6 @@
 		class="{inputClass} file:mr-4 file:rounded-full file:border-0 file:bg-gold file:px-4 file:py-2 file:font-display file:text-sm file:font-semibold file:text-night"
 		onchange={checkPhotoCount}
 	/>
-	<span class="mt-1 block text-xs text-grey/80">Optional. Up to {photoLimits.maximumCount} photos help us understand the job and quote faster.</span>
+	<span class="mt-1 block text-xs text-grey/80">Up to {photoLimits.maximumCount} photos: ideally a close-up of the problem and a wide shot of the area. Optional, but they help us respond faster.</span>
 	{#if problem}<span class="mt-1 block text-xs text-red-400">{problem}</span>{/if}
 </label>
