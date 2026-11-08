@@ -8,6 +8,7 @@
 	import BrochureOffer from '$lib/components/BrochureOffer.svelte';
 	import Accreditations from '$lib/components/Accreditations.svelte';
 	import CtaBand from '$lib/components/CtaBand.svelte';
+	import CompletedProjects from '$lib/components/refurbishment/CompletedProjects.svelte';
 	import { testimonials } from '$lib/site.js';
 </script>
 
@@ -26,7 +27,6 @@
 	secondary={{ href: '#services', label: 'What we do' }}
 />
 
-<!-- Intro -->
 <section class="bg-night py-24 sm:py-32">
 	<div class="container-site grid gap-12 lg:grid-cols-12">
 		<div class="lg:col-span-5" use:reveal={{ stagger: true }}>
@@ -46,7 +46,6 @@
 	</div>
 </section>
 
-<!-- Services (alternating) -->
 <section id="services" class="bg-night-2 py-24 sm:py-32">
 	<div class="container-site">
 		<div class="max-w-2xl" use:reveal>
@@ -73,8 +72,9 @@
 	</div>
 </section>
 
-<!-- Process -->
-<section class="bg-night py-24 sm:py-32">
+<CompletedProjects />
+
+<section class="bg-night-2 py-24 sm:py-32">
 	<div class="container-site">
 		<div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between" use:reveal>
 			<div>
