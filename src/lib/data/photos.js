@@ -39,6 +39,19 @@ export const photoGroups = [
 		].map(img)
 	},
 	{
+		label: 'Completed refurbishments',
+		images: [
+			'cadogan-square-living-room.webp',
+			'cadogan-square-kitchen.webp',
+			'cadogan-square-bathroom.webp',
+			'hampton-court-kitchen.webp',
+			'hampton-court-bathroom.webp',
+			'wimbledon-front.webp',
+			'wimbledon-rear.webp',
+			'wimbledon-driveway.webp'
+		].map((fileName) => img(`projects/${fileName}`))
+	},
+	{
 		label: 'Maintenance & trades',
 		images: [
 			'common-roof-repairs.webp',
