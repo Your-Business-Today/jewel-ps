@@ -156,7 +156,7 @@ const ACCREDITATION_LOGOS = '/images/accreditations';
 
 /** @typedef {{ name: string, image: string, registration?: string, expires?: string, href?: string }} Accreditation */
 
-/** Current schemes, from the accreditations register Katie Prentice sent on 15 October 2026. Expiry dates are ISO, so a lapsed scheme drops off the site by itself.
+/** The schemes as they stood on 13 November 2026, before the office kept them at /admin/accreditations. The site shows this list only when the database cannot be read.
  * @type {Accreditation[]}
  */
 export const accreditations = [

@@ -11,7 +11,8 @@
 		{ label: 'Media', href: '/admin/media' },
 		{ label: 'Brochures', href: '/admin/brochure' },
 		{ label: 'RTW checks', href: '/admin/rtw' },
-		{ label: 'Reviews', href: '/admin/reviews' }
+		{ label: 'Reviews', href: '/admin/reviews' },
+		{ label: 'Accreditations', href: '/admin/accreditations' }
 	];
 
 	/** @param {string} href */
