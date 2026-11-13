@@ -1,5 +1,6 @@
 <script>
-	import { refurbServices, process, img } from '$lib/site.js';
+	import { photoFor, refurbishmentPhotoFor } from '$lib/site-photos.js';
+	import { refurbServices, process, testimonials } from '$lib/site.js';
 	import { reveal, parallax } from '$lib/motion.js';
 	import Seo from '$lib/components/Seo.svelte';
 	import Icon from '$lib/components/Icon.svelte';
@@ -9,7 +10,6 @@
 	import Accreditations from '$lib/components/Accreditations.svelte';
 	import CtaBand from '$lib/components/CtaBand.svelte';
 	import CompletedProjects from '$lib/components/refurbishment/CompletedProjects.svelte';
-	import { testimonials } from '$lib/site.js';
 </script>
 
 <Seo
@@ -21,7 +21,7 @@
 	kicker="Our services · Refurbishment"
 	title="From concept to completion."
 	lede="Renovation and refurbishment by skilled professionals, with bespoke solutions for residential and commercial property. We work with you from first consultation to final finish."
-	image={img('image6.jpg')}
+	image={photoFor('refurbishment.hero')}
 	alt="A refurbished interior by Jewel Property Serve"
 	cta={{ href: '/contact', label: 'Request a free quote' }}
 	secondary={{ href: '#services', label: 'What we do' }}
@@ -57,7 +57,7 @@
 				<article class="grid items-center gap-8 lg:grid-cols-12 lg:gap-16">
 					<div class="relative overflow-hidden rounded-[2rem] shadow-card lg:col-span-7 {i % 2 ? 'lg:order-2' : ''}" use:reveal>
 						<div class="aspect-[16/10]">
-							<img src={s.image} alt={s.title} class="h-[125%] w-full object-cover" loading="lazy" use:parallax={{ speed: 0.22 }} />
+							<img src={refurbishmentPhotoFor(s.title)} alt={s.title} class="h-[125%] w-full object-cover" loading="lazy" use:parallax={{ speed: 0.22 }} />
 						</div>
 						<span class="absolute left-6 top-6 rounded-full bg-night/70 px-4 py-1.5 font-display text-xs font-semibold tracking-kicker text-gold backdrop-blur">0{i + 1}</span>
 					</div>

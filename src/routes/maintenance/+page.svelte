@@ -1,5 +1,6 @@
 <script>
-	import { maintenanceServices, clients, contact, img } from '$lib/site.js';
+	import { photoFor } from '$lib/site-photos.js';
+	import { maintenanceServices, clients, contact, testimonials } from '$lib/site.js';
 	import { reveal } from '$lib/motion.js';
 	import { equalHeights } from '$lib/equalHeights.js';
 	import Seo from '$lib/components/Seo.svelte';
@@ -9,7 +10,6 @@
 	import Accreditations from '$lib/components/Accreditations.svelte';
 	import CtaBand from '$lib/components/CtaBand.svelte';
 	import CleaningServices from '$lib/components/maintenance/CleaningServices.svelte';
-	import { testimonials } from '$lib/site.js';
 </script>
 
 <Seo
@@ -21,7 +21,7 @@
 	kicker="Our services · Maintenance"
 	title="Maintaining your peace of mind."
 	lede="Regular and specialised maintenance of your property and estate portfolio, keeping everything safe, compliant and running smoothly — with experts on call 24 hours a day."
-	image={img('common-roof-repairs.webp')}
+	image={photoFor('maintenance.hero')}
 	alt="Roof maintenance by Jewel Property Serve"
 	cta={{ href: '/contact', label: 'Request a free quote' }}
 	secondary={{ href: contact.phoneHref, label: `Emergency: ${contact.phone}` }}

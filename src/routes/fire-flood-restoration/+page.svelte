@@ -1,5 +1,6 @@
 <script>
-	import { restorationServices, contact, img } from '$lib/site.js';
+	import { photoFor } from '$lib/site-photos.js';
+	import { restorationServices, contact, testimonials } from '$lib/site.js';
 	import { reveal, parallax } from '$lib/motion.js';
 	import Seo from '$lib/components/Seo.svelte';
 	import PageHero from '$lib/components/PageHero.svelte';
@@ -7,7 +8,6 @@
 	import BrochureOffer from '$lib/components/BrochureOffer.svelte';
 	import Accreditations from '$lib/components/Accreditations.svelte';
 	import CtaBand from '$lib/components/CtaBand.svelte';
-	import { testimonials } from '$lib/site.js';
 
 	const steps = [
 		{ step: '01', title: 'Emergency response', text: 'Make-safe, board-up and emergency drying, day or night. Call us and we’ll be on our way.' },
@@ -26,7 +26,7 @@
 	kicker="Our services · Fire & flood restoration"
 	title="Bringing your property back to life after disaster strikes."
 	lede="Seeing your property in disrepair is overwhelming. As a nominated main contractor for insurance companies across the UK, we’re here to help you every step of the way."
-	image={img('Jewel-repair.jpg')}
+	image={photoFor('fire-flood.hero')}
 	alt="Fire and flood damage restoration works"
 	cta={{ href: contact.phoneHref, label: `24/7 emergency: ${contact.phone}` }}
 	secondary={{ href: '/contact', label: 'Request a free quote' }}
@@ -52,7 +52,7 @@
 		</div>
 		<div class="relative overflow-hidden rounded-[2rem] shadow-card lg:col-span-6" use:reveal>
 			<div class="aspect-[4/3]">
-				<img src={img('Jewel-repair.jpg')} alt="Restoration works in progress" class="h-[125%] w-full object-cover" loading="lazy" use:parallax={{ speed: 0.25 }} />
+				<img src={photoFor('fire-flood.works')} alt="Restoration works in progress" class="h-[125%] w-full object-cover" loading="lazy" use:parallax={{ speed: 0.25 }} />
 			</div>
 			<div class="absolute bottom-6 left-6 flex items-center gap-3 rounded-full bg-night/70 px-4 py-2 text-sm text-white backdrop-blur">
 				<span class="relative flex h-2.5 w-2.5"><span class="absolute inline-flex h-full w-full animate-pulseRing rounded-full bg-gold/70"></span><span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-gold"></span></span>
