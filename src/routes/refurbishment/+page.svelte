@@ -1,5 +1,6 @@
 <script>
-	import { photoFor, refurbishmentPhotoFor } from '$lib/site-photos.js';
+	import { listTextFor } from '$lib/site-text.js';
+	import { refurbishmentPhotoFor } from '$lib/site-photos.js';
 	import { refurbServices, process, testimonials } from '$lib/site.js';
 	import { reveal, parallax } from '$lib/motion.js';
 	import Seo from '$lib/components/Seo.svelte';
@@ -19,9 +20,7 @@
 
 <PageHero
 	kicker="Our services · Refurbishment"
-	title="From concept to completion."
-	lede="Renovation and refurbishment by skilled professionals, with bespoke solutions for residential and commercial property. We work with you from first consultation to final finish."
-	image={photoFor('refurbishment.hero')}
+	page="refurbishment"
 	alt="A refurbished interior by Jewel Property Serve"
 	cta={{ href: '/contact', label: 'Request a free quote' }}
 	secondary={{ href: '#services', label: 'What we do' }}
@@ -63,7 +62,7 @@
 					</div>
 					<div class="lg:col-span-5 {i % 2 ? 'lg:order-1' : ''}" use:reveal={{ stagger: true }}>
 						<h3 class="font-display text-3xl font-semibold text-white sm:text-4xl">{s.title}</h3>
-						<p class="mt-5 leading-relaxed text-grey">{s.text}</p>
+						<p class="mt-5 leading-relaxed text-grey">{listTextFor('refurbishment', s.title)}</p>
 						<a href="/contact" class="mt-7 inline-flex items-center gap-2 font-display text-sm font-semibold text-gold transition hover:gap-3">Discuss your {s.title.toLowerCase()} project <Icon name="arrow" size={16} /></a>
 					</div>
 				</article>

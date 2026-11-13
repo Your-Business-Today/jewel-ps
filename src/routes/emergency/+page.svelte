@@ -1,5 +1,4 @@
 <script>
-	import { photoFor } from '$lib/site-photos.js';
 	import { contact, testimonials } from '$lib/site.js';
 	import { emergencyServices, emergencySteps } from '$lib/content/emergency.js';
 	import Seo from '$lib/components/Seo.svelte';
@@ -19,9 +18,7 @@
 
 <PageHero
 	kicker="24/7 emergency callout · London & the South East"
-	title="A leak or an emergency? Call us now."
-	lede="Our engineers are on standby day and night, 365 days a year, to stop the damage, make your property safe and put it right."
-	image={photoFor('emergency.hero')}
+	page="emergency"
 	alt="Jewel Property Serve emergency engineer on a callout"
 	cta={{ href: contact.phoneHref, label: `Call ${contact.phone}` }}
 	secondary={{ href: '/contact', label: 'Send us the details' }}

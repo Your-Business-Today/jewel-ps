@@ -1,4 +1,5 @@
 <script>
+	import { textFor } from '$lib/site-text.js';
 	import { photoFor } from '$lib/site-photos.js';
 	import { onMount } from 'svelte';
 	import { services, stats, process, maintenanceServices, clients, contact, ecologi } from '$lib/site.js';
@@ -140,7 +141,7 @@
 						<div class="relative p-7 sm:p-8">
 							<span class="font-display text-xs font-semibold tracking-kicker text-gold">{s.index}</span>
 							<h3 class="mt-3 font-display text-3xl font-semibold text-white">{s.title}</h3>
-							<p class="mt-3 max-w-xs text-sm leading-relaxed text-white/70">{s.short}</p>
+							<p class="mt-3 max-w-xs text-sm leading-relaxed text-white/70">{textFor(`service.${s.id}.short`)}</p>
 							<span class="mt-5 inline-block font-display text-sm font-semibold text-gold transition group-hover:translate-x-1">Learn more →</span>
 						</div>
 					</a>
@@ -264,7 +265,7 @@
 			<div class="order-1 lg:order-2 lg:col-span-5 lg:col-start-8" use:reveal={{ stagger: true }}>
 				<p class="kicker">Sustainability</p>
 				<h2 class="h-section mt-5 text-white">{ecologi.title}</h2>
-				<p class="mt-6 text-lg text-grey">{ecologi.text}</p>
+				<p class="mt-6 text-lg text-grey">{textFor('ecologi')}</p>
 				<a href="/about#ecologi" class="btn-ghost mt-8">Our eco commitment</a>
 			</div>
 		</div>

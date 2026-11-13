@@ -1,4 +1,5 @@
 <script>
+	import { listTextFor, textFor } from '$lib/site-text.js';
 	import { photoFor } from '$lib/site-photos.js';
 	import { values, groupValues, leadership, clients } from '$lib/site.js';
 	import { reveal, parallax } from '$lib/motion.js';
@@ -19,9 +20,7 @@
 
 <PageHero
 	kicker="About us"
-	title="Maintenance, refurbishment, insurance works and building safety."
-	lede="A family business caring for properties across London and the South East, from day-to-day upkeep to high-end refurbishment, with the reliability and care clients have trusted for over two decades."
-	image={photoFor('about.hero')}
+	page="about"
 	alt="A prime London lobby maintained by Jewel Property Serve"
 	cta={{ href: '/contact', label: 'Get in touch' }}
 />
@@ -87,7 +86,7 @@
 		<figure class="relative mx-auto max-w-4xl text-center" use:reveal>
 			<img src="/images/logos/jewel-diamond.svg" alt="" class="mx-auto h-10 w-auto opacity-80" />
 			<blockquote class="mt-8 font-display text-2xl font-medium leading-snug text-white sm:text-3xl lg:text-4xl">
-				“{leadership.quote}”
+				“{textFor('about.leadership')}”
 			</blockquote>
 			<figcaption class="mt-8">
 				<span class="block font-display font-semibold text-gold">{leadership.name}</span>
@@ -109,7 +108,7 @@
 				<div class="card group p-8 transition hover:border-gold/40">
 					<span class="font-display text-4xl font-semibold text-gold/40 transition group-hover:text-gold">{String(i + 1).padStart(2, '0')}</span>
 					<h3 class="mt-6 font-display text-2xl font-semibold text-white">{v.title}</h3>
-					<p class="mt-3 text-sm leading-relaxed text-grey">{v.text}</p>
+					<p class="mt-3 text-sm leading-relaxed text-grey">{listTextFor('about.value', v.title)}</p>
 				</div>
 			{/each}
 		</div>

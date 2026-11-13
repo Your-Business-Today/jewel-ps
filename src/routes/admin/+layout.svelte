@@ -10,6 +10,7 @@
 		{ label: 'Enquiries', href: '/admin/enquiries' },
 		{ label: 'Media', href: '/admin/media' },
 		{ label: 'Site photos', href: '/admin/photos' },
+		{ label: 'Site text', href: '/admin/text' },
 		{ label: 'Brochures', href: '/admin/brochure' },
 		{ label: 'RTW checks', href: '/admin/rtw' },
 		{ label: 'Reviews', href: '/admin/reviews' },
