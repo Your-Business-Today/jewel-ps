@@ -1,7 +1,7 @@
 import { AccreditationLimits } from '$lib/accreditation-limits.js';
+import { isImageAddress } from '$lib/image-address.js';
 
 const isoDate = /^\d{4}-\d{2}-\d{2}$/;
-const sitePathOrSecureAddress = /^(\/|https:\/\/)\S+$/;
 const secureAddress = /^https:\/\/\S+$/;
 const Positions = { first: 0, last: 1000 };
 
@@ -28,7 +28,7 @@ function problemWith(values) {
 	if (name.length > AccreditationLimits.longestName) return `The name can be at most ${AccreditationLimits.longestName} characters.`;
 	if (!image) return 'Choose a logo.';
 	if (image.length > AccreditationLimits.longestImage) return `The logo address can be at most ${AccreditationLimits.longestImage} characters.`;
-	if (!sitePathOrSecureAddress.test(image)) return 'The logo must be one of the site’s images or an https:// address.';
+	if (!isImageAddress(image)) return 'The logo must be one of the site’s images or an https:// address.';
 	if (registration.length > AccreditationLimits.longestRegistration) return `The registration number can be at most ${AccreditationLimits.longestRegistration} characters.`;
 	if (expires && !isRealDate(expires)) return 'The expiry date is not a real date.';
 	if (href.length > AccreditationLimits.longestLink) return `The link can be at most ${AccreditationLimits.longestLink} characters.`;

@@ -1,6 +1,7 @@
 <script>
+	import { photoFor } from '$lib/site-photos.js';
 	import { onMount } from 'svelte';
-	import { services, stats, process, maintenanceServices, clients, contact, ecologi, img } from '$lib/site.js';
+	import { services, stats, process, maintenanceServices, clients, contact, ecologi } from '$lib/site.js';
 	import { getGsap, prefersReducedMotion, reveal, parallax, countUp, splitWords } from '$lib/motion.js';
 	import Seo from '$lib/components/Seo.svelte';
 	import Testimonials from '$lib/components/Testimonials.svelte';
@@ -77,7 +78,7 @@
 	<div class="absolute inset-0">
 		<img
 			bind:this={heroBg}
-			src={img('50-Liverpool-st-Lounge-Area-Workroom-view_MC_HR_13.14-1920x1280.jpg')}
+			src={photoFor('home.hero')}
 			alt="A high-end London interior maintained by Jewel Property Serve"
 			class="photo h-full w-full object-cover will-change-transform"
 			fetchpriority="high"
@@ -132,7 +133,7 @@
 						style="transition-delay: {i * 90}ms"
 					>
 						<div class="absolute inset-0 overflow-hidden">
-							<img src={s.image} alt="" class="photo h-[115%] w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" loading="lazy" use:parallax={{ speed: 0.18 }} />
+							<img src={photoFor(`service.${s.id}`)} alt="" class="photo h-[115%] w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" loading="lazy" use:parallax={{ speed: 0.18 }} />
 							<div class="photo-tint absolute inset-0"></div>
 							<div class="absolute inset-0 bg-gradient-to-t from-night via-night/40 to-transparent"></div>
 						</div>
@@ -174,7 +175,7 @@
 			</div>
 			<div class="relative overflow-hidden rounded-[1.5rem] lg:col-span-6" use:reveal>
 				<div class="aspect-[4/3] lg:aspect-[4/5]">
-					<img src={img('9174928687_ba363209af_k.jpg')} alt="A property cared for by Jewel Property Serve" class="h-[120%] w-full object-cover" loading="lazy" use:parallax={{ speed: 0.25 }} />
+					<img src={photoFor('home.cared-for')} alt="A property cared for by Jewel Property Serve" class="h-[120%] w-full object-cover" loading="lazy" use:parallax={{ speed: 0.25 }} />
 				</div>
 			</div>
 		</div>
@@ -257,7 +258,7 @@
 		<div class="container-site grid items-center gap-12 lg:grid-cols-12">
 			<div class="relative order-2 overflow-hidden rounded-[1.5rem] lg:order-1 lg:col-span-6" use:reveal>
 				<div class="aspect-[4/3]">
-					<img src={ecologi.image} alt="Our Ecologi forest" class="h-[120%] w-full object-cover" loading="lazy" use:parallax={{ speed: 0.25 }} />
+					<img src={photoFor('home.ecologi')} alt="Our Ecologi forest" class="h-[120%] w-full object-cover" loading="lazy" use:parallax={{ speed: 0.25 }} />
 				</div>
 			</div>
 			<div class="order-1 lg:order-2 lg:col-span-5 lg:col-start-8" use:reveal={{ stagger: true }}>

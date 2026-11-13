@@ -1,5 +1,6 @@
 <script>
-	import { values, groupValues, leadership, clients, img } from '$lib/site.js';
+	import { photoFor } from '$lib/site-photos.js';
+	import { values, groupValues, leadership, clients } from '$lib/site.js';
 	import { reveal, parallax } from '$lib/motion.js';
 	import Seo from '$lib/components/Seo.svelte';
 	import Icon from '$lib/components/Icon.svelte';
@@ -20,7 +21,7 @@
 	kicker="About us"
 	title="Maintenance, refurbishment, insurance works and building safety."
 	lede="A family business caring for properties across London and the South East, from day-to-day upkeep to high-end refurbishment, with the reliability and care clients have trusted for over two decades."
-	image={img('jewel_style_prime_london_lobby_option_3-1.png')}
+	image={photoFor('about.hero')}
 	alt="A prime London lobby maintained by Jewel Property Serve"
 	cta={{ href: '/contact', label: 'Get in touch' }}
 />
@@ -47,7 +48,7 @@
 		</div>
 		<div class="relative overflow-hidden rounded-[2rem] shadow-card lg:col-span-6" use:reveal>
 			<div class="aspect-[4/3]">
-				<img src={img('Office-Picture-1.png')} alt="The Jewel Property Serve office" class="h-[125%] w-full object-cover" loading="lazy" use:parallax={{ speed: 0.25 }} />
+				<img src={photoFor('about.office')} alt="The Jewel Property Serve office" class="h-[125%] w-full object-cover" loading="lazy" use:parallax={{ speed: 0.25 }} />
 			</div>
 		</div>
 	</div>
@@ -59,7 +60,7 @@
 	<div class="container-site grid items-center gap-14 lg:grid-cols-12 lg:gap-20">
 		<div class="relative order-2 overflow-hidden rounded-[2rem] lg:order-1 lg:col-span-6" use:reveal>
 			<div class="aspect-[4/3]">
-				<img src={img('construction-engineer-with-foreman-worker-checking-2021-08-26-17-34-59-utc_60.jpg')} alt="Jewel engineers reviewing works on site" class="h-[125%] w-full object-cover" loading="lazy" use:parallax={{ speed: 0.25 }} />
+				<img src={photoFor('about.engineers')} alt="Jewel engineers reviewing works on site" class="h-[125%] w-full object-cover" loading="lazy" use:parallax={{ speed: 0.25 }} />
 			</div>
 		</div>
 		<div class="order-1 lg:order-2 lg:col-span-6" use:reveal={{ stagger: true }}>
