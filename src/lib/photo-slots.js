@@ -15,8 +15,8 @@ const pagePhotos = [
 	{ slot: 'about.engineers', page: 'About', label: 'Engineers on site', image: img('construction-engineer-with-foreman-worker-checking-2021-08-26-17-34-59-utc_60.jpg') },
 	{ slot: 'refurbishment.hero', page: 'Refurbishment', label: 'Top of the page', image: img('image6.jpg') },
 	{ slot: 'maintenance.hero', page: 'Maintenance', label: 'Top of the page', image: img('common-roof-repairs.webp') },
-	{ slot: 'fire-flood.hero', page: 'Fire & flood restoration', label: 'Top of the page', image: img('Jewel-repair.jpg') },
-	{ slot: 'fire-flood.works', page: 'Fire & flood restoration', label: 'Restoration works in progress', image: img('Jewel-repair.jpg') },
+	{ slot: 'fire-flood-restoration.hero', page: 'Fire & flood restoration', label: 'Top of the page', image: img('Jewel-repair.jpg') },
+	{ slot: 'fire-flood-restoration.works', page: 'Fire & flood restoration', label: 'Restoration works in progress', image: img('Jewel-repair.jpg') },
 	{ slot: 'emergency.hero', page: 'Emergency callout', label: 'Top of the page', image: img('Emergency-Callouts.jpg') },
 	{ slot: 'managing-agents.hero', page: 'Managing agents', label: 'Top of the page', image: img('common-roof-repairs.webp') },
 	{ slot: 'insurance-claims.hero', page: 'Insurers & loss adjusters', label: 'Top of the page', image: img('Jewel-repair.jpg') }
