@@ -1,4 +1,5 @@
 <script>
+	import { textFor } from '$lib/site-text.js';
 	import { ecologi } from '$lib/site.js';
 	import { reveal, parallax } from '$lib/motion.js';
 </script>
@@ -8,7 +9,7 @@
 		<div class="lg:col-span-5" use:reveal={{ stagger: true }}>
 			<p class="kicker">Sustainability</p>
 			<h2 class="h-section mt-5 text-white">{ecologi.title}</h2>
-			<p class="mt-6 text-lg text-grey">{ecologi.text}</p>
+			<p class="mt-6 text-lg text-grey">{textFor('ecologi')}</p>
 			<div class="mt-8 grid grid-cols-2 gap-4">
 				<div class="card p-5">
 					<p class="font-display text-3xl font-semibold text-white">0.30<span class="text-base text-gold">t</span></p>

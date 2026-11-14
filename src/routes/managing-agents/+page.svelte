@@ -1,5 +1,4 @@
 <script>
-	import { img } from '$lib/site.js';
 	import { portfolioServices, portfolioSteps, chilternCourt } from '$lib/content/managing-agents.js';
 	import { reveal } from '$lib/motion.js';
 	import Seo from '$lib/components/Seo.svelte';
@@ -21,9 +20,7 @@
 
 <PageHero
 	kicker="Managing agents & block managers"
-	title="One contractor for your whole portfolio."
-	lede="Reactive repairs, planned maintenance and compliance testing across every building you manage, through one service desk that residents are happy to see."
-	image={img('common-roof-repairs.webp')}
+	page="managing-agents"
 	alt="Jewel Property Serve engineers maintaining a residential block"
 	cta={{ href: '/contact', label: 'Discuss your portfolio' }}
 	secondary={{ href: '/brochure', label: 'Our credentials pack' }}

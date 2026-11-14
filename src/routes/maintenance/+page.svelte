@@ -1,5 +1,6 @@
 <script>
-	import { maintenanceServices, clients, contact, img } from '$lib/site.js';
+	import { listTextFor } from '$lib/site-text.js';
+	import { maintenanceServices, clients, contact, testimonials } from '$lib/site.js';
 	import { reveal } from '$lib/motion.js';
 	import { equalHeights } from '$lib/equalHeights.js';
 	import Seo from '$lib/components/Seo.svelte';
@@ -9,7 +10,6 @@
 	import Accreditations from '$lib/components/Accreditations.svelte';
 	import CtaBand from '$lib/components/CtaBand.svelte';
 	import CleaningServices from '$lib/components/maintenance/CleaningServices.svelte';
-	import { testimonials } from '$lib/site.js';
 </script>
 
 <Seo
@@ -19,9 +19,7 @@
 
 <PageHero
 	kicker="Our services · Maintenance"
-	title="Maintaining your peace of mind."
-	lede="Regular and specialised maintenance of your property and estate portfolio, keeping everything safe, compliant and running smoothly — with experts on call 24 hours a day."
-	image={img('common-roof-repairs.webp')}
+	page="maintenance"
 	alt="Roof maintenance by Jewel Property Serve"
 	cta={{ href: '/contact', label: 'Request a free quote' }}
 	secondary={{ href: contact.phoneHref, label: `Emergency: ${contact.phone}` }}
@@ -62,7 +60,7 @@
 						<span class="pt-1 font-display text-xs font-semibold text-gold/80">{String(i + 1).padStart(2, '0')}</span>
 						<div>
 							<h3 class="font-display text-xl font-semibold text-white sm:text-2xl">{s.title}</h3>
-							<p class="mt-2 max-w-xl text-sm leading-relaxed text-grey">{s.text}</p>
+							<p class="mt-2 max-w-xl text-sm leading-relaxed text-grey">{listTextFor('maintenance', s.title)}</p>
 							{#if s.title.includes('Emergency')}<a href={contact.phoneHref} class="btn-gold mt-5">Call {contact.phone}</a>{/if}
 						</div>
 					</div>

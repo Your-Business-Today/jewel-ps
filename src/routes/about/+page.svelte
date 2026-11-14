@@ -1,5 +1,7 @@
 <script>
-	import { values, groupValues, leadership, clients, img } from '$lib/site.js';
+	import { listTextFor, textFor } from '$lib/site-text.js';
+	import { photoFor } from '$lib/site-photos.js';
+	import { values, groupValues, leadership, clients } from '$lib/site.js';
 	import { reveal, parallax } from '$lib/motion.js';
 	import Seo from '$lib/components/Seo.svelte';
 	import Icon from '$lib/components/Icon.svelte';
@@ -18,9 +20,7 @@
 
 <PageHero
 	kicker="About us"
-	title="Maintenance, refurbishment, insurance works and building safety."
-	lede="A family business caring for properties across London and the South East, from day-to-day upkeep to high-end refurbishment, with the reliability and care clients have trusted for over two decades."
-	image={img('jewel_style_prime_london_lobby_option_3-1.png')}
+	page="about"
 	alt="A prime London lobby maintained by Jewel Property Serve"
 	cta={{ href: '/contact', label: 'Get in touch' }}
 />
@@ -47,7 +47,7 @@
 		</div>
 		<div class="relative overflow-hidden rounded-[2rem] shadow-card lg:col-span-6" use:reveal>
 			<div class="aspect-[4/3]">
-				<img src={img('Office-Picture-1.png')} alt="The Jewel Property Serve office" class="h-[125%] w-full object-cover" loading="lazy" use:parallax={{ speed: 0.25 }} />
+				<img src={photoFor('about.office')} alt="The Jewel Property Serve office" class="h-[125%] w-full object-cover" loading="lazy" use:parallax={{ speed: 0.25 }} />
 			</div>
 		</div>
 	</div>
@@ -59,7 +59,7 @@
 	<div class="container-site grid items-center gap-14 lg:grid-cols-12 lg:gap-20">
 		<div class="relative order-2 overflow-hidden rounded-[2rem] lg:order-1 lg:col-span-6" use:reveal>
 			<div class="aspect-[4/3]">
-				<img src={img('construction-engineer-with-foreman-worker-checking-2021-08-26-17-34-59-utc_60.jpg')} alt="Jewel engineers reviewing works on site" class="h-[125%] w-full object-cover" loading="lazy" use:parallax={{ speed: 0.25 }} />
+				<img src={photoFor('about.engineers')} alt="Jewel engineers reviewing works on site" class="h-[125%] w-full object-cover" loading="lazy" use:parallax={{ speed: 0.25 }} />
 			</div>
 		</div>
 		<div class="order-1 lg:order-2 lg:col-span-6" use:reveal={{ stagger: true }}>
@@ -86,7 +86,7 @@
 		<figure class="relative mx-auto max-w-4xl text-center" use:reveal>
 			<img src="/images/logos/jewel-diamond.svg" alt="" class="mx-auto h-10 w-auto opacity-80" />
 			<blockquote class="mt-8 font-display text-2xl font-medium leading-snug text-white sm:text-3xl lg:text-4xl">
-				“{leadership.quote}”
+				“{textFor('about.leadership')}”
 			</blockquote>
 			<figcaption class="mt-8">
 				<span class="block font-display font-semibold text-gold">{leadership.name}</span>
@@ -108,7 +108,7 @@
 				<div class="card group p-8 transition hover:border-gold/40">
 					<span class="font-display text-4xl font-semibold text-gold/40 transition group-hover:text-gold">{String(i + 1).padStart(2, '0')}</span>
 					<h3 class="mt-6 font-display text-2xl font-semibold text-white">{v.title}</h3>
-					<p class="mt-3 text-sm leading-relaxed text-grey">{v.text}</p>
+					<p class="mt-3 text-sm leading-relaxed text-grey">{listTextFor('about.value', v.title)}</p>
 				</div>
 			{/each}
 		</div>

@@ -74,6 +74,58 @@ create index if not exists review_requests_sent_at_idx
 
 alter table public.review_requests enable row level security;
 
+-- The accreditations shown on the site, edited by the office at
+-- /admin/accreditations rather than in code. A scheme whose expiry date has
+-- passed drops off the public site by itself. RLS on with no policies, and no
+-- grants to the public roles: only the site's server code reads it.
+-- Seeded by migrations/2026-11-13-accreditations.sql.
+
+create table if not exists public.accreditations (
+	id uuid primary key default gen_random_uuid(),
+	name text not null check (char_length(name) between 1 and 120),
+	image text not null check (char_length(image) between 1 and 500),
+	registration text not null default '' check (char_length(registration) <= 60),
+	expires date,
+	href text not null default '' check (char_length(href) <= 500),
+	position integer not null default 0,
+	updated_at timestamptz not null default now()
+);
+
+create index if not exists accreditations_position_idx
+	on public.accreditations (position);
+
+alter table public.accreditations enable row level security;
+
+revoke all on public.accreditations from anon, authenticated;
+
+-- The photos the office has chosen at /admin/photos, one per named place on
+-- the site. A place with no row shows the photo kept in code. RLS on with no
+-- policies, and no grants to the public roles: only the site's server code reads it.
+
+create table if not exists public.site_photos (
+	slot text primary key check (char_length(slot) between 1 and 80),
+	image text not null check (char_length(image) between 1 and 500),
+	updated_at timestamptz not null default now()
+);
+
+alter table public.site_photos enable row level security;
+
+revoke all on public.site_photos from anon, authenticated;
+
+-- The words the office has changed at /admin/text, one row per named place on
+-- the site. A place with no row shows the text kept in code. RLS on with no
+-- policies, and no grants to the public roles: only the site's server code reads it.
+
+create table if not exists public.site_text (
+	slot text primary key check (char_length(slot) between 1 and 80),
+	text text not null check (char_length(text) between 1 and 1200),
+	updated_at timestamptz not null default now()
+);
+
+alter table public.site_text enable row level security;
+
+revoke all on public.site_text from anon, authenticated;
+
 -- ---------- Lock the public API roles out (added 2026-09-04) --------
 -- The site only ever talks to Supabase from server code with the
 -- service_role key, so the public anon/authenticated roles need no

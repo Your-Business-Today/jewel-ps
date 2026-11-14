@@ -1,9 +1,11 @@
 <script>
+	import { page } from '$app/state';
 	import { accreditationsInForce } from '$lib/accreditations.js';
 	import { reveal } from '$lib/motion.js';
 	import AccreditationTile from './AccreditationTile.svelte';
 
-	const accreditations = accreditationsInForce();
+	const siteData = $derived(page.data);
+	const accreditations = $derived(accreditationsInForce(siteData.accreditations ?? []));
 </script>
 
 <section class="border-y border-white/[0.06] bg-night">

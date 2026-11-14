@@ -1,14 +1,20 @@
 <script>
 	import { parallax, reveal } from '$lib/motion.js';
+	import { photoFor } from '$lib/site-photos.js';
+	import { textFor } from '$lib/site-text.js';
 
 	/**
 	 * @type {{
-	 *   kicker: string, title: string, lede?: string, image: string, alt?: string,
+	 *   page: string, kicker: string, alt?: string,
 	 *   cta?: { href: string, label: string } | null, secondary?: { href: string, label: string } | null,
 	 *   children?: import('svelte').Snippet
 	 * }}
 	 */
-	let { kicker, title, lede = '', image, alt = '', cta = null, secondary = null, children } = $props();
+	let { page, kicker, alt = '', cta = null, secondary = null, children } = $props();
+
+	const title = $derived(textFor(`${page}.hero.title`));
+	const lede = $derived(textFor(`${page}.hero.lede`));
+	const image = $derived(photoFor(`${page}.hero`));
 </script>
 
 <section class="relative isolate flex min-h-[70svh] items-end overflow-hidden bg-night pt-36 pb-16 sm:pb-20 lg:min-h-[78svh] lg:pt-44 lg:pb-24">

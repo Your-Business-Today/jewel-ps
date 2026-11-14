@@ -1,5 +1,5 @@
 <script>
-	import { contact, img, testimonials } from '$lib/site.js';
+	import { contact, testimonials } from '$lib/site.js';
 	import { claimSteps, claimReporting } from '$lib/content/insurance-claims.js';
 	import Seo from '$lib/components/Seo.svelte';
 	import PageHero from '$lib/components/PageHero.svelte';
@@ -19,9 +19,7 @@
 
 <PageHero
 	kicker="Insurers & loss adjusters"
-	title="Reinstatement you can place with confidence."
-	lede="A nominated main contractor for UK insurers, we take a claim from the first emergency call to the final sign-off, and keep you informed at every stage."
-	image={img('Jewel-repair.jpg')}
+	page="insurance-claims"
 	alt="Insurance reinstatement works by Jewel Property Serve"
 	cta={{ href: '/contact', label: 'Place a claim with us' }}
 	secondary={{ href: contact.phoneHref, label: `24/7: ${contact.phone}` }}
