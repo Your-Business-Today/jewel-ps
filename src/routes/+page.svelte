@@ -2,13 +2,15 @@
 	import { textFor } from '$lib/site-text.js';
 	import { photoFor } from '$lib/site-photos.js';
 	import { onMount } from 'svelte';
-	import { services, stats, process, maintenanceServices, clients, contact, ecologi } from '$lib/site.js';
+	import { stats, process, maintenanceServices, clients, contact, ecologi } from '$lib/site.js';
 	import { getGsap, prefersReducedMotion, reveal, parallax, countUp, splitWords } from '$lib/motion.js';
 	import Seo from '$lib/components/Seo.svelte';
 	import Testimonials from '$lib/components/Testimonials.svelte';
 	import GoogleRating from '$lib/components/GoogleRating.svelte';
 	import Accreditations from '$lib/components/Accreditations.svelte';
 	import CtaBand from '$lib/components/CtaBand.svelte';
+	import JewelCanvas from '$lib/components/jewel/JewelCanvas.svelte';
+	import HomeServices from '$lib/components/home/HomeServices.svelte';
 
 	let { data } = $props();
 
@@ -22,7 +24,6 @@
 	/** @type {HTMLElement} */ let processLine;
 	/** @type {HTMLElement[]} */ let processSteps = [];
 
-	const mainServices = services.filter((s) => s.id !== 'emergency');
 	const trades = maintenanceServices.filter((s) => s.title !== '24hr Emergency Callout');
 
 	onMount(() => {
@@ -88,6 +89,9 @@
 		<div class="photo-tint absolute inset-0"></div>
 		<div class="absolute inset-0 bg-gradient-to-t from-night via-night/55 to-night/25"></div>
 		<div class="absolute inset-0 bg-gradient-to-r from-night/70 via-night/20 to-transparent"></div>
+		<div class="absolute inset-x-0 top-[9%] h-[40%] opacity-70 lg:inset-y-0 lg:left-auto lg:h-full lg:w-[55%] lg:opacity-100">
+			<JewelCanvas label="A jewel made of gold light that moves away from your cursor" />
+		</div>
 		<div bind:this={heroShade} class="absolute inset-0 bg-night opacity-0"></div>
 	</div>
 
@@ -117,47 +121,7 @@
 <!-- ============================ THE CURTAIN: everything below slides over the hero ============================ -->
 <div bind:this={curtain} class="relative z-10 rounded-t-[2rem] bg-night shadow-[0_-30px_60px_-20px_rgba(0,0,0,0.8)] sm:rounded-t-[2.5rem]">
 	<!-- Services -->
-	<section id="services" class="py-20 sm:py-28">
-		<div class="container-site">
-			<div class="max-w-2xl" use:reveal={{ stagger: true }}>
-				<p class="kicker">Our services</p>
-				<h2 class="h-section mt-5 text-white">For all your needs, we’ve got you covered.</h2>
-				<p class="mt-5 text-lg text-grey">One complete solution for your property — reactive, planned and project works, from a single repair to a full transformation.</p>
-			</div>
-
-			<div class="mt-12 grid gap-4 sm:mt-16 sm:gap-5 lg:grid-cols-3">
-				{#each mainServices as s, i}
-					<a
-						href={s.href}
-						class="group relative flex min-h-[22rem] flex-col justify-end overflow-hidden rounded-[1.5rem] bg-night-3 sm:min-h-[26rem] lg:min-h-[32rem]"
-						use:reveal
-						style="transition-delay: {i * 90}ms"
-					>
-						<div class="absolute inset-0 overflow-hidden">
-							<img src={photoFor(`service.${s.id}`)} alt="" class="photo h-[115%] w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" loading="lazy" use:parallax={{ speed: 0.18 }} />
-							<div class="photo-tint absolute inset-0"></div>
-							<div class="absolute inset-0 bg-gradient-to-t from-night via-night/40 to-transparent"></div>
-						</div>
-						<div class="relative p-7 sm:p-8">
-							<span class="font-display text-xs font-semibold tracking-kicker text-gold">{s.index}</span>
-							<h3 class="mt-3 font-display text-3xl font-semibold text-white">{s.title}</h3>
-							<p class="mt-3 max-w-xs text-sm leading-relaxed text-white/70">{textFor(`service.${s.id}.short`)}</p>
-							<span class="mt-5 inline-block font-display text-sm font-semibold text-gold transition group-hover:translate-x-1">Learn more →</span>
-						</div>
-					</a>
-				{/each}
-			</div>
-
-			<!-- 24hr callout: one line, one action -->
-			<div class="mt-5 flex flex-col gap-5 rounded-[1.5rem] border border-gold/30 bg-gold/[0.06] p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8" use:reveal>
-				<div>
-					<p class="font-display text-xs font-semibold tracking-kicker text-gold">04 · 24-hour emergency callout</p>
-					<p class="mt-2 font-display text-xl font-semibold text-white sm:text-2xl">Experts on standby around the clock, 365 days a year.</p>
-				</div>
-				<a href={contact.phoneHref} class="btn-gold shrink-0">Call {contact.phone}</a>
-			</div>
-		</div>
-	</section>
+	<HomeServices />
 
 	<!-- Intro + stats -->
 	<section class="border-t border-white/[0.06] py-20 sm:py-28">

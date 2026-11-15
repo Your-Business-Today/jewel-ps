@@ -15,6 +15,7 @@
 		"@sveltejs/kit": "^2.15.1",
 		"@sveltejs/vite-plugin-svelte": "^5.0.3",
 		"@types/node": "^26.3.0",
+		"@types/three": "^0.170.0",
 		"autoprefixer": "^10.4.20",
 		"postcss": "^8.4.49",
 		"svelte": "^5.16.0",
@@ -25,6 +26,7 @@
 	"dependencies": {
 		"@sparticuz/chromium": "^149.0.0",
 		"gsap": "^3.15.0",
-		"puppeteer-core": "^25.8.0"
+		"puppeteer-core": "^25.8.0",
+		"three": "^0.170.0"
 	}
 }
