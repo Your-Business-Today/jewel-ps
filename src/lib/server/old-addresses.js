@@ -11,6 +11,13 @@ const newAddresses = new Map([
 	['/contact-us-jewel-property-serve', '/contact'],
 	['/case-studies', '/about'],
 	['/our-accreditations-jewelps', '/about'],
+	['/about-us', '/about'],
+	['/contact-us', '/contact'],
+	['/vacancies', '/contact'],
+	['/our-services', '/'],
+	['/privacy-policy', '/privacy'],
+	['/terms-and-conditions', '/terms'],
+	['/legal', '/terms'],
 	['/styleguide', '/'],
 	['/images/photos/Ecoligi.jpg', '/images/photos/Ecologi.jpg'],
 	['/images/photos/6870d940dea0ec79c9489c62_Tilling-p-800.jpg', '/images/photos/6870d940dea0ec79c9489c62_Tiling-p-800.jpg']
