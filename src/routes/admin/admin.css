@@ -168,6 +168,11 @@
 	color: #fff;
 }
 
+.admin .btn.btn--sm {
+	padding: 0.4rem 1rem;
+	font-size: 0.86rem;
+}
+
 .admin .btn:disabled {
 	opacity: 0.5;
 	cursor: default;
