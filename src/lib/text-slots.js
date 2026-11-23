@@ -25,6 +25,8 @@ const pageHeroes = [
 	{ slot: 'emergency.hero.lede', page: 'Emergency callout', label: 'Introduction under the headline', kind: TextKinds.paragraph, text: "Our engineers are on standby day and night, 365 days a year, to stop the damage, make your property safe and put it right." },
 	{ slot: 'managing-agents.hero.title', page: 'Managing agents', label: 'Headline', kind: TextKinds.line, text: "One contractor for your whole portfolio." },
 	{ slot: 'managing-agents.hero.lede', page: 'Managing agents', label: 'Introduction under the headline', kind: TextKinds.paragraph, text: "Reactive repairs, planned maintenance and compliance testing across every building you manage, through one service desk that residents are happy to see." },
+	{ slot: 'building-safety.hero.title', page: 'Building safety (BSR)', label: 'Headline', kind: TextKinds.line, text: "Building safety, from application to everyday upkeep." },
+	{ slot: 'building-safety.hero.lede', page: 'Building safety (BSR)', label: 'Introduction under the headline', kind: TextKinds.paragraph, text: "For owners and managers of higher-risk buildings, we prepare and manage Building Safety Regulator applications, and carry the same standard through every refurbishment and repair that follows." },
 	{ slot: 'insurance-claims.hero.title', page: 'Insurers & loss adjusters', label: 'Headline', kind: TextKinds.line, text: "Reinstatement you can place with confidence." },
 	{ slot: 'insurance-claims.hero.lede', page: 'Insurers & loss adjusters', label: 'Introduction under the headline', kind: TextKinds.paragraph, text: "Working for leading major-loss insurance companies, we take a claim from the first emergency call to the final sign-off, and keep you informed at every stage." },
 ];
