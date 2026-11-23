@@ -173,6 +173,31 @@
 	font-size: 0.86rem;
 }
 
+.admin .linkish {
+	font: inherit;
+	font-size: 0.86rem;
+	background: none;
+	border: 0;
+	padding: 0.2rem 0.1rem;
+	cursor: pointer;
+	color: var(--ink-600);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	text-decoration-thickness: 1px;
+}
+
+.admin .linkish:hover {
+	color: var(--ink-900);
+}
+
+.admin .linkish--go {
+	color: #2c7a2c;
+}
+
+.admin .linkish--danger {
+	color: #a33a2a;
+}
+
 .admin .btn:disabled {
 	opacity: 0.5;
 	cursor: default;

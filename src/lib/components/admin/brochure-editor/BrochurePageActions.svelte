@@ -46,18 +46,4 @@
 	}
 	.iconbtn:hover:not(:disabled) { border-color: var(--ink-400); color: var(--ink-900); }
 	.iconbtn:disabled { opacity: 0.35; cursor: default; }
-	.linkish {
-		font: inherit;
-		font-size: 0.86rem;
-		background: none;
-		border: 0;
-		padding: 0.2rem 0.1rem;
-		cursor: pointer;
-		color: var(--ink-600);
-		text-decoration: underline;
-		text-underline-offset: 3px;
-		text-decoration-thickness: 1px;
-	}
-	.linkish:hover { color: var(--ink-900); }
-	.linkish--danger { color: #a33a2a; }
 </style>
