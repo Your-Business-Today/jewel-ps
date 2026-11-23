@@ -14,7 +14,8 @@
 		{ label: 'Brochures', href: '/admin/brochure' },
 		{ label: 'RTW checks', href: '/admin/rtw' },
 		{ label: 'Reviews', href: '/admin/reviews' },
-		{ label: 'Accreditations', href: '/admin/accreditations' }
+		{ label: 'Accreditations', href: '/admin/accreditations' },
+		{ label: 'Projects', href: '/admin/projects' }
 	];
 
 	/** @param {string} href */
