@@ -27,6 +27,6 @@ export const serviceLines = [
 		icon: 'shield',
 		title: 'Building Safety Regulator (BSR)',
 		text: 'Support for owners of higher-risk buildings through Building Safety Regulator applications, spanning the refurbishment and maintenance work they cover.',
-		href: '/contact#request'
+		href: '/building-safety'
 	}
 ];

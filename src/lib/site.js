@@ -46,6 +46,7 @@ export const nav = [
 	{ label: 'Refurbishment', href: '/refurbishment' },
 	{ label: 'Maintenance', href: '/maintenance' },
 	{ label: 'Fire & Flood', href: '/fire-flood-restoration' },
+	{ label: 'BSR', href: '/building-safety' },
 	{ label: 'Contact', href: '/contact' }
 ];
 
@@ -53,6 +54,7 @@ export const footerServices = [
 	{ label: 'Refurbishment', href: '/refurbishment' },
 	{ label: 'Maintenance', href: '/maintenance' },
 	{ label: 'Fire & Flood Restoration', href: '/fire-flood-restoration' },
+	{ label: 'Building Safety (BSR)', href: '/building-safety' },
 	{ label: '24hr Emergency Callout', href: '/emergency' },
 	{ label: 'Managing Agents', href: '/managing-agents' },
 	{ label: 'Insurers & Loss Adjusters', href: '/insurance-claims' }

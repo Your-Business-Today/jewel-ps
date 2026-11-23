@@ -11,6 +11,7 @@ const pages = [
 	{ path: '/managing-agents', priority: '0.8' },
 	{ path: '/emergency', priority: '0.9' },
 	{ path: '/insurance-claims', priority: '0.8' },
+	{ path: '/building-safety', priority: '0.9' },
 	{ path: '/contact', priority: '0.8' },
 	{ path: '/brochure', priority: '0.5' },
 	{ path: '/privacy', priority: '0.2' },
