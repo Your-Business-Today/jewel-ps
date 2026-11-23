@@ -168,6 +168,44 @@
 	color: #fff;
 }
 
+.admin .btn.btn--sm {
+	padding: 0.4rem 1rem;
+	font-size: 0.86rem;
+}
+
+.admin .section-label {
+	font-size: 0.82rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.14em;
+	color: var(--ink-400);
+}
+
+.admin .linkish {
+	font: inherit;
+	font-size: 0.86rem;
+	background: none;
+	border: 0;
+	padding: 0.2rem 0.1rem;
+	cursor: pointer;
+	color: var(--ink-600);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	text-decoration-thickness: 1px;
+}
+
+.admin .linkish:hover {
+	color: var(--ink-900);
+}
+
+.admin .linkish--go {
+	color: #2c7a2c;
+}
+
+.admin .linkish--danger {
+	color: #a33a2a;
+}
+
 .admin .btn:disabled {
 	opacity: 0.5;
 	cursor: default;
