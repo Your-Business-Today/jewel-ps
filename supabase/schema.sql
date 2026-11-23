@@ -126,6 +126,28 @@ alter table public.site_text enable row level security;
 
 revoke all on public.site_text from anon, authenticated;
 
+-- ---------- Completed projects (added 2026-11-23) ----------------------
+-- Kept by the office at /admin/projects. Existing databases: run by the
+-- migrations workflow from migrations/2026-11-23-completed-projects.sql.
+
+create table if not exists public.completed_projects (
+	id uuid primary key default gen_random_uuid(),
+	name text not null check (char_length(name) between 1 and 120),
+	location text not null default '' check (char_length(location) <= 120),
+	service text not null check (service in ('refurbishment', 'maintenance', 'fire-flood')),
+	summary text not null check (char_length(summary) between 1 and 600),
+	photos jsonb not null default '[]'::jsonb check (jsonb_typeof(photos) = 'array' and jsonb_array_length(photos) between 1 and 4),
+	position integer not null default 0,
+	updated_at timestamptz not null default now()
+);
+
+create index if not exists completed_projects_service_position_idx
+	on public.completed_projects (service, position);
+
+alter table public.completed_projects enable row level security;
+
+revoke all on public.completed_projects from anon, authenticated;
+
 -- ---------- Lock the public API roles out (added 2026-09-04) --------
 -- The site only ever talks to Supabase from server code with the
 -- service_role key, so the public anon/authenticated roles need no

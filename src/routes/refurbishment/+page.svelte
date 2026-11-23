@@ -10,7 +10,7 @@
 	import BrochureOffer from '$lib/components/BrochureOffer.svelte';
 	import Accreditations from '$lib/components/Accreditations.svelte';
 	import CtaBand from '$lib/components/CtaBand.svelte';
-	import CompletedProjects from '$lib/components/refurbishment/CompletedProjects.svelte';
+	import CompletedProjects from '$lib/components/projects/CompletedProjects.svelte';
 </script>
 
 <Seo
@@ -71,7 +71,7 @@
 	</div>
 </section>
 
-<CompletedProjects />
+<CompletedProjects service="refurbishment" />
 
 <section class="bg-night-2 py-24 sm:py-32">
 	<div class="container-site">

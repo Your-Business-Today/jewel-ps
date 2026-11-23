@@ -3,14 +3,9 @@ import { img } from '$lib/site.js';
 /** @param {string} fileName @param {string} alt */
 const projectPhoto = (fileName, alt) => ({ src: img(`projects/${fileName}`), alt });
 
-export const completedProjectsIntro = {
-	kicker: 'Completed projects',
-	title: 'Refurbishments we have handed over.',
-	lede: 'A selection of finished homes, from a period flat in Chelsea to a detached family house in Wimbledon, each run by one project manager from first visit to final finish.'
-};
-
 export const completedProjects = [
 	{
+		service: 'refurbishment',
 		name: 'Cadogan Square',
 		location: 'Chelsea, London',
 		summary: 'A period flat refurbished throughout: an open living and dining room around a three-sided fire, a handleless kitchen with mirrored splashbacks and a stone-lined bathroom.',
@@ -21,6 +16,7 @@ export const completedProjects = [
 		]
 	},
 	{
+		service: 'refurbishment',
 		name: 'Hampton Court Residence',
 		location: 'Hampton Court',
 		summary: 'A family house finished to a contemporary standard: a long kitchen and dining room opening onto the garden through full-height glazing, and a freestanding bath beneath an arched sash window.',
@@ -30,6 +26,7 @@ export const completedProjects = [
 		]
 	},
 	{
+		service: 'refurbishment',
 		name: 'Wimbledon Residence',
 		location: 'Wimbledon, London',
 		summary: 'A detached family house finished outside as well as in, with a resin driveway, a timber carport and a terraced rear garden opening from folding glass doors.',

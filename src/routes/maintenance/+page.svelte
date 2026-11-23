@@ -9,6 +9,7 @@
 	import BrochureOffer from '$lib/components/BrochureOffer.svelte';
 	import Accreditations from '$lib/components/Accreditations.svelte';
 	import CtaBand from '$lib/components/CtaBand.svelte';
+	import CompletedProjects from '$lib/components/projects/CompletedProjects.svelte';
 	import CleaningServices from '$lib/components/maintenance/CleaningServices.svelte';
 </script>
 
@@ -94,5 +95,6 @@
 
 <Testimonials items={[testimonials[2], testimonials[3]]} title="Long-standing relationships." parallaxColumns={false} />
 <BrochureOffer text="Our brochure sets out who we are, the trades we cover, the schemes we are accredited by and the work we do, ready to share with your board, landlord or client." />
+<CompletedProjects service="maintenance" />
 <Accreditations />
 <CtaBand title="Need something fixed?" text="Call our service desk — we’ll talk you through the issue and get the right engineer to you fast." />
