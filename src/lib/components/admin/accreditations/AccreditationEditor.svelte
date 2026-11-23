@@ -1,6 +1,7 @@
 <script>
 	import { enhance } from '$app/forms';
 	import { AccreditationLimits } from '$lib/accreditation-limits.js';
+	import { isExpiringSoon, todayAsDate } from '$lib/accreditation-expiry.js';
 	import AccreditationLogoField from './AccreditationLogoField.svelte';
 
 	/**
@@ -15,7 +16,8 @@
 	 */
 	let { accreditation, isNew = false, error = '', groups, uploads, canUpload } = $props();
 
-	const today = new Date().toISOString().slice(0, 10);
+	const today = todayAsDate();
+	const isDueForRenewal = $derived(isExpiringSoon(accreditation.expires, today));
 	const hasLapsed = $derived(Boolean(accreditation.expires && accreditation.expires < today));
 	const action = $derived(isNew ? '?/add' : '?/save');
 
@@ -36,6 +38,7 @@
 		<label><span>Order on the site</span><input name="position" type="number" min="0" max="1000" step="1" value={accreditation.position} required /></label>
 	</div>
 	{#if hasLapsed}<p class="lapsed">Expired: hidden from the site until the date is renewed.</p>{/if}
+	{#if isDueForRenewal}<p class="lapsed">Due for renewal: it expires on {accreditation.expires}. Put the new date in once it is renewed, or it leaves the site.</p>{/if}
 	{#if error}<p class="error">{error}</p>{/if}
 	<div class="actions">
 		<button class="btn btn--primary">{isNew ? 'Add accreditation' : 'Save'}</button>
