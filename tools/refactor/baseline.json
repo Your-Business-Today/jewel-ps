@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-16T12:19:15+00:00",
+  "generatedAt": "2026-11-23T20:27:06+00:00",
   "kitVersion": "1.55.0",
   "score": {
-    "overall": 86.1,
+    "overall": 89.7,
     "groups": [
       {
         "group": "Standard baseline checks",
-        "score": 83.8,
+        "score": 88.4,
         "weight": 60
       },
       {
@@ -16,7 +16,7 @@
       },
       {
         "group": "Prose",
-        "score": 86.0,
+        "score": 88.4,
         "weight": 20
       },
       {
@@ -39,9 +39,9 @@
         "zeroAt": 0.5,
         "unit": "files",
         "isMeasured": true,
-        "offenders": 23,
-        "measuredAgainst": 258,
-        "score": 82.2
+        "offenders": 18,
+        "measuredAgainst": 297,
+        "score": 87.9
       },
       {
         "key": "worstFile",
@@ -51,9 +51,9 @@
         "zeroAt": 9,
         "unit": "",
         "isMeasured": true,
-        "offenders": 2.79,
+        "offenders": 2.21,
         "measuredAgainst": 1,
-        "score": 69.0
+        "score": 75.4
       },
       {
         "key": "functionsOverLimit",
@@ -64,8 +64,8 @@
         "unit": "functions",
         "isMeasured": true,
         "offenders": 7,
-        "measuredAgainst": 263,
-        "score": 89.4
+        "measuredAgainst": 291,
+        "score": 90.4
       },
       {
         "key": "elseBlocks",
@@ -76,8 +76,8 @@
         "unit": "branches",
         "isMeasured": true,
         "offenders": 3,
-        "measuredAgainst": 392,
-        "score": 98.5
+        "measuredAgainst": 418,
+        "score": 98.6
       },
       {
         "key": "duplication",
@@ -87,9 +87,9 @@
         "zeroAt": 20,
         "unit": "",
         "isMeasured": true,
-        "offenders": 0.89,
+        "offenders": 0.28,
         "measuredAgainst": 1,
-        "score": 95.5
+        "score": 98.6
       },
       {
         "key": "comments",
@@ -99,9 +99,9 @@
         "zeroAt": 50,
         "unit": "thousand lines",
         "isMeasured": true,
-        "offenders": 99,
-        "measuredAgainst": 14.63,
-        "score": 86.5
+        "offenders": 88,
+        "measuredAgainst": 14.9,
+        "score": 88.2
       },
       {
         "key": "magicValues",
@@ -111,9 +111,9 @@
         "zeroAt": 20,
         "unit": "thousand lines",
         "isMeasured": true,
-        "offenders": 75,
-        "measuredAgainst": 14.63,
-        "score": 74.4
+        "offenders": 62,
+        "measuredAgainst": 14.9,
+        "score": 79.2
       },
       {
         "key": "orphans",
@@ -124,8 +124,8 @@
         "unit": "components and functions",
         "isMeasured": true,
         "offenders": 11,
-        "measuredAgainst": 370,
-        "score": 70.3
+        "measuredAgainst": 421,
+        "score": 73.9
       },
       {
         "key": "memberChains",
@@ -135,9 +135,9 @@
         "zeroAt": 30,
         "unit": "thousand lines",
         "isMeasured": true,
-        "offenders": 55,
-        "measuredAgainst": 14.63,
-        "score": 87.5
+        "offenders": 52,
+        "measuredAgainst": 14.9,
+        "score": 88.4
       },
       {
         "key": "deepIndentation",
@@ -147,9 +147,9 @@
         "zeroAt": 30,
         "unit": "thousand lines",
         "isMeasured": true,
-        "offenders": 204,
-        "measuredAgainst": 14.63,
-        "score": 53.5
+        "offenders": 83,
+        "measuredAgainst": 14.9,
+        "score": 81.4
       },
       {
         "key": "functionNames",
@@ -160,7 +160,7 @@
         "unit": "functions",
         "isMeasured": true,
         "offenders": 0,
-        "measuredAgainst": 263,
+        "measuredAgainst": 291,
         "score": 100.0
       },
       {
@@ -172,7 +172,7 @@
         "unit": "predicted files",
         "isMeasured": true,
         "offenders": 0,
-        "measuredAgainst": 16,
+        "measuredAgainst": 20,
         "score": 100.0
       },
       {
@@ -194,9 +194,9 @@
         "zeroAt": 0.25,
         "unit": "branches",
         "isMeasured": true,
-        "offenders": 11,
-        "measuredAgainst": 392,
-        "score": 88.8
+        "offenders": 10,
+        "measuredAgainst": 418,
+        "score": 90.4
       },
       {
         "key": "literalComparisons",
@@ -206,9 +206,9 @@
         "zeroAt": 0.25,
         "unit": "branches",
         "isMeasured": true,
-        "offenders": 31,
-        "measuredAgainst": 392,
-        "score": 68.4
+        "offenders": 27,
+        "measuredAgainst": 418,
+        "score": 74.2
       },
       {
         "key": "gluedAccessors",
@@ -219,7 +219,7 @@
         "unit": "functions",
         "isMeasured": true,
         "offenders": 0,
-        "measuredAgainst": 263,
+        "measuredAgainst": 291,
         "score": 100.0
       },
       {
@@ -249,18 +249,18 @@
   "summaries": {
     "fileLength": {
       "limit": 100,
-      "filesOverLimit": 23,
-      "totalFiles": 258,
-      "totalLines": 14634,
-      "worstFileLines": 379,
-      "worstFileTimesOverLimit": 2.79
+      "filesOverLimit": 18,
+      "totalFiles": 297,
+      "totalLines": 14905,
+      "worstFileLines": 321,
+      "worstFileTimesOverLimit": 2.21
     },
     "functionShape": {
       "limit": 30,
       "functionsOverLimit": 7,
-      "totalFunctions": 263,
+      "totalFunctions": 291,
       "elseBlocks": 3,
-      "ifBlocks": 392,
+      "ifBlocks": 418,
       "measurementIsHeuristic": true
     },
     "functionNames": {
@@ -273,43 +273,43 @@
       "measurementIsHeuristic": true
     },
     "duplication": {
-      "clones": 10,
-      "duplicatedLines": 169,
-      "totalLines": 19089,
-      "duplicatedPercentage": 0.89
+      "clones": 3,
+      "duplicatedLines": 52,
+      "totalLines": 18833,
+      "duplicatedPercentage": 0.28
     },
     "naming": {
-      "bannedAbbreviationHits": 153,
-      "unprefixedBooleans": 28
+      "bannedAbbreviationHits": 145,
+      "unprefixedBooleans": 26
     },
     "comments": {
-      "explanatoryCommentLines": 99,
-      "filesWithComments": 25,
+      "explanatoryCommentLines": 88,
+      "filesWithComments": 24,
       "taskMarkers": 0
     },
     "magicValues": {
-      "inlineHexColours": 70,
+      "inlineHexColours": 57,
       "inlineStyleAttributes": 5,
       "repeatedStringLiterals": 0
     },
     "prose": {
-      "longMemberChainLines": 55,
-      "deeplyIndentedLines": 204,
-      "overlongLines": 277,
+      "longMemberChainLines": 52,
+      "deeplyIndentedLines": 83,
+      "overlongLines": 288,
       "measurementIsHeuristic": true
     },
     "conditions": {
-      "tangledConditionLines": 11,
-      "literalComparisonLines": 31,
+      "tangledConditionLines": 10,
+      "literalComparisonLines": 27,
       "measurementIsHeuristic": true
     },
     "orphans": {
       "orphanFunctions": 0,
-      "functionsExamined": 263
+      "functionsExamined": 291
     },
     "designPatterns": {
-      "roleFamilies": 7,
-      "predictedFiles": 16,
+      "roleFamilies": 13,
+      "predictedFiles": 20,
       "predictedFilesMissing": 0,
       "entities": 0,
       "entitiesOutOfRange": 0,
@@ -317,32 +317,32 @@
       "measurementIsHeuristic": true
     },
     "inventory": {
-      "pages": 27,
-      "components": 107,
+      "pages": 29,
+      "components": 130,
       "orphanComponents": 11,
-      "averagePageLines": 109
+      "averagePageLines": 64
     },
     "siteDefinition": {
       "skipped": "no siteDefinition catalogue in rules.json"
     },
     "inputValidation": {
-      "schemaTables": 6,
+      "schemaTables": 7,
       "limitedColumns": 0,
       "writeDoors": 0,
       "unvalidatedDoors": 0,
       "looserLimits": 0
     },
     "fileAreas": {
-      "totalFiles": 547,
-      "frontend": 238,
+      "totalFiles": 588,
+      "frontend": 264,
       "tooling": 129,
-      "shared": 74,
-      "backend": 39,
+      "shared": 79,
+      "backend": 47,
       "tests": 21,
       "docs": 16,
       "infrastructure": 14,
-      "database": 7,
-      "api": 7,
+      "database": 8,
+      "api": 8,
       "other": 2
     }
   },
@@ -351,48 +351,24 @@
       "name": "fileLength",
       "summary": {
         "limit": 100,
-        "filesOverLimit": 23,
-        "totalFiles": 258,
-        "totalLines": 14634,
-        "worstFileLines": 379,
-        "worstFileTimesOverLimit": 2.79
+        "filesOverLimit": 18,
+        "totalFiles": 297,
+        "totalLines": 14905,
+        "worstFileLines": 321,
+        "worstFileTimesOverLimit": 2.21
       },
       "offenders": [
         {
-          "file": "src/routes/admin/brochure/[id]/+page.svelte",
-          "lines": 379
-        },
-        {
           "file": "src/lib/site.js",
-          "lines": 319
+          "lines": 321
         },
         {
           "file": "src/lib/server/brochures.js",
           "lines": 316
         },
         {
-          "file": "src/routes/admin/brochure/+page.svelte",
-          "lines": 312
-        },
-        {
-          "file": "src/routes/admin/media/+page.svelte",
-          "lines": 301
-        },
-        {
           "file": "src/lib/brochure/templates.js",
           "lines": 282
-        },
-        {
-          "file": "src/routes/+page.svelte",
-          "lines": 255
-        },
-        {
-          "file": "src/routes/admin/rtw/+page.svelte",
-          "lines": 253
-        },
-        {
-          "file": "src/lib/components/admin/ImagePicker.svelte",
-          "lines": 241
         },
         {
           "file": "src/lib/server/db.js",
@@ -400,11 +376,15 @@
         },
         {
           "file": "src/routes/admin/+layout.svelte",
-          "lines": 211
+          "lines": 212
         },
         {
           "file": "src/routes/+layout.svelte",
           "lines": 202
+        },
+        {
+          "file": "src/lib/components/admin/ImagePicker.svelte",
+          "lines": 195
         },
         {
           "file": "src/lib/brochure/defaults.js",
@@ -448,7 +428,7 @@
         },
         {
           "file": "src/routes/fire-flood-restoration/+page.svelte",
-          "lines": 110
+          "lines": 112
         }
       ]
     },
@@ -457,9 +437,9 @@
       "summary": {
         "limit": 30,
         "functionsOverLimit": 7,
-        "totalFunctions": 263,
+        "totalFunctions": 291,
         "elseBlocks": 3,
-        "ifBlocks": 392,
+        "ifBlocks": 418,
         "measurementIsHeuristic": true
       },
       "offenders": [
@@ -527,8 +507,8 @@
     "naming": {
       "name": "naming",
       "summary": {
-        "bannedAbbreviationHits": 153,
-        "unprefixedBooleans": 28
+        "bannedAbbreviationHits": 145,
+        "unprefixedBooleans": 26
       },
       "offenders": {
         "abbreviations": [
@@ -800,11 +780,6 @@
             "name": "prerender"
           },
           {
-            "file": "src/lib/components/admin/ImagePicker.svelte",
-            "line": 20,
-            "name": "uploading"
-          },
-          {
             "file": "src/lib/components/admin/dashboard/DashboardNotice.svelte",
             "line": 2,
             "name": "configured"
@@ -856,7 +831,7 @@
           },
           {
             "file": "src/routes/admin/brochure/+page.svelte",
-            "line": 5,
+            "line": 6,
             "name": "showCreate"
           },
           {
@@ -868,11 +843,6 @@
             "file": "src/routes/admin/login/+page.svelte",
             "line": 6,
             "name": "submitting"
-          },
-          {
-            "file": "src/routes/admin/media/+page.svelte",
-            "line": 7,
-            "name": "uploading"
           }
         ]
       }
@@ -880,8 +850,8 @@
     "comments": {
       "name": "comments",
       "summary": {
-        "explanatoryCommentLines": 99,
-        "filesWithComments": 25,
+        "explanatoryCommentLines": 88,
+        "filesWithComments": 24,
         "taskMarkers": 0
       },
       "offenders": []
@@ -889,7 +859,7 @@
     "magicValues": {
       "name": "magicValues",
       "summary": {
-        "inlineHexColours": 70,
+        "inlineHexColours": 57,
         "inlineStyleAttributes": 5,
         "repeatedStringLiterals": 0
       },
@@ -897,7 +867,15 @@
         "hexColours": [
           {
             "file": "src/lib/components/admin/ImagePicker.svelte",
-            "line": 191
+            "line": 145
+          },
+          {
+            "file": "src/lib/components/admin/brochure-editor/BrochureHead.svelte",
+            "line": 62
+          },
+          {
+            "file": "src/lib/components/admin/brochures/BrochureListRow.svelte",
+            "line": 50
           },
           {
             "file": "src/lib/components/admin/dashboard/DashboardNotice.svelte",
@@ -988,6 +966,14 @@
             "line": 24
           },
           {
+            "file": "src/lib/components/admin/rtw/RtwSubmissionRow.svelte",
+            "line": 53
+          },
+          {
+            "file": "src/lib/components/admin/rtw/RtwSubmissionRow.svelte",
+            "line": 54
+          },
+          {
             "file": "src/lib/components/brochure/PageBackCover.svelte",
             "line": 92
           },
@@ -1016,84 +1002,68 @@
             "line": 149
           },
           {
-            "file": "src/routes/+page.svelte",
-            "line": 247
+            "file": "src/lib/components/home/HomeProcess.svelte",
+            "line": 68
           },
           {
-            "file": "src/routes/+page.svelte",
-            "line": 248
+            "file": "src/lib/components/home/HomeProcess.svelte",
+            "line": 69
           },
           {
-            "file": "src/routes/+page.svelte",
-            "line": 249
-          },
-          {
-            "file": "src/routes/admin/+layout.svelte",
-            "line": 66
+            "file": "src/lib/components/home/HomeProcess.svelte",
+            "line": 70
           },
           {
             "file": "src/routes/admin/+layout.svelte",
-            "line": 127
+            "line": 67
           },
           {
             "file": "src/routes/admin/+layout.svelte",
-            "line": 152
+            "line": 128
           },
           {
             "file": "src/routes/admin/+layout.svelte",
-            "line": 167
+            "line": 153
+          },
+          {
+            "file": "src/routes/admin/+layout.svelte",
+            "line": 168
           },
           {
             "file": "src/routes/admin/brochure/+page.svelte",
-            "line": 170
-          },
-          {
-            "file": "src/routes/admin/brochure/+page.svelte",
-            "line": 283
-          },
-          {
-            "file": "src/routes/admin/brochure/+page.svelte",
-            "line": 284
-          },
-          {
-            "file": "src/routes/admin/brochure/+page.svelte",
-            "line": 285
-          },
-          {
-            "file": "src/routes/admin/brochure/+page.svelte",
-            "line": 306
-          },
-          {
-            "file": "src/routes/admin/brochure/+page.svelte",
-            "line": 310
+            "line": 62
           },
           {
             "file": "src/routes/admin/brochure/[id]/+page.svelte",
-            "line": 213
+            "line": 49
           },
           {
             "file": "src/routes/admin/brochure/[id]/+page.svelte",
-            "line": 214
+            "line": 51
           },
           {
             "file": "src/routes/admin/brochure/[id]/+page.svelte",
-            "line": 215
+            "line": 56
           },
           {
-            "file": "src/routes/admin/brochure/[id]/+page.svelte",
-            "line": 362
+            "file": "src/routes/admin/login/+page.svelte",
+            "line": 83
           },
           {
-            "file": "src/routes/admin/brochure/[id]/+page.svelte",
-            "line": 368
+            "file": "src/routes/admin/login/+page.svelte",
+            "line": 139
           },
           {
-            "file": "src/routes/admin/brochure/[id]/+page.svelte",
-            "line": 370
+            "file": "src/routes/admin/login/+page.svelte",
+            "line": 140
           },
           {
-            "file": "src/routes/admin/brochure/[id]/+page.svelte",
-            "line": 377
+            "file": "src/routes/admin/login/+page.svelte",
+            "line": 141
+          },
+          {
+            "file": "src/routes/admin/login/+page.svelte",
+            "line": 149
           }
         ],
         "inlineStyles": [
@@ -1102,16 +1072,16 @@
             "line": 20
           },
           {
+            "file": "src/lib/components/home/HomeProcess.svelte",
+            "line": 50
+          },
+          {
             "file": "src/lib/components/rtw/CheckRecord.svelte",
             "line": 6
           },
           {
             "file": "src/routes/+layout.svelte",
             "line": 107
-          },
-          {
-            "file": "src/routes/+page.svelte",
-            "line": 175
           },
           {
             "file": "src/routes/brochure/+page.svelte",
@@ -1124,9 +1094,9 @@
     "prose": {
       "name": "prose",
       "summary": {
-        "longMemberChainLines": 55,
-        "deeplyIndentedLines": 204,
-        "overlongLines": 277,
+        "longMemberChainLines": 52,
+        "deeplyIndentedLines": 83,
+        "overlongLines": 288,
         "measurementIsHeuristic": true
       },
       "offenders": {
@@ -1209,11 +1179,11 @@
           },
           {
             "file": "src/lib/components/admin/ImagePicker.svelte",
-            "line": 83
+            "line": 77
           },
           {
-            "file": "src/lib/components/admin/ImagePicker.svelte",
-            "line": 114
+            "file": "src/lib/components/admin/PhotoUploadButton.svelte",
+            "line": 30
           },
           {
             "file": "src/lib/components/admin/page-editor/GroupItem.svelte",
@@ -1265,7 +1235,7 @@
           },
           {
             "file": "src/routes/admin/+layout.svelte",
-            "line": 22
+            "line": 23
           },
           {
             "file": "src/routes/admin/+page.svelte",
@@ -1273,7 +1243,7 @@
           },
           {
             "file": "src/routes/admin/brochure/+page.svelte",
-            "line": 80
+            "line": 8
           },
           {
             "file": "src/routes/admin/brochure/[id]/+page.svelte",
@@ -1320,16 +1290,16 @@
             "line": 50
           },
           {
-            "file": "src/routes/admin/media/+page.svelte",
-            "line": 75
+            "file": "src/routes/brochure/+page.svelte",
+            "line": 12
           },
           {
-            "file": "src/routes/admin/media/+page.svelte",
-            "line": 105
+            "file": "src/routes/brochure/+page.svelte",
+            "line": 37
           },
           {
-            "file": "src/routes/admin/media/+page.svelte",
-            "line": 106
+            "file": "src/routes/brochure/print/[id]/+page.svelte",
+            "line": 8
           }
         ],
         "deepIndentation": [
@@ -1351,15 +1321,43 @@
           },
           {
             "file": "src/lib/components/admin/ImagePicker.svelte",
-            "line": 75
+            "line": 44
           },
           {
             "file": "src/lib/components/admin/ImagePicker.svelte",
-            "line": 76
+            "line": 45
           },
           {
             "file": "src/lib/components/admin/ImagePicker.svelte",
-            "line": 77
+            "line": 46
+          },
+          {
+            "file": "src/lib/components/admin/ImagePicker.svelte",
+            "line": 47
+          },
+          {
+            "file": "src/lib/components/admin/ImagePicker.svelte",
+            "line": 48
+          },
+          {
+            "file": "src/lib/components/admin/ImagePicker.svelte",
+            "line": 68
+          },
+          {
+            "file": "src/lib/components/admin/ImagePicker.svelte",
+            "line": 69
+          },
+          {
+            "file": "src/lib/components/admin/ImagePicker.svelte",
+            "line": 70
+          },
+          {
+            "file": "src/lib/components/admin/ImagePicker.svelte",
+            "line": 71
+          },
+          {
+            "file": "src/lib/components/admin/ImagePicker.svelte",
+            "line": 72
           },
           {
             "file": "src/lib/components/admin/ImagePicker.svelte",
@@ -1394,56 +1392,12 @@
             "line": 85
           },
           {
-            "file": "src/lib/components/admin/ImagePicker.svelte",
-            "line": 105
+            "file": "src/lib/components/admin/media/MediaUploads.svelte",
+            "line": 19
           },
           {
-            "file": "src/lib/components/admin/ImagePicker.svelte",
-            "line": 106
-          },
-          {
-            "file": "src/lib/components/admin/ImagePicker.svelte",
-            "line": 107
-          },
-          {
-            "file": "src/lib/components/admin/ImagePicker.svelte",
-            "line": 108
-          },
-          {
-            "file": "src/lib/components/admin/ImagePicker.svelte",
-            "line": 109
-          },
-          {
-            "file": "src/lib/components/admin/ImagePicker.svelte",
-            "line": 115
-          },
-          {
-            "file": "src/lib/components/admin/ImagePicker.svelte",
-            "line": 116
-          },
-          {
-            "file": "src/lib/components/admin/ImagePicker.svelte",
-            "line": 117
-          },
-          {
-            "file": "src/lib/components/admin/ImagePicker.svelte",
-            "line": 118
-          },
-          {
-            "file": "src/lib/components/admin/ImagePicker.svelte",
-            "line": 119
-          },
-          {
-            "file": "src/lib/components/admin/ImagePicker.svelte",
-            "line": 120
-          },
-          {
-            "file": "src/lib/components/admin/ImagePicker.svelte",
-            "line": 121
-          },
-          {
-            "file": "src/lib/components/admin/ImagePicker.svelte",
-            "line": 122
+            "file": "src/lib/components/admin/media/MediaUploads.svelte",
+            "line": 20
           },
           {
             "file": "src/lib/components/admin/page-editor/GroupItem.svelte",
@@ -1472,6 +1426,38 @@
           {
             "file": "src/lib/components/brochure/PageProjectDetail.svelte",
             "line": 37
+          },
+          {
+            "file": "src/lib/components/home/HomeIntro.svelte",
+            "line": 33
+          },
+          {
+            "file": "src/lib/components/home/HomeProcess.svelte",
+            "line": 54
+          },
+          {
+            "file": "src/lib/components/home/HomeProcess.svelte",
+            "line": 55
+          },
+          {
+            "file": "src/lib/components/home/HomeProcess.svelte",
+            "line": 56
+          },
+          {
+            "file": "src/lib/components/home/HomeProcess.svelte",
+            "line": 57
+          },
+          {
+            "file": "src/lib/components/home/HomeProcess.svelte",
+            "line": 58
+          },
+          {
+            "file": "src/lib/components/home/HomeTrades.svelte",
+            "line": 25
+          },
+          {
+            "file": "src/lib/components/home/HomeTrades.svelte",
+            "line": 26
           },
           {
             "file": "src/routes/+layout.svelte",
@@ -1516,22 +1502,6 @@
           {
             "file": "src/routes/+layout.svelte",
             "line": 168
-          },
-          {
-            "file": "src/routes/+layout.svelte",
-            "line": 169
-          },
-          {
-            "file": "src/routes/+layout.svelte",
-            "line": 170
-          },
-          {
-            "file": "src/routes/+layout.svelte",
-            "line": 171
-          },
-          {
-            "file": "src/routes/+layout.svelte",
-            "line": 172
           }
         ],
         "overlongLines": [
@@ -1588,6 +1558,18 @@
             "line": 166
           },
           {
+            "file": "src/lib/content/building-safety.js",
+            "line": 2
+          },
+          {
+            "file": "src/lib/content/building-safety.js",
+            "line": 3
+          },
+          {
+            "file": "src/lib/content/building-safety.js",
+            "line": 4
+          },
+          {
             "file": "src/lib/content/cleaning.js",
             "line": 4
           },
@@ -1614,6 +1596,10 @@
           {
             "file": "src/lib/content/cleaning.js",
             "line": 13
+          },
+          {
+            "file": "src/lib/content/completed-projects.js",
+            "line": 6
           },
           {
             "file": "src/lib/content/insurance-claims.js",
@@ -1657,19 +1643,15 @@
           },
           {
             "file": "src/lib/content/refurbishment-projects.js",
-            "line": 9
+            "line": 11
           },
           {
             "file": "src/lib/content/refurbishment-projects.js",
-            "line": 16
+            "line": 22
           },
           {
             "file": "src/lib/content/refurbishment-projects.js",
-            "line": 26
-          },
-          {
-            "file": "src/lib/content/refurbishment-projects.js",
-            "line": 35
+            "line": 32
           },
           {
             "file": "src/lib/content/service-lines.js",
@@ -1722,18 +1704,6 @@
           {
             "file": "src/lib/data/legal/business-terms.js",
             "line": 39
-          },
-          {
-            "file": "src/lib/data/legal/business-terms.js",
-            "line": 40
-          },
-          {
-            "file": "src/lib/data/legal/business-terms.js",
-            "line": 41
-          },
-          {
-            "file": "src/lib/data/legal/business-terms.js",
-            "line": 47
           }
         ]
       }
@@ -1741,8 +1711,8 @@
     "conditions": {
       "name": "conditions",
       "summary": {
-        "tangledConditionLines": 11,
-        "literalComparisonLines": 31,
+        "tangledConditionLines": 10,
+        "literalComparisonLines": 27,
         "measurementIsHeuristic": true
       },
       "offenders": {
@@ -1750,6 +1720,10 @@
           {
             "file": "src/hooks.server.js",
             "line": 46
+          },
+          {
+            "file": "src/lib/admin/photo-upload.js",
+            "line": 16
           },
           {
             "file": "src/lib/motion.js",
@@ -1780,16 +1754,8 @@
             "line": 29
           },
           {
-            "file": "src/lib/components/admin/ImagePicker.svelte",
-            "line": 43
-          },
-          {
             "file": "src/routes/admin/login/+page.svelte",
             "line": 41
-          },
-          {
-            "file": "src/routes/admin/media/+page.svelte",
-            "line": 28
           }
         ],
         "literalComparisons": [
@@ -1891,19 +1857,7 @@
           },
           {
             "file": "src/routes/admin/+layout.svelte",
-            "line": 43
-          },
-          {
-            "file": "src/routes/admin/brochure/+page.svelte",
-            "line": 89
-          },
-          {
-            "file": "src/routes/admin/brochure/+page.svelte",
-            "line": 106
-          },
-          {
-            "file": "src/routes/admin/brochure/[id]/+page.svelte",
-            "line": 30
+            "line": 44
           },
           {
             "file": "src/routes/admin/enquiries/+page.svelte",
@@ -1912,10 +1866,6 @@
           {
             "file": "src/routes/admin/login/+page.svelte",
             "line": 41
-          },
-          {
-            "file": "src/routes/admin/rtw/+page.svelte",
-            "line": 22
           }
         ]
       }
@@ -1924,15 +1874,15 @@
       "name": "orphans",
       "summary": {
         "orphanFunctions": 0,
-        "functionsExamined": 263
+        "functionsExamined": 291
       },
       "offenders": []
     },
     "designPatterns": {
       "name": "designPatterns",
       "summary": {
-        "roleFamilies": 7,
-        "predictedFiles": 16,
+        "roleFamilies": 13,
+        "predictedFiles": 20,
         "predictedFilesMissing": 0,
         "entities": 0,
         "entitiesOutOfRange": 0,
@@ -1941,18 +1891,24 @@
       },
       "offenders": {
         "roleFamilies": {
-          "+page.server.js": 16,
-          "+page.svelte": 27,
-          "+server.js": 7,
+          "+page.server.js": 20,
+          "+page.svelte": 29,
+          "+server.js": 8,
+          "actions": 4,
           "card": 6,
-          "field": 5,
-          "form": 8,
-          "notice": 4
+          "field": 6,
+          "form": 10,
+          "head": 4,
+          "intro": 4,
+          "limits": 4,
+          "notice": 4,
+          "row": 5,
+          "store": 4
         },
         "patterns": [
           {
             "pattern": "every +page.server.js has a +page.svelte",
-            "predicted": 16,
+            "predicted": 20,
             "missing": []
           }
         ],
@@ -1963,52 +1919,13 @@
     "inventory": {
       "name": "inventory",
       "summary": {
-        "pages": 27,
-        "components": 107,
+        "pages": 29,
+        "components": 130,
         "orphanComponents": 11,
-        "averagePageLines": 109
+        "averagePageLines": 64
       },
       "offenders": {
         "pages": [
-          {
-            "page": "src/routes/admin/brochure/[id]/+page.svelte",
-            "lines": 379,
-            "widgets": [
-              "form",
-              "list"
-            ]
-          },
-          {
-            "page": "src/routes/admin/brochure/+page.svelte",
-            "lines": 312,
-            "widgets": [
-              "form",
-              "list"
-            ]
-          },
-          {
-            "page": "src/routes/admin/media/+page.svelte",
-            "lines": 301,
-            "widgets": [
-              "form",
-              "list"
-            ]
-          },
-          {
-            "page": "src/routes/+page.svelte",
-            "lines": 255,
-            "widgets": [
-              "list"
-            ]
-          },
-          {
-            "page": "src/routes/admin/rtw/+page.svelte",
-            "lines": 253,
-            "widgets": [
-              "table",
-              "list"
-            ]
-          },
           {
             "page": "src/routes/admin/login/+page.svelte",
             "lines": 179,
@@ -2025,7 +1942,14 @@
           },
           {
             "page": "src/routes/fire-flood-restoration/+page.svelte",
-            "lines": 110,
+            "lines": 112,
+            "widgets": [
+              "list"
+            ]
+          },
+          {
+            "page": "src/routes/maintenance/+page.svelte",
+            "lines": 100,
             "widgets": [
               "list"
             ]
@@ -2043,11 +1967,9 @@
             ]
           },
           {
-            "page": "src/routes/maintenance/+page.svelte",
-            "lines": 98,
-            "widgets": [
-              "list"
-            ]
+            "page": "src/routes/admin/rtw/+page.svelte",
+            "lines": 91,
+            "widgets": []
           },
           {
             "page": "src/routes/admin/enquiries/+page.svelte",
@@ -2062,9 +1984,36 @@
             "widgets": []
           },
           {
+            "page": "src/routes/admin/brochure/+page.svelte",
+            "lines": 64,
+            "widgets": [
+              "list"
+            ]
+          },
+          {
             "page": "src/routes/managing-agents/+page.svelte",
             "lines": 62,
             "widgets": []
+          },
+          {
+            "page": "src/routes/admin/media/+page.svelte",
+            "lines": 60,
+            "widgets": []
+          },
+          {
+            "page": "src/routes/building-safety/+page.svelte",
+            "lines": 59,
+            "widgets": [
+              "list"
+            ]
+          },
+          {
+            "page": "src/routes/admin/brochure/[id]/+page.svelte",
+            "lines": 57,
+            "widgets": [
+              "form",
+              "list"
+            ]
           },
           {
             "page": "src/routes/brochure/+page.svelte",
@@ -2094,6 +2043,13 @@
             ]
           },
           {
+            "page": "src/routes/admin/projects/+page.svelte",
+            "lines": 45,
+            "widgets": [
+              "list"
+            ]
+          },
+          {
             "page": "src/routes/rtw/+page.svelte",
             "lines": 45,
             "widgets": []
@@ -2111,6 +2067,11 @@
             "widgets": [
               "list"
             ]
+          },
+          {
+            "page": "src/routes/+page.svelte",
+            "lines": 39,
+            "widgets": []
           },
           {
             "page": "src/routes/admin/+page.svelte",
@@ -2141,23 +2102,23 @@
         "componentReuse": [
           {
             "component": "src/lib/components/Seo.svelte",
-            "reusedBy": 13
+            "reusedBy": 14
+          },
+          {
+            "component": "src/lib/components/Accreditations.svelte",
+            "reusedBy": 10
           },
           {
             "component": "src/lib/components/Icon.svelte",
             "reusedBy": 10
           },
           {
-            "component": "src/lib/components/Accreditations.svelte",
+            "component": "src/lib/components/CtaBand.svelte",
             "reusedBy": 9
           },
           {
-            "component": "src/lib/components/CtaBand.svelte",
-            "reusedBy": 8
-          },
-          {
             "component": "src/lib/components/PageHero.svelte",
-            "reusedBy": 7
+            "reusedBy": 8
           },
           {
             "component": "src/lib/components/Testimonials.svelte",
@@ -2172,28 +2133,28 @@
             "reusedBy": 5
           },
           {
+            "component": "src/lib/components/SectionIntro.svelte",
+            "reusedBy": 5
+          },
+          {
             "component": "src/lib/components/brochure/BrochureDoc.svelte",
             "reusedBy": 5
           },
           {
-            "component": "src/lib/components/SectionIntro.svelte",
+            "component": "src/lib/components/NumberedList.svelte",
+            "reusedBy": 4
+          },
+          {
+            "component": "src/lib/components/StepCards.svelte",
+            "reusedBy": 4
+          },
+          {
+            "component": "src/lib/components/admin/ImagePicker.svelte",
             "reusedBy": 4
           },
           {
             "component": "src/lib/components/legal/LegalClause.svelte",
             "reusedBy": 4
-          },
-          {
-            "component": "src/lib/components/NumberedList.svelte",
-            "reusedBy": 3
-          },
-          {
-            "component": "src/lib/components/StepCards.svelte",
-            "reusedBy": 3
-          },
-          {
-            "component": "src/lib/components/admin/ImagePicker.svelte",
-            "reusedBy": 3
           },
           {
             "component": "src/lib/components/legal/LegalClauses.svelte",
@@ -2204,11 +2165,31 @@
             "reusedBy": 3
           },
           {
+            "component": "src/lib/components/projects/CompletedProjects.svelte",
+            "reusedBy": 3
+          },
+          {
             "component": "src/lib/components/GoogleRating.svelte",
             "reusedBy": 2
           },
           {
+            "component": "src/lib/components/about/ServiceLineCard.svelte",
+            "reusedBy": 2
+          },
+          {
+            "component": "src/lib/components/admin/PhotoUploadButton.svelte",
+            "reusedBy": 2
+          },
+          {
+            "component": "src/lib/components/admin/brochure-editor/BrochurePageRow.svelte",
+            "reusedBy": 2
+          },
+          {
             "component": "src/lib/components/admin/dashboard/ContentTile.svelte",
+            "reusedBy": 2
+          },
+          {
+            "component": "src/lib/components/admin/media/MediaCell.svelte",
             "reusedBy": 2
           },
           {
@@ -2240,10 +2221,6 @@
             "reusedBy": 1
           },
           {
-            "component": "src/lib/components/about/ServiceLineCard.svelte",
-            "reusedBy": 1
-          },
-          {
             "component": "src/lib/components/about/ServiceLines.svelte",
             "reusedBy": 1
           },
@@ -2253,6 +2230,30 @@
           },
           {
             "component": "src/lib/components/admin/accreditations/AccreditationLogoField.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/admin/brochure-editor/BrochureHead.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/admin/brochure-editor/BrochurePageActions.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/admin/brochure-editor/BrochurePageAdders.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/admin/brochures/BrochureCreateForm.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/admin/brochures/BrochureListRow.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/admin/brochures/BrochureRowActions.svelte",
             "reusedBy": 1
           },
           {
@@ -2324,6 +2325,18 @@
             "reusedBy": 1
           },
           {
+            "component": "src/lib/components/admin/media/CopyUrlButton.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/admin/media/MediaBuiltIn.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/admin/media/MediaUploads.svelte",
+            "reusedBy": 1
+          },
+          {
             "component": "src/lib/components/admin/page-editor/DeletePageForm.svelte",
             "reusedBy": 1
           },
@@ -2372,6 +2385,14 @@
             "reusedBy": 1
           },
           {
+            "component": "src/lib/components/admin/projects/ProjectEditor.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/admin/projects/ProjectPhotosField.svelte",
+            "reusedBy": 1
+          },
+          {
             "component": "src/lib/components/admin/reviews/ReviewRequestForm.svelte",
             "reusedBy": 1
           },
@@ -2385,6 +2406,18 @@
           },
           {
             "component": "src/lib/components/admin/reviews/ReviewSetupNotices.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/admin/rtw/RtwPager.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/admin/rtw/RtwSubmissionRow.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/admin/rtw/RtwSubmissionsTable.svelte",
             "reusedBy": 1
           },
           {
@@ -2456,11 +2489,35 @@
             "reusedBy": 1
           },
           {
+            "component": "src/lib/components/home/HomeEcologi.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/home/HomeHero.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/home/HomeHeroFoot.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/home/HomeIntro.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/home/HomeProcess.svelte",
+            "reusedBy": 1
+          },
+          {
             "component": "src/lib/components/home/HomeServiceCard.svelte",
             "reusedBy": 1
           },
           {
             "component": "src/lib/components/home/HomeServices.svelte",
+            "reusedBy": 1
+          },
+          {
+            "component": "src/lib/components/home/HomeTrades.svelte",
             "reusedBy": 1
           },
           {
@@ -2476,11 +2533,7 @@
             "reusedBy": 1
           },
           {
-            "component": "src/lib/components/refurbishment/CompletedProjects.svelte",
-            "reusedBy": 1
-          },
-          {
-            "component": "src/lib/components/refurbishment/ProjectCard.svelte",
+            "component": "src/lib/components/projects/ProjectCard.svelte",
             "reusedBy": 1
           },
           {
@@ -2596,24 +2649,24 @@
     "fileAreas": {
       "name": "fileAreas",
       "summary": {
-        "totalFiles": 547,
-        "frontend": 238,
+        "totalFiles": 588,
+        "frontend": 264,
         "tooling": 129,
-        "shared": 74,
-        "backend": 39,
+        "shared": 79,
+        "backend": 47,
         "tests": 21,
         "docs": 16,
         "infrastructure": 14,
-        "database": 7,
-        "api": 7,
+        "database": 8,
+        "api": 8,
         "other": 2
       },
       "offenders": [
         {
           "area": "frontend",
-          "files": 238,
-          "sourceFiles": 137,
-          "sourceLines": 8167
+          "files": 264,
+          "sourceFiles": 162,
+          "sourceLines": 8032
         },
         {
           "area": "tooling",
@@ -2623,15 +2676,15 @@
         },
         {
           "area": "shared",
-          "files": 74,
-          "sourceFiles": 74,
-          "sourceLines": 3549
+          "files": 79,
+          "sourceFiles": 79,
+          "sourceLines": 3676
         },
         {
           "area": "backend",
-          "files": 39,
-          "sourceFiles": 39,
-          "sourceLines": 2680
+          "files": 47,
+          "sourceFiles": 47,
+          "sourceLines": 2929
         },
         {
           "area": "tests",
@@ -2653,15 +2706,15 @@
         },
         {
           "area": "database",
-          "files": 7,
+          "files": 8,
           "sourceFiles": 0,
           "sourceLines": 0
         },
         {
           "area": "api",
-          "files": 7,
-          "sourceFiles": 7,
-          "sourceLines": 234
+          "files": 8,
+          "sourceFiles": 8,
+          "sourceLines": 264
         },
         {
           "area": "other",
@@ -2674,7 +2727,7 @@
     "inputValidation": {
       "name": "inputValidation",
       "summary": {
-        "schemaTables": 6,
+        "schemaTables": 7,
         "limitedColumns": 0,
         "writeDoors": 0,
         "unvalidatedDoors": 0,
@@ -2688,46 +2741,30 @@
     "duplication": {
       "name": "duplication",
       "summary": {
-        "clones": 10,
-        "duplicatedLines": 169,
-        "totalLines": 19089,
-        "duplicatedPercentage": 0.89
+        "clones": 3,
+        "duplicatedLines": 52,
+        "totalLines": 18833,
+        "duplicatedPercentage": 0.28
       },
       "offenders": [
-        {
-          "file": "src/routes/admin/media/+page.svelte",
-          "duplicatedLineInstances": 74
-        },
-        {
-          "file": "src/routes/admin/rtw/+page.svelte",
-          "duplicatedLineInstances": 61
-        },
-        {
-          "file": "src/lib/components/admin/enquiries/EnquiryActions.svelte",
-          "duplicatedLineInstances": 59
-        },
-        {
-          "file": "src/routes/admin/brochure/[id]/+page.svelte",
-          "duplicatedLineInstances": 43
-        },
-        {
-          "file": "src/routes/admin/brochure/+page.svelte",
-          "duplicatedLineInstances": 41
-        },
         {
           "file": "src/lib/components/admin/enquiries/InboxNotice.svelte",
           "duplicatedLineInstances": 38
         },
         {
-          "file": "src/lib/components/admin/reviews/ReviewRequestsSent.svelte",
-          "duplicatedLineInstances": 33
+          "file": "src/routes/admin/media/+page.svelte",
+          "duplicatedLineInstances": 25
         },
         {
           "file": "src/routes/admin/reviews/+page.svelte",
           "duplicatedLineInstances": 20
         },
         {
-          "file": "src/lib/components/admin/ImagePicker.svelte",
+          "file": "src/routes/admin/rtw/+page.svelte",
+          "duplicatedLineInstances": 20
+        },
+        {
+          "file": "src/lib/components/admin/reviews/ReviewRequestsSent.svelte",
           "duplicatedLineInstances": 13
         }
       ]
