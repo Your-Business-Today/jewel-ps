@@ -26,7 +26,7 @@ const pageHeroes = [
 	{ slot: 'managing-agents.hero.title', page: 'Managing agents', label: 'Headline', kind: TextKinds.line, text: "One contractor for your whole portfolio." },
 	{ slot: 'managing-agents.hero.lede', page: 'Managing agents', label: 'Introduction under the headline', kind: TextKinds.paragraph, text: "Reactive repairs, planned maintenance and compliance testing across every building you manage, through one service desk that residents are happy to see." },
 	{ slot: 'insurance-claims.hero.title', page: 'Insurers & loss adjusters', label: 'Headline', kind: TextKinds.line, text: "Reinstatement you can place with confidence." },
-	{ slot: 'insurance-claims.hero.lede', page: 'Insurers & loss adjusters', label: 'Introduction under the headline', kind: TextKinds.paragraph, text: "A nominated main contractor for UK insurers, we take a claim from the first emergency call to the final sign-off, and keep you informed at every stage." },
+	{ slot: 'insurance-claims.hero.lede', page: 'Insurers & loss adjusters', label: 'Introduction under the headline', kind: TextKinds.paragraph, text: "Working for leading major-loss insurance companies, we take a claim from the first emergency call to the final sign-off, and keep you informed at every stage." },
 ];
 
 /** @type {TextSlot[]} */
