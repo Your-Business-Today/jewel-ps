@@ -174,81 +174,84 @@ Push to GitHub, import the repo in Vercel (framework auto-detects as SvelteKit),
 ## Code quality
 
 <table><tr><td align="center">
-<strong>Code quality score</strong><h2>81.6%</h2>
-<sub>measured 2026-11-02 · project-process kit 1.40.0</sub>
+<strong>Code quality score</strong><h2>89.7%</h2>
+<sub>measured 2026-11-23 · project-process kit 1.55.0</sub>
 </td></tr></table>
 
-427 files · frontend 201 · tooling 106 · shared 41 · backend 22 · docs 16 · tests 15 · infrastructure 14 · api 7 · database 3 · other 2
+588 files · frontend 264 · tooling 129 · shared 79 · backend 47 · tests 21 · docs 16 · infrastructure 14 · database 8 · api 8 · other 2
 
 <details>
-<summary><strong>How the 81.6% is made up</strong></summary>
+<summary><strong>How the 89.7% is made up</strong></summary>
 
 | Element | Reading | Score | Weight | 0% at |
 | --- | --- | --- | --- | --- |
-| **Standard baseline checks** | | **78.9%** | **60** | |
-| Files over the line limit | 24 in 179 files | 73.2% | 10 | 50% of files |
-| Worst file, in limits over | 2.79 | 69.0% | 5 | 9 |
-| Functions over the line limit | 6 in 169 functions | 85.8% | 8 | 25% of functions |
-| Else blocks | 3 in 292 branches | 97.9% | 5 | 50% of branches |
-| Duplication % | 0.78 | 96.1% | 8 | 20 |
-| Explanatory comment lines | 101 in 11.66 thousand lines | 82.7% | 4 | 50 per thousand lines |
-| Inline magic values | 76 in 11.66 thousand lines | 67.4% | 4 | 20 per thousand lines |
-| Orphan components and functions | 11 in 251 components and functions | 56.2% | 4 | 10% of components and functions |
-| Long member chain lines | 54 in 11.66 thousand lines | 84.6% | 4 | 30 per thousand lines |
-| Deeply indented lines | 219 in 11.66 thousand lines | 37.4% | 4 | 30 per thousand lines |
-| Overlong function names | 0 in 169 functions | 100.0% | 4 | 10% of functions |
+| **Standard baseline checks** | | **88.4%** | **60** | |
+| Files over the line limit | 18 in 297 files | 87.9% | 10 | 50% of files |
+| Worst file, in limits over | 2.21 | 75.4% | 5 | 9 |
+| Functions over the line limit | 7 in 291 functions | 90.4% | 8 | 25% of functions |
+| Else blocks | 3 in 418 branches | 98.6% | 5 | 50% of branches |
+| Duplication % | 0.28 | 98.6% | 8 | 20 |
+| Explanatory comment lines | 88 in 14.9 thousand lines | 88.2% | 4 | 50 per thousand lines |
+| Inline magic values | 62 in 14.9 thousand lines | 79.2% | 4 | 20 per thousand lines |
+| Orphan components and functions | 11 in 421 components and functions | 73.9% | 4 | 10% of components and functions |
+| Long member chain lines | 52 in 14.9 thousand lines | 88.4% | 4 | 30 per thousand lines |
+| Deeply indented lines | 83 in 14.9 thousand lines | 81.4% | 4 | 30 per thousand lines |
+| Overlong function names | 0 in 291 functions | 100.0% | 4 | 10% of functions |
 | **Design pattern file count** | | **100.0%** | **10** | |
-| Files the patterns predict but are missing | 0 in 11 predicted files | 100.0% | 10 | 50% of predicted files |
+| Files the patterns predict but are missing | 0 in 20 predicted files | 100.0% | 10 | 50% of predicted files |
 | Entities outside their expected file count | not measured | not measured | — | 50% of entities |
-| **Prose** | | **80.3%** | **20** | |
-| Conditions with calls tangled inside calls | 12 in 292 branches | 83.6% | 8 | 25% of branches |
-| Conditions compared to a raw literal | 32 in 292 branches | 56.2% | 6 | 25% of branches |
-| Accessor names that want to be a property | 0 in 169 functions | 100.0% | 6 | 10% of functions |
+| **Prose** | | **88.4%** | **20** | |
+| Conditions with calls tangled inside calls | 10 in 418 branches | 90.4% | 8 | 25% of branches |
+| Conditions compared to a raw literal | 27 in 418 branches | 74.2% | 6 | 25% of branches |
+| Accessor names that want to be a property | 0 in 291 functions | 100.0% | 6 | 10% of functions |
 | **Widget adoption** | | **not measured** | **0** | |
 | Markup written by hand where a widget should be | not measured | not measured | — | 50% of widget slots |
 | **Input validation** | | **not measured** | **0** | |
 | Doors that write without checking their input against the columns | not measured | not measured | — | 50% of write doors |
 
-Each element scores 100% with no offenders and falls in a straight line to 0% when its offenders, measured against the size of the codebase, reach the figure in the last column. The score is the weighted average of the elements that could be measured; an element that could not be measured lends its weight to the rest. Weights and zero points are set in `tools/refactor/rules.json` under `score.elements`. The offenders behind every reading are in `tools/refactor/audit-output/audit.json`.
+Each element scores 100% with no offenders and falls in a straight line to 0% when its offenders, measured against the size of the codebase, reach the figure in the last column. The score is the weighted average of the elements that could be measured; an element that could not be measured lends its weight to the rest. Weights and zero points are set in `tools/refactor/rules.json` under `score.elements`. The offenders behind every reading are in `tools/refactor/audit-output/audit.json` once the audit has run there; git ignores it.
 
 </details>
 
 <details>
-<summary><strong>The repository by area: 427 files</strong></summary>
+<summary><strong>The repository by area: 588 files</strong></summary>
 
 | Area | Files | Of which audited source | Source lines |
 | --- | --- | --- | --- |
-| frontend | 201 | 108 | 7,181 |
-| tooling | 106 | 0 | 0 |
-| shared | 41 | 41 | 2,336 |
-| backend | 22 | 22 | 1,901 |
+| frontend | 264 | 162 | 8,032 |
+| tooling | 129 | 0 | 0 |
+| shared | 79 | 79 | 3,676 |
+| backend | 47 | 47 | 2,929 |
+| tests | 21 | 0 | 0 |
 | docs | 16 | 0 | 0 |
-| tests | 15 | 0 | 0 |
 | infrastructure | 14 | 0 | 0 |
-| api | 7 | 7 | 234 |
-| database | 3 | 0 | 0 |
+| database | 8 | 0 | 0 |
+| api | 8 | 8 | 264 |
 | other | 2 | 1 | 4 |
-| **whole repository** | **427** | **179** | **11,656** |
+| **whole repository** | **588** | **297** | **14,905** |
 
 </details>
 
 <details>
-<summary><strong>The refactoring plan: 34 steps, in order</strong></summary>
+<summary><strong>The refactoring plan: 28 steps, in order</strong></summary>
 
 **Pass 2 — Component breakout**
 
-1. Break `src/routes/admin/brochure/[id]/+page.svelte` (379 lines) into components. Component-sized blocks: lines 23–57 (35 lines); lines 59–76 (18 lines); lines 78–127 (50 lines, taking pageTitle).
-2. Break `src/routes/admin/brochure/+page.svelte` (312 lines) into components. Component-sized blocks: lines 21–33 (13 lines); lines 53–78 (26 lines); lines 80–136 (57 lines, taking fmtDate).
-3. Break `src/routes/admin/media/+page.svelte` (301 lines) into components. Component-sized blocks: lines 64–79 (16 lines, taking uploadFiles); lines 104–145 (42 lines); lines 147–163 (17 lines).
-4. Break `src/routes/+page.svelte` (282 lines) into components. Component-sized blocks: lines 73–110 (38 lines); lines 115–155 (41 lines); lines 158–191 (34 lines); lines 194–220 (27 lines).
-5. Break `src/routes/admin/rtw/+page.svelte` (253 lines) into components. Component-sized blocks: lines 43–118 (76 lines, taking ukDate, ukDateTime, outcomeClass).
-6. Break `src/lib/components/admin/ImagePicker.svelte` (241 lines) into components. Component-sized blocks: lines 62–128 (67 lines, taking pick, uploadFiles).
-7. Break `src/routes/admin/+layout.svelte` (207 lines) into components. Component-sized blocks: lines 26–58 (33 lines, taking isActive).
-8. Break `src/routes/+layout.svelte` (203 lines) into components. Component-sized blocks: lines 55–93 (39 lines); lines 101–113 (13 lines); lines 129–191 (63 lines).
-9. Break `src/routes/admin/login/+page.svelte` (179 lines) into components. Component-sized blocks: lines 13–66 (54 lines).
-10. Break `src/lib/components/brochure/PageProjectDetail.svelte` (155 lines) into components. Component-sized blocks: lines 15–57 (43 lines).
+1. Break `src/routes/admin/+layout.svelte` (212 lines) into components. Component-sized blocks: lines 31–63 (33 lines, taking isActive).
+2. Break `src/routes/+layout.svelte` (202 lines) into components. Component-sized blocks: lines 55–93 (39 lines); lines 101–113 (13 lines); lines 129–190 (62 lines).
+3. Break `src/lib/components/admin/ImagePicker.svelte` (195 lines) into components. Component-sized blocks: lines 31–91 (61 lines, taking pick).
+4. Break `src/routes/admin/login/+page.svelte` (179 lines) into components. Component-sized blocks: lines 13–66 (54 lines).
+5. Break `src/lib/components/brochure/PageProjectDetail.svelte` (155 lines) into components. Component-sized blocks: lines 15–57 (43 lines).
+6. Break `src/lib/components/brochure/PageBackCover.svelte` (140 lines) into components. Component-sized blocks: lines 6–47 (42 lines).
+7. Break `src/lib/components/brochure/PageTeam.svelte` (127 lines) into components. Component-sized blocks: lines 14–44 (31 lines).
+8. Break `src/routes/about/+page.svelte` (122 lines) into components. Component-sized blocks: lines 31–54 (24 lines); lines 57–81 (25 lines); lines 84–97 (14 lines); lines 100–116 (17 lines).
+9. Break `src/routes/fire-flood-restoration/+page.svelte` (112 lines) into components. Component-sized blocks: lines 35–62 (28 lines); lines 65–86 (22 lines); lines 89–106 (18 lines).
 
-… and 24 more steps. The whole plan, with the measured detail, is in [`tools/refactor/refactor-plan.md`](tools/refactor/refactor-plan.md).
+**Pass 3 — Utility function identification**
+
+10. Remove the 11 components and functions nothing calls. Listed in audit.json under details.orphans and details.inventory.offenders.orphans; confirm each has no caller before it goes.
+
+… and 18 more steps. The whole plan, with the measured detail, is in [`tools/refactor/refactor-plan.md`](tools/refactor/refactor-plan.md).
 
 </details>
 

@@ -23,5 +23,11 @@
     "deploymentEnabled": {
       "staging": false
     }
-  }
+  },
+  "crons": [
+    {
+      "path": "/api/cron/accreditation-expiry",
+      "schedule": "0 7 * * *"
+    }
+  ]
 }

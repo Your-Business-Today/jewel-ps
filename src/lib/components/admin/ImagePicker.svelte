@@ -1,4 +1,6 @@
 <script>
+	import PhotoUploadButton from './PhotoUploadButton.svelte';
+
 	/**
 	 * Modal image picker for the brochure builder.
 	 * Tabs: photos already uploaded through the builder, plus every image the
@@ -17,45 +19,12 @@
 		onpick = () => {}
 	} = $props();
 
-	let uploading = $state(false);
 	let uploadError = $state('');
-	/** @type {HTMLInputElement | undefined} */
-	let fileInput = $state();
 
 	/** @param {string} url */
 	function pick(url) {
 		onpick(url);
 		open = false;
-	}
-
-	/** @param {FileList | null} files */
-	async function uploadFiles(files) {
-		if (!files || files.length === 0) return;
-		uploading = true;
-		uploadError = '';
-		try {
-			for (const file of Array.from(files)) {
-				const res = await fetch('/admin/api/media', {
-					method: 'POST',
-					headers: { 'Content-Type': 'application/json' },
-					body: JSON.stringify({ filename: file.name })
-				});
-				if (!res.ok) throw new Error((await res.text()).slice(0, 200));
-				const { uploadUrl, publicUrl } = await res.json();
-				const put = await fetch(uploadUrl, {
-					method: 'PUT',
-					headers: { 'Content-Type': file.type || 'application/octet-stream' },
-					body: file
-				});
-				if (!put.ok) throw new Error(`Upload failed (${put.status})`);
-				uploaded = [publicUrl, ...uploaded];
-			}
-		} catch (e) {
-			uploadError = e instanceof Error ? e.message : 'Upload failed';
-		} finally {
-			uploading = false;
-			if (fileInput) fileInput.value = '';
-		}
 	}
 </script>
 
@@ -72,17 +41,11 @@
 				<strong>Choose a photo</strong>
 				<div class="picker__head-actions">
 					{#if canUpload}
-						<label class="btn btn--primary picker__upload">
-							{uploading ? 'Uploading…' : '⬆ Upload photos'}
-							<input
-								bind:this={fileInput}
-								type="file"
-								accept="image/*"
-								multiple
-								disabled={uploading}
-								onchange={(e) => uploadFiles(e.currentTarget.files)}
-							/>
-						</label>
+						<PhotoUploadButton
+							class="picker__upload"
+							onuploaded={(publicUrl) => (uploaded = [publicUrl, ...uploaded])}
+							onfailed={(message) => (uploadError = message)}
+						/>
 					{/if}
 					<button class="picker__close" onclick={() => (open = false)} aria-label="Close">✕</button>
 				</div>
@@ -162,18 +125,9 @@
 		gap: 0.8rem;
 	}
 
-	.picker__upload {
-		position: relative;
-		overflow: hidden;
+	.picker__head-actions :global(.picker__upload) {
 		font-size: 0.86rem;
 		padding: 0.45rem 1.1rem;
-	}
-
-	.picker__upload input {
-		position: absolute;
-		inset: 0;
-		opacity: 0;
-		cursor: pointer;
 	}
 
 	.picker__close {

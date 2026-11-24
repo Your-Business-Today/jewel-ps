@@ -1,3 +1,5 @@
+import { todayAsDate } from '$lib/accreditation-expiry.js';
+
 /** @typedef {import('$lib/site.js').Accreditation} Accreditation */
 
 /**
@@ -5,6 +7,6 @@
  * @param {Accreditation[]} accreditations
  */
 export function accreditationsInForce(accreditations) {
-	const today = new Date().toISOString().slice(0, 10);
+	const today = todayAsDate();
 	return accreditations.filter((accreditation) => !accreditation.expires || accreditation.expires >= today);
 }

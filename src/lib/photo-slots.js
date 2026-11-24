@@ -19,6 +19,7 @@ const pagePhotos = [
 	{ slot: 'fire-flood-restoration.works', page: 'Fire & flood restoration', label: 'Restoration works in progress', image: img('Jewel-repair.jpg') },
 	{ slot: 'emergency.hero', page: 'Emergency callout', label: 'Top of the page', image: img('Emergency-Callouts.jpg') },
 	{ slot: 'managing-agents.hero', page: 'Managing agents', label: 'Top of the page', image: img('common-roof-repairs.webp') },
+	{ slot: 'building-safety.hero', page: 'Building safety (BSR)', label: 'Top of the page', image: img('mark-higham-theartshot360-hEFlK-ZoE-E-unsplash-1.jpg') },
 	{ slot: 'insurance-claims.hero', page: 'Insurers & loss adjusters', label: 'Top of the page', image: img('Jewel-repair.jpg') }
 ];
 
