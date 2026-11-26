@@ -1,12 +1,10 @@
-# Refactor audit — baseline v3, after round 2
+# Refactor audit
 
-Generated 2026-11-23 from `refactor/round-2`, replacing the v2 baseline.
-
-The widgets' designs: not set up. This repository has no design index and no `siteDefinition` catalogue in `rules.json`, so the site has never been checked against a brand sheet ("Check the site against the brand") nor its widgets against their sheets ("Check the widgets against their designs").
+Generated 2026-11-25 17:38 UTC.
 
 ## Headline
 
-**Code quality score 86.3% → 89.7%.** **18 of 297 source files are over the 100-line limit (6.1%)**, down from 23; the worst file is 321 lines (`src/lib/site.js`), down from 379.
+**Code quality score 89.7%.** **18 of 297 source files are over the 100-line limit (6.1%)**; the worst file is 321 lines.
 
 ## Code quality score
 
@@ -38,6 +36,22 @@ The widgets' designs: not set up. This repository has no design index and no `si
 
 Each element scores 100% with no offenders and falls in a straight line to 0% when its offenders, measured against the size of the codebase, reach the figure in the last column. The score is the weighted average of the elements that could be measured; an element that could not be measured lends its weight to the rest. Weights and zero points are set in `tools/refactor/rules.json` under `score.elements`. The offenders behind every reading are in `tools/refactor/audit-output/audit.json` once the audit has run there; git ignores it.
 
+## The repository by area
+
+| Area | Files | Of which audited source | Source lines |
+| --- | --- | --- | --- |
+| frontend | 264 | 162 | 8,032 |
+| tooling | 129 | 0 | 0 |
+| shared | 79 | 79 | 3,676 |
+| backend | 47 | 47 | 2,929 |
+| tests | 21 | 0 | 0 |
+| docs | 18 | 0 | 0 |
+| infrastructure | 14 | 0 | 0 |
+| database | 8 | 0 | 0 |
+| api | 8 | 8 | 264 |
+| other | 2 | 1 | 4 |
+| **whole repository** | **590** | **297** | **14,905** |
+
 ## Summary
 
 | Check | Key figures |
@@ -57,31 +71,33 @@ Each element scores 100% with no offenders and falls in a straight line to 0% wh
 | inventory | pages: 29, components: 130, orphanComponents: 11, averagePageLines: 64 |
 | siteDefinition | skipped: no siteDefinition catalogue in rules.json |
 | inputValidation | schemaTables: 7, limitedColumns: 0, writeDoors: 0, unvalidatedDoors: 0, looserLimits: 0 |
-| fileAreas | totalFiles: 588, frontend: 264, tooling: 129, shared: 79, backend: 47, tests: 21, docs: 16, infrastructure: 14, database: 8, api: 8, other: 2 |
+| fileAreas | totalFiles: 590, frontend: 264, tooling: 129, shared: 79, backend: 47, tests: 21, docs: 18, infrastructure: 14, database: 8, api: 8, other: 2 |
 
-## Round 2 — the five longest pages broken into components
+## Against the baseline
 
-The round took the first five steps of the plan, all Pass 2. Each page was cut into components at the seams the plan measured, with the functions and styles that belong to each block moving with it. Three things the pages each wrote for themselves were given one home: the photo upload (`src/lib/admin/photo-upload.js` and `PhotoUploadButton.svelte`, now used by the media library and the image picker), the admin area's small buttons, link buttons and section labels (`admin.css`), and the UK date-time format (`src/lib/admin/uk-date-time.js`, which the RTW page now uses instead of its own copy). Behaviour is unchanged. The home page's hero, curtain and process animations were checked in a browser after the split.
-
-- **`src/routes/admin/brochure/[id]/+page.svelte` 379 → 57**: `BrochureHead` (rename, publish state, preview and PDF), `BrochurePageAdders`, `BrochurePageRow` (thumbnail and title, taking `pageTitle`) and `BrochurePageActions` (move, edit, duplicate, delete), in `components/admin/brochure-editor/`.
-- **`src/routes/admin/brochure/+page.svelte` 312 → 64**: `BrochureCreateForm`, `BrochureListRow` (taking the date format, renamed `shortDateOf`) and `BrochureRowActions`, in `components/admin/brochures/`.
-- **`src/routes/admin/media/+page.svelte` 301 → 60**: `MediaUploads` (with the two-press delete), `MediaBuiltIn`, `MediaCell` and `CopyUrlButton`, in `components/admin/media/`. `uploadFiles` became `PhotoUploadButton` over `uploadPhoto`, and the image picker lost its own copy (241 → 195).
-- **`src/routes/+page.svelte` 255 → 39**: `HomeHero` (the intro and the curtain animation, as two named steps), `HomeHeroFoot`, `HomeIntro`, `HomeProcess` (with its own scroll-line animation), `HomeTrades` and `HomeEcologi`, in `components/home/`. Three explanatory comments came off because the function names now say it.
-- **`src/routes/admin/rtw/+page.svelte` 253 → 91**: `RtwSubmissionsTable`, `RtwSubmissionRow` (taking `ukDate` and `outcomeClass`) and `RtwPager`, in `components/admin/rtw/`.
-- **Held**: every ratcheted figure held or improved. Files over the limit 23 → 18, worst file 379 → 321, duplication 0.88% → 0.28%, comments 99 → 88, deeply indented lines 204 → 83, literal comparisons 31 → 27, tangled conditions 11 → 10, member chains 55 → 52, functions over the limit 7 → 7, else blocks 3 → 3, orphan components 11 → 11.
-- **Division signature**: none. The file count rose from 258 to 297 as the pages divided, and no figure drifted with it.
-
-## The journey so far
-
-| Figure | v1 | v2 | v3 |
+| Ratcheted figure | Baseline | Now | Verdict |
 | --- | --- | --- | --- |
-| Code quality score | 82.8% | 86.1% | **89.7%** |
-| Worst file | 379 | 379 | **321** |
-| Average page length | — | 109 | **64** |
-| Duplication % | 1.01 | 0.89 | **0.28** |
-| Else blocks | 3 | 3 | **3** |
-| Functions over the limit | 6 | 7 | **7** |
-| Files over the limit | 24 | 23 | **18** |
+| code quality score | 89.7% | 89.7% | — |
+| fileLength.filesOverLimit | 18 | 18 | held |
+| fileLength.worstFileLines | 321 | 321 | held |
+| functionShape.functionsOverLimit | 7 | 7 | held |
+| functionShape.elseBlocks | 3 | 3 | held |
+| duplication.duplicatedPercentage | 0.28 | 0.28 | held |
+| comments.explanatoryCommentLines | 88 | 88 | held |
+| magicValues.inlineHexColours | 57 | 57 | held |
+| inventory.orphanComponents | 11 | 11 | held |
+| orphans.orphanFunctions | 0 | 0 | held |
+| prose.longMemberChainLines | 52 | 52 | held |
+| prose.deeplyIndentedLines | 83 | 83 | held |
+| functionNames.overlongFunctionNames | 0 | 0 | held |
+| accessorNames.gluedAccessorNames | 0 | 0 | held |
+| conditions.tangledConditionLines | 10 | 10 | held |
+| conditions.literalComparisonLines | 27 | 27 | held |
+| designPatterns.predictedFilesMissing | 0 | 0 | held |
+| siteDefinition.handRolledElements | None | None | — |
+| siteDefinition.boxedContentWidgets | None | None | — |
+| inputValidation.unvalidatedDoors | 0 | 0 | held |
+| inputValidation.looserLimits | 0 | 0 | held |
 
 ## Worst files by length
 
@@ -102,13 +118,8 @@ The round took the first five steps of the plan, all Pass 2. Each page was cut i
 | src/lib/components/brochure/PageBackCover.svelte | 140 |
 | src/lib/components/brochure/PageTeam.svelte | 127 |
 | src/routes/about/+page.svelte | 122 |
+| src/lib/server/email.js | 121 |
+| src/lib/server/login-attempts.js | 113 |
+| src/routes/fire-flood-restoration/+page.svelte | 112 |
 
-## Next round, named
-
-1. Break `src/routes/admin/+layout.svelte` (212 lines) into components.
-2. Break `src/routes/+layout.svelte` (202 lines) into components.
-3. Break `src/lib/components/admin/ImagePicker.svelte` (195 lines) into components.
-4. Break `src/routes/admin/login/+page.svelte` (179 lines) into components.
-5. Break `src/lib/components/brochure/PageProjectDetail.svelte` (155 lines) into components.
-
-The worst file is now `src/lib/site.js` at 321 lines: the site's content and settings in one module, which Pass 4 divides once the pages are done.
+Full detail, including every offender list, is in `audit.json`.
